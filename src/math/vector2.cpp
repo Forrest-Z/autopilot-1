@@ -2,6 +2,10 @@
 #pragma GCC optimize("O2")
 
 #include "vector2.h"
+#include "Location.h"
+#include "common_math.h"
+
+using namespace LOC;
 
 template <typename T>
 float Vector2<T>::length_squared() const
@@ -179,16 +183,16 @@ bool Vector2<T>::circle_segment_intersection(const Vector2<T>& seg_start, const 
     // calculate vector from start to end
     const Vector2f seg_end_minus_start = seg_end - seg_start;
 
-    const float a = sq(seg_end_minus_start.x) + sq(seg_end_minus_start.y);
+    const float a = SQ(seg_end_minus_start.x) + SQ(seg_end_minus_start.y);
     const float b = 2 * ((seg_end_minus_start.x * seg_start_local.x) + (seg_end_minus_start.y * seg_start_local.y));
-    const float c = sq(seg_start_local.x) + sq(seg_start_local.y) - sq(radius);
+    const float c = SQ(seg_start_local.x) + SQ(seg_start_local.y) - SQ(radius);
 
     // check for invalid data
-    if (::is_zero(a) || isnan(a) || isnan(b) || isnan(c)) {
+    if (is_zero(a) || isnan(a) || isnan(b) || isnan(c)) {
        return false;
     }
 
-    const float delta = sq(b) - (4.0f * a * c);
+    const float delta = SQ(b) - (4.0f * a * c);
 
     if (isnan(delta)) {
        return false;
@@ -274,8 +278,8 @@ Vector2<T> Vector2<T>::projected(const Vector2<T> &v)
 template <typename T>
 void Vector2<T>::offset_bearing(float bearing, float distance)
 {
-    x += cosf(radians(bearing)) * distance;
-    y += sinf(radians(bearing)) * distance;
+    x += cosf(math::radians(bearing)) * distance;
+    y += sinf(math::radians(bearing)) * distance;
 }
 
 // given a position pos_delta and a velocity v1 produce a vector
@@ -380,9 +384,9 @@ float Vector2<T>::closest_distance_between_lines_squared(const Vector2<T> &a1,
     const float dist2 = Vector2<T>::closest_distance_between_line_and_point_squared(b1,b2,a2);
     const float dist3 = Vector2<T>::closest_distance_between_line_and_point_squared(a1,a2,b1);
     const float dist4 = Vector2<T>::closest_distance_between_line_and_point_squared(a1,a2,b2);
-    const float m1 = MIN(dist1,dist2);
-    const float m2 = MIN(dist3,dist4);
-    return MIN(m1,m2);
+    const float m1 = std::fmin(dist1,dist2);
+    const float m2 = std::fmin(dist3,dist4);
+    return std::fmin(m1,m2);
 }
 
 // w defines a line segment from the origin

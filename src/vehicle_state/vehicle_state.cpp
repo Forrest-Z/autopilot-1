@@ -31,7 +31,7 @@ void VehicleState::Reset(void)
     initialized_ = false;
 }
 
-bool VehicleState::get_ekf_origin(Location &origin)
+bool VehicleState::get_ekf_origin(Location &origin) const
 {
     if(ekf_origin_is_set){
         origin = ekf_origin_;
@@ -39,7 +39,7 @@ bool VehicleState::get_ekf_origin(Location &origin)
     return ekf_origin_is_set;
 }
 
-void VehicleStat::update(double ts)
+void VehicleState::update(double ts)
 {
     // if called timeout reset current state
     uint64_t cur_time = user_time::get_millis();

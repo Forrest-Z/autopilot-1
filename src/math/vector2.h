@@ -8,6 +8,7 @@
 #include <cmath>
 #include <common/commom.h>
 
+#include "definitions.h"
 
 template <typename T>
 struct Vector2

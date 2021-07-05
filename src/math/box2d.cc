@@ -56,8 +56,8 @@ Box2d::Box2d(const Vec2d &center, const double heading, const double length,
       heading_(heading),
       cos_heading_(cos(heading)),
       sin_heading_(sin(heading)) {
-  CHECK_GT(length_, -kMathEpsilon);
-  CHECK_GT(width_, -kMathEpsilon);
+ // CHECK_GT(length_, -kMathEpsilon);
+ // CHECK_GT(width_, -kMathEpsilon);
   InitCorners();
 }
 
@@ -70,8 +70,8 @@ Box2d::Box2d(const LineSegment2d &axis, const double width)
       heading_(axis.heading()),
       cos_heading_(axis.cos_heading()),
       sin_heading_(axis.sin_heading()) {
-  CHECK_GT(length_, -kMathEpsilon);
-  CHECK_GT(width_, -kMathEpsilon);
+ // CHECK_GT(length_, -kMathEpsilon);
+ // CHECK_GT(width_, -kMathEpsilon);
   InitCorners();
 }
 
@@ -103,8 +103,8 @@ Box2d::Box2d(const AABox2d &aabox)
       heading_(0.0),
       cos_heading_(1.0),
       sin_heading_(0.0) {
-  CHECK_GT(length_, -kMathEpsilon);
-  CHECK_GT(width_, -kMathEpsilon);
+//  CHECK_GT(length_, -kMathEpsilon);
+ // CHECK_GT(width_, -kMathEpsilon);
 }
 
 Box2d Box2d::CreateAABox(const Vec2d &one_corner,
@@ -262,8 +262,8 @@ double Box2d::DistanceTo(const LineSegment2d &line_segment) const {
         return 0.0;
     }
   }
-  ACHECK(0) << "unimplemented state: " << gx1 << " " << gy1 << " " << gx2 << " "
-            << gy2;
+//  ACHECK(0) << "unimplemented state: " << gx1 << " " << gy1 << " " << gx2 << " "
+  //          << gy2;
   return 0.0;
 }
 
@@ -340,9 +340,11 @@ void Box2d::LateralExtend(const double extension_length) {
 }
 
 std::string Box2d::DebugString() const {
-  return absl::StrCat("box2d ( center = ", center_.DebugString(),
-                      "  heading = ", heading_, "  length = ", length_,
-                      "  width = ", width_, " )");
+  // return absl::StrCat("box2d ( center = ", center_.DebugString(),
+  //                     "  heading = ", heading_, "  length = ", length_,
+  //                     "  width = ", width_, " )");
+  std::string str= "box2d";
+  return str;
 }
 
 }  // namespace math

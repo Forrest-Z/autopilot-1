@@ -5,6 +5,7 @@
 #include "vector2.h"
 #include <math/common_math.h>
 
+
 #define LOCATION_ALT_MAX_M  83000   // maximum altitude (in meters) that can be fit into Location structure's alt field
 
 namespace LOC{
@@ -38,6 +39,9 @@ float norm(const T first, const U second, const Params... parameters)
 }
 
 
+#define        is_zero(x)                       (((x) < FLT_EPSILON) && ((x) > (-1.0*FLT_EPSILON)))
+
+#define        is_equal(v_1,v_2)                (std::fabs(v_1 - v_2) <= FLT_EPSILON)
 
 class Location
 {

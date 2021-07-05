@@ -2,7 +2,6 @@
 
 #include <math/RingBuffer.h>
 #include <mutex>
-#include "params.h"
 #include <math/vector3.h>
 
 #define MAVLINK_COMM_NUM_BUFFERS 1

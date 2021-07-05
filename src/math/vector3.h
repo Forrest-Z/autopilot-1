@@ -5,6 +5,7 @@
 #endif
 
 #include "rotations.h"
+#include "definitions.h"
 
 #include <stdint.h>
 #include <cmath>
@@ -13,11 +14,7 @@
 #if MATH_CHECK_INDEXES
 #include <assert.h>
 #endif
-
-#define        FLT_EPSILON                      (0.000001f)
-
-template <typename T>
-class Matrix3;
+#include <common/commom.h>
 
 template <typename T>
 class Vector3
@@ -102,12 +99,6 @@ public:
         return *this * v;
     }
     
-    // multiply a row vector by a matrix, to give a row vector
-    Vector3<T> operator *(const Matrix3<T> &m) const;
-
-    // multiply a column vector by a row vector, returning a 3x3 matrix
-    Matrix3<T> mul_rowcol(const Vector3<T> &v) const;
-
     // cross product
     Vector3<T> operator %(const Vector3<T> &v) const;
 
@@ -124,21 +115,12 @@ public:
     // computes the angle between this vector and another vector
     float angle(const Vector3<T> &v2) const;
 
-    // check if any elements are NAN
-    bool is_nan() const WARN_IF_UNUSED;
-
-    // check if any elements are infinity
-    bool is_inf() const WARN_IF_UNUSED;
-
     // check if all elements are zero
   //  bool is_zero()   {
    //     return true;
        // return ((fabsf(x) < FLT_EPSILON) && (fabsf(y) < FLT_EPSILON) && (fabsf(z) < FLT_EPSILON));
  //   }
 
-
-    // rotate by a standard rotation
-    void rotate_inverse(enum Rotation rotation);
 
     // gets the length of this vector squared
     T  length_squared() const

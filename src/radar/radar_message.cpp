@@ -105,7 +105,7 @@ void RadarMessage::send_message(int sysid, int componetid, int msgid)
         arm2ipc_msg_.heading_deg = ins_msg.heading;
         arm2ipc_msg_.ground_course_deg = ins_msg.motionDirection;
         arm2ipc_msg_.ground_speed_kn   = ins_msg.speed;
-
+    }
         break;
     }
 

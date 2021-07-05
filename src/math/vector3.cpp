@@ -1,27 +1,11 @@
 
 #pragma GCC optimize("O2")
 #include "vector3.h"
+#include "Location.h"
+#include "common_math.h"
+#include "math_utils.h"
 
-
-template <typename T>
-void Vector3<T>::rotate_inverse(enum Rotation rotation)
-{
-    Vector3<T> x_vec(1.0f,0.0f,0.0f);
-    Vector3<T> y_vec(0.0f,1.0f,0.0f);
-    Vector3<T> z_vec(0.0f,0.0f,1.0f);
-
-    x_vec.rotate(rotation);
-    y_vec.rotate(rotation);
-    z_vec.rotate(rotation);
-
-    Matrix3<T> M(
-        x_vec.x, y_vec.x, z_vec.x,
-        x_vec.y, y_vec.y, z_vec.y,
-        x_vec.z, y_vec.z, z_vec.z
-    );
-
-    (*this) = M.mul_transpose(*this);
-}
+using namespace LOC;
 
 // vector cross product
 template <typename T>
@@ -63,18 +47,6 @@ Vector3<T> &Vector3<T>::operator -=(const Vector3<T> &v)
 {
     x -= v.x; y -= v.y; z -= v.z;
     return *this;
-}
-
-template <typename T>
-bool Vector3<T>::is_nan(void) const
-{
-    return isnan(x) || isnan(y) || isnan(z);
-}
-
-template <typename T>
-bool Vector3<T>::is_inf(void) const
-{
-    return isinf(x) || isinf(y) || isinf(z);
 }
 
 template <typename T>
@@ -140,32 +112,14 @@ float Vector3<T>::angle(const Vector3<T> &v2) const
     return acosf(cosv);
 }
 
-// multiplication of transpose by a vector
-template <typename T>
-Vector3<T> Vector3<T>::operator *(const Matrix3<T> &m) const
-{
-    return Vector3<T>(*this * m.colx(),
-                      *this * m.coly(),
-                      *this * m.colz());
-}
-
-// multiply a column vector by a row vector, returning a 3x3 matrix
-template <typename T>
-Matrix3<T> Vector3<T>::mul_rowcol(const Vector3<T> &v2) const
-{
-    const Vector3<T> v1 = *this;
-    return Matrix3<T>(v1.x * v2.x, v1.x * v2.y, v1.x * v2.z,
-                      v1.y * v2.x, v1.y * v2.y, v1.y * v2.z,
-                      v1.z * v2.x, v1.z * v2.y, v1.z * v2.z);
-}
 
 // extrapolate position given bearing and pitch (in degrees) and distance
 template <typename T>
 void Vector3<T>::offset_bearing(float bearing, float pitch, float distance)
 {
-    y += cosf(radians(pitch)) * sinf(radians(bearing)) * distance;
-    x += cosf(radians(pitch)) * cosf(radians(bearing)) * distance;
-    z += sinf(radians(pitch)) * distance;
+    y += cosf(math::radians(pitch)) * sinf(math::radians(bearing)) * distance;
+    x += cosf(math::radians(pitch)) * cosf(math::radians(bearing)) * distance;
+    z += sinf(math::radians(pitch)) * distance;
 }
 
 // distance from the tip of this vector to a line segment specified by two vectors
@@ -178,7 +132,7 @@ float Vector3<T>::distance_to_segment(const Vector3<T> &seg_start, const Vector3
     const float c = (seg_end-*this).length();
 
     // protect against divide by zero later
-    if (::is_zero(b)) {
+    if (is_zero(b)) {
         return 0.0f;
     }
 
@@ -190,7 +144,7 @@ float Vector3<T>::distance_to_segment(const Vector3<T> &seg_start, const Vector3
     if (area_squared < 0.0f) {
         area_squared = 0.0f;
     }
-    const float area = safe_sqrt(area_squared);
+    const float area = sqrtf(area_squared);
     return 2.0f*area/b;
 }
 
@@ -213,7 +167,7 @@ Vector3<T> Vector3<T>::point_on_line_closest_to_other_point(const Vector3<T> &w1
     
     const float line_vec_len = line_vec.length();
     // protection against divide by zero
-    if(::is_zero(line_vec_len)) {
+    if(fabs(line_vec_len) < FLT_EPSILON) {
         return {0.0f, 0.0f, 0.0f};
     }
 
@@ -222,7 +176,7 @@ Vector3<T> Vector3<T>::point_on_line_closest_to_other_point(const Vector3<T> &w1
     const Vector3<T> scaled_p_vec = p_vec * scale;
 
     float dot_product = unit_vec * scaled_p_vec;
-    dot_product = constrain_float(dot_product,0.0f,1.0f); 
+    dot_product = math::Clamp(dot_product,0.0f,1.0f); 
  
     const Vector3<T> closest_point = line_vec * dot_product;
     return (closest_point + w1);

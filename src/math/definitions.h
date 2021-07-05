@@ -14,6 +14,8 @@
 
 #define M_GOLDEN  1.6180339f
 
+#define        FLT_EPSILON                      (0.000001f)
+
 #define M_2PI         (M_PI * 2)
 
 // MATH_CHECK_INDEXES modifies some objects (e.g. SoloGimbalEKF) to

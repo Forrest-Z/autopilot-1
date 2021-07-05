@@ -240,7 +240,7 @@ float Location::line_path_proportion(const Location &point1, const Location &poi
 {
     const Vector2f vec1 = point1.get_distance_NE(point2);
     const Vector2f vec2 = point1.get_distance_NE(*this);
-    const float dsquared = sq(vec1.x) + sq(vec1.y);
+    const float dsquared = SQ(vec1.x) + SQ(vec1.y);
     if (dsquared < 0.001f) {
         // the two points are very close together
         return 1.0f;

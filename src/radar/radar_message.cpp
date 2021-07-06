@@ -89,12 +89,15 @@ void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
             uint16_t i = 0;
             IPC2ARM msg;
             zmqObsVec.clear();
+         //  printf("obstacle_size = %d\n",obstalce_size);
             while( i <8*obstalce_size){
-               memcpy(&msg,&pBuf[8*i+1],sizeof(msg));
+               memcpy(&msg,&pBuf[i+1],sizeof(msg));
                database_push(msg.lat,msg.lng);
 
-               	zmqObsSingle.lat = msg.lat;
-				zmqObsSingle.lng = msg.lng;
+              // printf("lat = %ld,lng =%ld\n",msg.lat,msg.lng);
+
+               	zmqObsSingle.lat = msg.lat*1e-7;
+				zmqObsSingle.lng = msg.lng*1e-7;
 				zmqObsSingle.radius = 0.5;
 				zmqObsSingle.infactRadius = 0.5;
 				zmqObsSingle.speed = 0.0;
@@ -164,13 +167,16 @@ void RadarMessage::send_message(int sysid, int componetid, int msgid)
     switch (msgid)
     {
     case UnMsgID_BoatLidar_Arm_IPC_Cross:{ 
-       
-        arm2ipc_msg_.gps_valid = (ins_msg.insState.c_rmcValid != 'A' && irtk_msg.rtk_state.c_rmcValid != 'A') ?(false):(true);
-        arm2ipc_msg_.lat       =  static_cast<int32_t>(ins_msg.latitude * 1e7);
-        arm2ipc_msg_.lng       =  static_cast<int32_t>(ins_msg.longitude * 1e7);
-        arm2ipc_msg_.heading_deg = ins_msg.heading;
+        arm2ipc_msg_.gps_valid         = (ins_msg.insState.c_rmcValid != 'A' && irtk_msg.rtk_state.c_rmcValid != 'A') ?(false):(true);
+        arm2ipc_msg_.lat               =  static_cast<int32_t>(ins_msg.latitude * 1e7);
+        arm2ipc_msg_.lng               =  static_cast<int32_t>(ins_msg.longitude * 1e7);
+        arm2ipc_msg_.heading_deg       = ins_msg.heading;
         arm2ipc_msg_.ground_course_deg = ins_msg.motionDirection;
         arm2ipc_msg_.ground_speed_kn   = ins_msg.speed;
+        memcpy(datapadu.databuf,&arm2ipc_msg_,sizeof(arm2ipc_msg_));
+        datapadu.len = sizeof(arm2ipc_msg_);
+       // printf("datapadu.len = %d\n",datapadu.len);
+       // printf("send message to radar\n");
     }
         break;
     }

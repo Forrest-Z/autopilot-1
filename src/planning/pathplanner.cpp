@@ -107,10 +107,10 @@ extern LOC::Location ekf_origin_;
 void AP_OAPathPlanner::avoidance_thread()
 {   
     // require ekf origin to have been set
-    origin_set =  (ekf_origin_.lat != 0 && ekf_origin_.lng != 0)?(true):(false);
     while (!origin_set) {
+        origin_set =  (ekf_origin_.lat != 0 && ekf_origin_.lng != 0)?(true):(false);
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
-        printf("need set ekf original");
+        printf("need set ekf original\n");
     }
 
     while (true) {

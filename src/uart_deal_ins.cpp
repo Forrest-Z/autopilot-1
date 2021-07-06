@@ -133,19 +133,17 @@ void *uart_deal_ins(void *aa)
 			insUdpRecReport(ins_sockid);
 			//insNanoRecReport();
 		}
-
+		
 		if(!ekf_origin_is_set && 
 		   (ins_msg.insState.c_rmcValid == 'A' || irtk_msg.rtk_state.c_rmcValid == 'A')&&
-		   delay_time == 0){
+		   (ins_msg.latitude >0.1 && ins_msg.longitude >0.1)){
 			   ekf_origin_is_set = true;
 
 			// get ekf_origin
          	   ekf_origin_.lat = ins_msg.latitude*1e7;
                ekf_origin_.lng = ins_msg.longitude*1e7;
                ekf_origin_.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
-			   printf("EKF ORIGIN SET [lat = %ld,lng = %ld]", ekf_origin_.lat,ekf_origin_.lng);
-		   }else{
-			   delay_time--;
+			   printf("EKF ORIGIN SET [lat = %ld,lng = %ld]\n", ekf_origin_.lat,ekf_origin_.lng);
 		   }
 	
 		sleep_1(INS_REC_TIMESLICE);	//10ms

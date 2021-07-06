@@ -10,9 +10,10 @@ class RadarMessage{
 public:
 #pragma pack(1)
     struct IPC2ARM{
-        uint8_t flag;
-        float   relative_heading;
-        float   relative_distance;
+        int32_t lat;
+        int32_t lng;
+        IPC2ARM():lat(0),lng(0){}
+        IPC2ARM(int32_t lat0,int32_t lng0):lat(lat0),lng(lng0){}
     };
 
     struct ARM2IPC{
@@ -58,12 +59,17 @@ private:
 
     void send_message(int sysid, int componetid, int msgid);
 
+    // push an object into the database. Pos is  lat and lng
+    void database_push(const int32_t lat,const int32_t lng);
+
 private:
     static RadarMessage* singleton_;
 
     std::unique_ptr<UDPDevice> udp_ptr_;
     std::unique_ptr<ProcAPDU> m_pProcAPDU;
     std::unique_ptr<MeanFilter> lateral_error_filter_;
+
+    //std::vector<IPC2ARM> obstacle_list_;
 
 
 private:

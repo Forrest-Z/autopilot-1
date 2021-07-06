@@ -8,6 +8,8 @@
 #include <user_time/user_time.h>
 #include "uart_irtk.h"
 #include "util/easylogging++.h"
+#include <math/Location.h>
+using namespace LOC;
 
 #define INS_REC_TIMESLICE 10
 #define UDP_INS_REC_PORT 8210
@@ -101,6 +103,10 @@ void jugdeGPSState()
 
 }
 
+static bool ekf_origin_is_set = false;
+static uint16_t delay_time = 300;
+Location ekf_origin_;
+
 void *uart_deal_ins(void *aa)
 {
 	if(uart_ins_init()<0)
@@ -127,6 +133,20 @@ void *uart_deal_ins(void *aa)
 			insUdpRecReport(ins_sockid);
 			//insNanoRecReport();
 		}
+
+		if(!ekf_origin_is_set && 
+		   (ins_msg.insState.c_rmcValid == 'A' || irtk_msg.rtk_state.c_rmcValid == 'A')&&
+		   delay_time == 0){
+			   ekf_origin_is_set = true;
+
+			// get ekf_origin
+         	   ekf_origin_.lat = ins_msg.latitude*1e7;
+               ekf_origin_.lng = ins_msg.longitude*1e7;
+               ekf_origin_.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
+			   printf("EKF ORIGIN SET [lat = %ld,lng = %ld]", ekf_origin_.lat,ekf_origin_.lng);
+		   }else{
+			   delay_time--;
+		   }
 	
 		sleep_1(INS_REC_TIMESLICE);	//10ms
 	}

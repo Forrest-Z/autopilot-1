@@ -1184,7 +1184,7 @@ threadnode *pdockCommunicationUSVRun;
 
 threadnode *pControl_main_thread;
 threadnode *pComm_main_thread;
-threadnode *pZmqGetObstacleThread;
+//threadnode *pZmqGetObstacleThread;
 threadnode *pSamplingCommThread;
 
 threadnode *auto_control_thread;
@@ -1199,10 +1199,10 @@ threadnode *radar_message_send;
 	if(Res)
 		printf("creat usv_monitor_thread fail???\n");
 
-	pZmqGetObstacleThread = NULL;
-	Res=CreateNewThread(pZmqGetObstacleThread,zmq_getObstacles,4);
-	if(Res)
-		printf("creat zmq_getObstacles fail???\n");
+	// pZmqGetObstacleThread = NULL;
+	// Res=CreateNewThread(pZmqGetObstacleThread,zmq_getObstacles,4);
+	// if(Res)
+	// 	printf("creat zmq_getObstacles fail???\n");
 
 	pSamplingCommThread = NULL;
 	Res=CreateNewThread(pSamplingCommThread,samplingComm,4);
@@ -1350,7 +1350,7 @@ uint8	Accelerator_Con[Accelerator_Con_Num];//RAMï¿½ï¿½ï¿½ï¿½DSPï¿½ï¿½ï¿½ï¿½ï¿½Å¿
 	Accelerator_Con[11]=(Accelerator_L&0x00ff);
 	Accelerator_Con[12]=(Accelerator_R&0xff00)>>8;
 	Accelerator_Con[13]=(Accelerator_R&0x00ff);	
-	Accelerator_Con[14]=USV_Control.USV_Control_Message[Radio_Sign].Engine_Run_L;				//ï¿½í®ží²¶ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ö¸ï¿½ï¿½
+	Accelerator_Con[14]=USV_Control.USV_Control_Message[Radio_Sign].Engine_Run_L;				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ö¸ï¿½ï¿½
 	Accelerator_Con[14]+=(USV_Control.USV_Control_Message[Radio_Sign].Engine_Run_R)<<2;			//ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ö¸ï¿½ï¿½
 	
 	Accelerator_Con[14]+=(USV_Control.USV_Control_Message[Radio_Sign].Oil_Con)<<4;				//ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
@@ -1377,18 +1377,18 @@ uint8	Accelerator_Con[Accelerator_Con_Num];//RAMï¿½ï¿½ï¿½ï¿½DSPï¿½ï¿½ï¿½ï¿½ï¿½Å¿
 
 
 	//
-	if(Engine_Run_L_old != 0x01 && USV_Control.USV_Control_Message[Radio_Sign].Engine_Run_L == 0x01)	//ï¿½í®ží²¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	if(Engine_Run_L_old != 0x01 && USV_Control.USV_Control_Message[Radio_Sign].Engine_Run_L == 0x01)	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
-	//	SysLogMsgPost("ï¿½í®ží²¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,Ï¨ï¿½ï¿½ï¿½ï¿½:%d(0-ï¿½ï¿½ï¿½Öµï¿½Ì¨,1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 3-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨  4-ï¿½ï¿½ï¿½)",Radio_Sign);
+	//	SysLogMsgPost("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,Ï¨ï¿½ï¿½ï¿½ï¿½:%d(0-ï¿½ï¿½ï¿½Öµï¿½Ì¨,1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 3-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨  4-ï¿½ï¿½ï¿½)",Radio_Sign);
 	}
 	if(Engine_Run_R_old != 0x01 && USV_Control.USV_Control_Message[Radio_Sign].Engine_Run_R == 0x01)    //ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
 	//	SysLogMsgPost("ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,Ï¨ï¿½ï¿½ï¿½ï¿½:%d(0-ï¿½ï¿½ï¿½Öµï¿½Ì¨,1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 3-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨  4-ï¿½ï¿½ï¿½)",Radio_Sign);
 	}
 
-	if(Engine_Run_L_old != 0x02 && USV_Control.USV_Control_Message[Radio_Sign].Engine_Run_L == 0x02)	//ï¿½í®ží²¶ï¿½ï¿½ï¿½Ï¨ï¿½ï¿½
+	if(Engine_Run_L_old != 0x02 && USV_Control.USV_Control_Message[Radio_Sign].Engine_Run_L == 0x02)	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¨ï¿½ï¿½
 	{
-	//	SysLogMsgPost("ï¿½í®ží²¶ï¿½ï¿½ï¿½Ï¨ï¿½ï¿½,Ï¨ï¿½ï¿½ï¿½ï¿½Ô´:%d(0-ï¿½ï¿½ï¿½Öµï¿½Ì¨,1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 3-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨  4-ï¿½ï¿½ï¿½)",Radio_Sign);
+	//	SysLogMsgPost("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¨ï¿½ï¿½,Ï¨ï¿½ï¿½ï¿½ï¿½Ô´:%d(0-ï¿½ï¿½ï¿½Öµï¿½Ì¨,1-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 2-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ 3-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨  4-ï¿½ï¿½ï¿½)",Radio_Sign);
 	}
 	if(Engine_Run_R_old != 0x02 && USV_Control.USV_Control_Message[Radio_Sign].Engine_Run_R == 0x02)    //ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½Ï¨ï¿½ï¿½
 	{

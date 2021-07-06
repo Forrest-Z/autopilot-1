@@ -19,7 +19,7 @@ public:
     AP_OABendyRuler &operator=(const AP_OABendyRuler&) = delete;
 
     // send configuration info stored in front end parameters
-    void set_ekf_origin(const Location &ekf_origin){ _ekf_origin = ekf_origin;}
+    //void set_ekf_origin(const Location &ekf_origin){ _ekf_origin = ekf_origin;}
 
     // run background task to find best path and update avoidance_results
     // returns true and populates origin_new and destination_new if OA is required.  returns false if OA is not required
@@ -46,7 +46,7 @@ private:
     float _current_lookahead;       // distance (in meters) ahead of the vehicle we are looking for obstacles
     float _bearing_prev;            // stored bearing in degrees 
     Location _destination_prev;     // previous destination, to check if there has been a change in destination
-    Location _ekf_origin;
+   // Location _ekf_origin;
 
     bool destinatoin_near_obstacle_{false};
     bool destination_unreachable_{false};

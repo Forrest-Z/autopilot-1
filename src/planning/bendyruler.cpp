@@ -225,7 +225,7 @@ float AP_OABendyRuler::calc_avoidance_margin(const Location &start, const Locati
 }
 
 
-
+extern LOC::Location ekf_origin_;
 // calculate minimum distance between a path and proximity sensor obstacles
 // on success returns true and updates margin
 bool AP_OABendyRuler::calc_margin_from_object_database(const Location &start, const Location &end, float &margin) const
@@ -238,7 +238,7 @@ bool AP_OABendyRuler::calc_margin_from_object_database(const Location &start, co
 
     // convert start and end to offsets (in cm) from EKF origin
     Vector2f start_NEU,end_NEU;
-    if (!start.get_vector_xy_from_origin_NE(start_NEU,_ekf_origin) || !end.get_vector_xy_from_origin_NE(end_NEU,_ekf_origin)) {
+    if (!start.get_vector_xy_from_origin_NE(start_NEU,ekf_origin_) || !end.get_vector_xy_from_origin_NE(end_NEU,ekf_origin_)) {
         return false;
     }
     if (start_NEU == end_NEU) {

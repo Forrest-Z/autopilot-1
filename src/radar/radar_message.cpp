@@ -4,6 +4,12 @@
 #include <user_time/user_time.h>
 #include <math/common_math.h>
 #include <util/easylogging++.h>
+#include "nanoObstacleSender.h"
+#include <math/Location.h>
+#include <planning/database.h>
+using namespace LOC;
+
+extern nanoObstacleSender senderTestV1;
 
 RadarMessage *RadarMessage::singleton_ = nullptr;
 
@@ -48,7 +54,7 @@ RadarMessage::~RadarMessage(){}
 void RadarMessage::update_receive(void)
 {
     int ilen = 0;
-    
+
     ilen = udp_ptr_->socket_recv(recv_buff_, sizeof(recv_buff_), const_cast<char *>(server_ip_.c_str()));
     if(ilen >  0){
         int nDelLen = 0;
@@ -60,6 +66,7 @@ void RadarMessage::update_receive(void)
             handle_message(datapadu->sysid, tmpmsgid, datapadu->databuf);
         }
     }
+
 }
 
  void RadarMessage::update_send(void)
@@ -70,19 +77,78 @@ void RadarMessage::update_receive(void)
 
 void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
 {
+    StruApfObstacle zmqObsSingle;
+	vector <StruApfObstacle> zmqObsVec;	
+
     switch (msgid)
     {
         case UnMsgID_BoatLidar_IPC_Arm_Cross:
         {
             receive_time_stamp_= user_time::get_millis();
-            memcpy(&ipc2arm_msg_,pBuf,sizeof(ipc2arm_msg_));
+            uint32_t obstalce_size = pBuf[0];
+            uint16_t i = 0;
+            IPC2ARM msg;
+            zmqObsVec.clear();
+            while( i <8*obstalce_size){
+               memcpy(&msg,&pBuf[8*i+1],sizeof(msg));
+               database_push(msg.lat,msg.lng);
 
-            // filter data
-            ipc2arm_msg_.relative_distance = lateral_error_filter_->Update(ipc2arm_msg_.relative_distance);
+               	zmqObsSingle.lat = msg.lat;
+				zmqObsSingle.lng = msg.lng;
+				zmqObsSingle.radius = 0.5;
+				zmqObsSingle.infactRadius = 0.5;
+				zmqObsSingle.speed = 0.0;
+				zmqObsSingle.heading =0.0;
+                zmqObsVec.push_back(zmqObsSingle);
+
+               i+=8;
+            }
+            senderTestV1.obstacleEnqueue(zmqObsVec);
         }
         break;
         default:{}break;
     }
+
+}
+
+extern LOC::Location ekf_origin_;
+// push an object into the database. Pos is  lat and lng
+void RadarMessage::database_push(const int32_t lat,const int32_t lng)
+{
+    AP_OADatabase *oaDb = AP::oadatabase();
+    if(oaDb == nullptr || !oaDb->healthy()){
+        return;
+    }
+
+    // get current position
+    if(ekf_origin_.lng == 0 || ekf_origin_.lat == 0){
+        return;
+    }
+
+    Vector2f current_pos;
+    Location current_loc;
+    current_loc.lat = ins_msg.latitude*1e7;
+    current_loc.lng = ins_msg.longitude*1e7;
+    current_loc.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
+     if(!current_loc.get_vector_xy_from_origin_NE(current_pos,ekf_origin_)){
+        return;
+    }
+
+ 
+    Vector2f obstacle_pos;
+    Location obstacle_loc;
+    obstacle_loc.lat = lat;
+    obstacle_loc.lng = lng;
+    obstacle_loc.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
+
+    if(!obstacle_loc.get_vector_xy_from_origin_NE(obstacle_pos,ekf_origin_)){
+        return;
+    }
+
+    float distance = (obstacle_pos - current_pos).length();
+    Vector3f pos{obstacle_pos.x,obstacle_pos.y,0.0f};
+
+    oaDb->queue_push(pos,user_time::get_millis(),distance);
 
 }
 

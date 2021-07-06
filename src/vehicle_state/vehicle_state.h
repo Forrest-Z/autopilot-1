@@ -6,8 +6,6 @@
 #include <iostream>
 #include <planning/pathplanner.h>
 
-//using namespace LOC;
-
 class VehicleState{
 public:
     enum SensorStatus{
@@ -35,7 +33,7 @@ public:
 
     void Init(VehicleStateConf &conf);
 
-    void Update(double ts);
+    //void Update(double ts);
 
     void update(double ts);
 
@@ -58,7 +56,6 @@ public:
     double lat_now() const{return lat_now_;}
     double lon_now() const{return lon_now_;}
 
-    bool   get_ekf_origin(Location &origin) const;
     bool   stop_boat(void) const { return stop_vehicle;}
     bool   waypoint_unreachable(void) const { return _oa_dest_unreachable;}
 
@@ -98,8 +95,6 @@ private:
 
 private:
     bool _oa_active;                // true if we should use alternative destination to avoid obstacles
-    LOC::Location ekf_origin_;
-    bool ekf_origin_is_set{false};
     bool stop_vehicle{false};
     bool _oa_dest_unreachable{false};
 

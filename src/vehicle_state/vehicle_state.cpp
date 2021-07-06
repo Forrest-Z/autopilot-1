@@ -14,6 +14,7 @@
 
 #include "vehicle_state.h"
 
+extern LOC::Location ekf_origin_;
 
 void VehicleState::Init(VehicleStateConf &conf)
 {
@@ -29,14 +30,6 @@ void VehicleState::Reset(void)
 {
     heading_error_td_filter.Reset();
     initialized_ = false;
-}
-
-bool VehicleState::get_ekf_origin(Location &origin) const
-{
-    if(ekf_origin_is_set){
-        origin = ekf_origin_;
-    }
-    return ekf_origin_is_set;
 }
 
 void VehicleState::update(double ts)
@@ -56,8 +49,7 @@ void VehicleState::update(double ts)
        ins_msg.insState.u8_sysState1==3 ){
         gps_msg_ok = false;
     }
-    if(cur_time - AP::radar_message()->radar_message_time_stamp() >= 500 || 
-        AP::radar_message()->ipc2arm_msg().flag == 0){
+    if(cur_time - AP::radar_message()->radar_message_time_stamp() >= 500){
         radar_msg_ok = false;
     }
 
@@ -67,23 +59,12 @@ void VehicleState::update(double ts)
     lat_now_ = ins_msg.latitude;
     lon_now_ = ins_msg.longitude;
 
-    AP_OAPathPlanner *oa = AP_OAPathPlanner::get_singleton();
-
     if(!initialized_ && id == 0 && gps_msg_ok && max_id >= 1){
           LOG(INFO)<< "VehicleState:: Set initial sail task point!";
           lat_start_ = lat_now_;
           lon_start_ = lon_now_;
 
-          // get ekf_origin
-          ekf_origin_.lat = lat_start_*1e7;
-          ekf_origin_.lng = lon_start_*1e7;
-          ekf_origin_.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
-        
-          ekf_origin_is_set = true;
           initialized_ = true;
-          if(oa != nullptr){
-              oa->set_ekf_origin(ekf_origin_);
-          }
     }
     if(id >= 1){
         lat_start_     = sailTask.sailMsg.wayPoint[id-1].f64_latitude;
@@ -110,7 +91,8 @@ void VehicleState::update(double ts)
     // true if OA has been recently active;
     bool _oa_was_active = _oa_active;
     _oa_dest_unreachable = false;
-
+    
+    AP_OAPathPlanner *oa = AP_OAPathPlanner::get_singleton();
     if (oa != nullptr) {
         const AP_OAPathPlanner::OA_RetState oa_retstate = oa->mission_avoidance(current_loc, _origin, _destination,ins_msg.heading, _oa_origin, _oa_destination);
         switch (oa_retstate) {
@@ -198,7 +180,7 @@ void VehicleState::update(double ts)
 }
 
 
-
+/*
 void VehicleState::Update(double ts)
 {
     uint64_t cur_time = user_time::get_millis();
@@ -351,6 +333,7 @@ void VehicleState::Update(double ts)
     }
 
 }
+*/
 
 VehicleState *VehicleState::singleton_ = nullptr;
 

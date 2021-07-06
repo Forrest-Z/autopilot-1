@@ -27,7 +27,7 @@ public:
     // perform any required initialisation
     void init();
 
-    void set_ekf_origin(const Location &ekf_origin){ _ekf_origin = ekf_origin;origin_set = true;printf("SET ekf original successed for AP_OAPathPlanner!\n");}
+   // void set_ekf_origin(const Location &ekf_origin){ _ekf_origin = ekf_origin;origin_set = true;printf("SET ekf original successed for AP_OAPathPlanner!\n");}
 
     // object avoidance processing return status enum
     enum OA_RetState : uint8_t {
@@ -98,7 +98,7 @@ private:
 
     bool proximity_only = true;
     static AP_OAPathPlanner *_singleton;
-    Location _ekf_origin;
+  //  Location _ekf_origin;
     bool origin_set{false};
 
 private:

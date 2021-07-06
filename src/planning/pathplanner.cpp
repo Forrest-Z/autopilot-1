@@ -102,10 +102,12 @@ AP_OAPathPlanner::OA_RetState AP_OAPathPlanner::mission_avoidance(const Location
     return OA_PROCESSING;
 }
 
+extern LOC::Location ekf_origin_;
 // avoidance thread that continually updates the avoidance_result structure based on avoidance_request
 void AP_OAPathPlanner::avoidance_thread()
 {   
     // require ekf origin to have been set
+    origin_set =  (ekf_origin_.lat != 0 && ekf_origin_.lng != 0)?(true):(false);
     while (!origin_set) {
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
         printf("need set ekf original");
@@ -155,7 +157,6 @@ void AP_OAPathPlanner::avoidance_thread()
                 printf("OAPathPlanner need reboot");
                 continue;
             }
-            _oabendyruler->set_ekf_origin(_ekf_origin);
             if (_oabendyruler->update(avoidance_request2.current_loc, avoidance_request2.destination, avoidance_request2.ground_course_deg, origin_new, destination_new, false)) {
                 res = OA_SUCCESS;
             }else if(_oabendyruler->give_up_current_waypoint() == true){

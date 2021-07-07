@@ -42,6 +42,8 @@ private:
     // on success returns true and updates margin
     bool calc_margin_from_object_database(const Location &start, const Location &end, float &margin) const;
 
+    bool check_near_obstacle(const Location &start, const Location &end) const;
+
     // internal variables used by background thread
     float _current_lookahead;       // distance (in meters) ahead of the vehicle we are looking for obstacles
     float _bearing_prev;            // stored bearing in degrees 
@@ -59,4 +61,5 @@ private:
     float _bendy_ratio{1.5f};           // object avoidance will avoid major directional change if change in margin ratio is less than this param
     float _bendy_angle{75.0f};          // object avoidance will try avoding change in direction over this much angle
     float _bendy_max_change_angle{135};
+    float _bendy_min_near_obstacle{1.0};
 };

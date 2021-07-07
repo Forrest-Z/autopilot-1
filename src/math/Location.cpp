@@ -87,6 +87,9 @@ Location::AltFrame Location::get_alt_frame() const
 
 bool Location::get_vector_xy_from_origin_NE(Vector2f &vec_ne,const Location &ekf_origin) const
 {
+    if(ekf_origin.lat == 0 || ekf_origin.lng == 0){
+        return false;
+    }
     vec_ne.x = (lat-ekf_origin.lat) * LATLON_TO_CM;
     vec_ne.y = (lng-ekf_origin.lng) * LATLON_TO_CM * ekf_origin.longitude_scale();
     return true;

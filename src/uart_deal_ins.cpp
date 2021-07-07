@@ -9,6 +9,7 @@
 #include "uart_irtk.h"
 #include "util/easylogging++.h"
 #include <math/Location.h>
+#include <conf/conf.h>
 using namespace LOC;
 
 #define INS_REC_TIMESLICE 10
@@ -180,13 +181,22 @@ int8 uart_ins_init( void )
 	{
 		iret = -1;
 	}
-	if (set_com_config(UART5_Fd, 115200, 8, 'N', 1)<0)
-	//if(set_com_config(UART5_Fd,38400,8,'N',1)<0)
-	//if(set_com_config(UART5_Fd,19200,8,'N',1)<0)
+	if(AP::conf()->boat_conf_.ins_type==1)
 	{
+		if (set_com_config(UART5_Fd, 115200, 8, 'N', 1)<0)
+		{
 		iret = -1;
+		}
+		INS_Init();
 	}
-	INS_Init();
+	else
+	{
+		if (set_com_config(UART5_Fd, 460800, 8, 'N', 1)<0)
+		{
+		iret = -1;
+		}
+	}
+	
 	return iret;
 }
 

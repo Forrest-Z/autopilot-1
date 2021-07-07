@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc")
+set(CMAKE_C_COMPILER "/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "4.7.3")
@@ -69,5 +69,5 @@ endif()
 
 
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/4.7.3;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/arm-linux-gnueabihf/lib;/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib;/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/4.7.3;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/arm-linux-gnueabihf/lib;/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib;/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

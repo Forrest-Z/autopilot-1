@@ -91,13 +91,14 @@ void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
             zmqObsVec.clear();
          //  printf("obstacle_size = %d\n",obstalce_size);
             while( i <8*obstalce_size){
+
                memcpy(&msg,&pBuf[i+1],sizeof(msg));
                database_push(msg.lat,msg.lng);
 
               // printf("lat = %ld,lng =%ld\n",msg.lat,msg.lng);
 
-               	zmqObsSingle.lat = msg.lat*1e-7;
-				zmqObsSingle.lng = msg.lng*1e-7;
+               	zmqObsSingle.lat = 1e-7*msg.lat;
+				zmqObsSingle.lng = 1e-7*msg.lng;
 				zmqObsSingle.radius = 0.5;
 				zmqObsSingle.infactRadius = 0.5;
 				zmqObsSingle.speed = 0.0;
@@ -120,11 +121,13 @@ void RadarMessage::database_push(const int32_t lat,const int32_t lng)
 {
     AP_OADatabase *oaDb = AP::oadatabase();
     if(oaDb == nullptr || !oaDb->healthy()){
+        printf("OADatabase is unhealthy!\n");
         return;
     }
 
     // get current position
     if(ekf_origin_.lng == 0 || ekf_origin_.lat == 0){
+        printf("OADatabase : EKF original not set!\n");
         return;
     }
 
@@ -148,8 +151,8 @@ void RadarMessage::database_push(const int32_t lat,const int32_t lng)
         return;
     }
 
-    float distance = (obstacle_pos - current_pos).length();
-    Vector3f pos{obstacle_pos.x,obstacle_pos.y,0.0f};
+    float distance = (obstacle_pos - current_pos).length()*0.01f;
+    Vector3f pos{obstacle_pos.x*0.01f,obstacle_pos.y*0.01f,0.0f};
 
     oaDb->queue_push(pos,user_time::get_millis(),distance);
 
@@ -175,8 +178,6 @@ void RadarMessage::send_message(int sysid, int componetid, int msgid)
         arm2ipc_msg_.ground_speed_kn   = ins_msg.speed;
         memcpy(datapadu.databuf,&arm2ipc_msg_,sizeof(arm2ipc_msg_));
         datapadu.len = sizeof(arm2ipc_msg_);
-       // printf("datapadu.len = %d\n",datapadu.len);
-       // printf("send message to radar\n");
     }
         break;
     }

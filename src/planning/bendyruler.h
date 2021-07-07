@@ -54,8 +54,9 @@ private:
 private:
     
     // OA common parameters
-    float _margin_max{1.5f};           // object avoidance will ignore objects more than this many meters from vehicle
-    float _lookahead{15.0f};            // object avoidance will look this many meters ahead of vehicle
+    float _margin_max{1.5f};            // object avoidance will ignore objects more than this many meters from vehicle
+    float _lookahead{20.0f};            // object avoidance will look this many meters ahead of vehicle
     float _bendy_ratio{1.5f};           // object avoidance will avoid major directional change if change in margin ratio is less than this param
     float _bendy_angle{75.0f};          // object avoidance will try avoding change in direction over this much angle
+    float _bendy_max_change_angle{135};
 };

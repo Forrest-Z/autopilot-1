@@ -104,7 +104,7 @@ private:
 private:
     // paramters
     int8_t _type{OA_PATHPLAN_BENDYRULER};                  // avoidance algorithm to be used
-    int16_t _options{0};              // Bitmask for options while recovering from Object Avoidance
+    int16_t _options{0};                                   // Bitmask for options while recovering from Object Avoidance
 
 };
 

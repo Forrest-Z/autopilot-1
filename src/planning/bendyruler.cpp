@@ -61,6 +61,11 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
     // check OA_BEARING_INC definition allows checking in all directions
     static_assert(360 % OA_BENDYRULER_BEARING_INC_XY == 0, "check 360 is a multiple of OA_BEARING_INC");
 
+    destinatoin_near_obstacle_ = check_near_obstacle(current_loc,destination);
+    if(destinatoin_near_obstacle_ == true){
+        return false;
+    }
+
     // search in OA_BENDYRULER_BEARING_INC degree increments around the vehicle alternating left
     // and right. For each direction check if vehicle would avoid all obstacles
     float best_bearing = bearing_to_dest;
@@ -243,6 +248,7 @@ bool AP_OABendyRuler::calc_margin_from_object_database(const Location &start, co
     // exit immediately if db is empty
     AP_OADatabase *oaDb = AP::oadatabase();
     if (oaDb == nullptr || !oaDb->healthy()) {
+        printf("bendyruler::OADatabase is unhealthy!\n");
         return false;
     }
 
@@ -274,4 +280,36 @@ bool AP_OABendyRuler::calc_margin_from_object_database(const Location &start, co
     }
 
     return false;
+}
+
+
+bool AP_OABendyRuler::check_near_obstacle(const Location &start, const Location &end) const
+{
+    // exit immediately if db is empty
+    AP_OADatabase *oaDb = AP::oadatabase();
+    if (oaDb == nullptr || !oaDb->healthy()) {
+        printf("bendyruler::OADatabase is unhealthy!\n");
+        return true;
+    }
+
+    // check each obstacle's distance from segment
+    float m_smallest_margin = FLT_MAX;
+    float n_smallest_margin = FLT_MAX;
+    for (uint16_t i=0; i<oaDb->database_count(); i++) {
+        const AP_OADatabase::OA_DbItem& item = oaDb->get_item(i);
+        Location obs(Vector3f(item.pos.x * 100.0f,item.pos.y *100.0f,0.0f),ekf_origin_);
+        // margin is distance between line segment and obstacle minus obstacle's radius
+        const float m = start.get_distance(obs);
+        const float n = end.get_distance(obs);
+        if (m < m_smallest_margin) {
+            m_smallest_margin = m;
+        }
+        if (n < n_smallest_margin) {
+            n_smallest_margin = n;
+        }
+    }
+
+    return (n_smallest_margin < _bendy_min_near_obstacle)?(true):(false);
+
+
 }

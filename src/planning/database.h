@@ -103,12 +103,12 @@ private:
 
 private:
     // parameters
-    int16_t      _queue_size_param{100};                    // queue size
-    int16_t      _database_size_param{200.0};                   // db size
-    int16_t      _database_expiry_seconds{10};               // objects expire after this timeout
-    int16_t      _output_level{3};                          // controls which items should be sent to GCS
+    int16_t      _queue_size_param{200};                       // queue size
+    int16_t      _database_size_param{500.0};                  // db size
+    int16_t      _database_expiry_seconds{10};                 // objects expire after this timeout
+    int16_t      _output_level{3};                             // controls which items should be sent to GCS
     float        _beam_width{10.0};                            // beam width used when converting lidar readings to object radius
-    float        _radius_min{0.01f};                            // objects minimum radius (in meters)
+    float        _radius_min{0.2f};                            // objects minimum radius (in meters)
     float        _dist_max{0.0f};                              // objects maximum distance (in meters)
     float        _min_alt{2.0f};                               // OADatabase minimum vehicle height check (in meters)
 

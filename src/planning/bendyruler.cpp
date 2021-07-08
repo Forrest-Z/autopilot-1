@@ -129,7 +129,11 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
                         _current_lookahead = std::fmin(_lookahead, _current_lookahead * 1.1f);
 
                         // if final_bearing is too away from bearing_to_dest,we will give up destination
-
+                        if(fabs(bearing_delta) >_bendy_max_change_angle){
+                            destination_unreachable_ = true;
+                            printf("bendyruler:: destination is unreachable!");
+                            return false;
+                        }
                         return active;
                     }
                 }
@@ -154,6 +158,12 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
     destination_new = current_loc;
     destination_new.offset_bearing(chosen_bearing, distance_to_dest);
 
+    // if final_bearing is too away from bearing_to_dest,we will give up destination
+    if(fabs(math::wrap_180(chosen_bearing -bearing_to_dest )) >_bendy_max_change_angle){
+        destination_unreachable_ = true;
+        printf("bendyruler:: destination is unreachable!");
+        return false;
+    }
     return true;
 }
 

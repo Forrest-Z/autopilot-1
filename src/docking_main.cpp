@@ -38,20 +38,20 @@
 #define READ_COIL_ADDR				0
 
 
-//������ 0x05д
-#define SET_REQ_ENTRYDOCK_COIL		0					/*usv���������־λ��Ȧ*/
-#define SET_USV_POWEROFF_COIL		1					/*usv�ϵ�Ϩ���־λ��Ȧ*/
-#define SET_USV_POWERON_COIL		2					/*usv�ϵ��ʼ����ɱ�־λ��Ȧ*/
-#define SET_USV_OUTSUCCESS_COIL		3					/*usv������ɱ�־λ��Ȧ*/
+//������ 0x05д
+#define SET_REQ_ENTRYDOCK_COIL		0					/*usv���������־λ��Ȧ*/
+#define SET_USV_POWEROFF_COIL		1					/*usv�ϵ�Ϩ���־λ��Ȧ*/
+#define SET_USV_POWERON_COIL		2					/*usv�ϵ��ʼ����ɱ�־λ��Ȧ*/
+#define SET_USV_OUTSUCCESS_COIL		3					/*usv������ɱ�־λ��Ȧ*/
 
 
 
-#define DOCK_COIL_MAX			3		//��Լ����������Ȧλ
+#define DOCK_COIL_MAX			3		//��Լ����������Ȧλ
 
-#define TIMEOUT_WRITE			20		//���볬ʱ
-#define TIMEOUT_READ			20		//����ʱ
-#define TIMEOUT_REQ				200		//����ʱ
-//���غ���
+#define TIMEOUT_WRITE			20		//���볬ʱ
+#define TIMEOUT_READ			20		//����ʱ
+#define TIMEOUT_REQ				200		//����ʱ
+//���غ���
 
 static void dockCommunicationUSVInit(void);
 static void dockCoilReadTask();//������
@@ -85,16 +85,16 @@ int8 return_num = RETURN_POINT_MAX_NUMBER;
 //dock can
 COMM_SIGN DOCK_comm_sign;
 
-DockingControlCmd docking_control_cmd;//�����������?
+DockingControlCmd docking_control_cmd;//�����������?
 modbus_t *mb = NULL;
 
 
 uint16 n_ship;//��������
 float l_ship;//����
 float temp_dockin_distance;//������ʱ��������
-float image_servo_start_distance;//�Ӿ��������?
-float image_servo_end_distance;//�Ӿ��������?
-float image_servo_pix_multi;//���ؾ����ϵ��?
+float image_servo_start_distance;//�Ӿ��������?
+float image_servo_end_distance;//�Ӿ��������?
+float image_servo_pix_multi;//���ؾ����ϵ��?
 
 //camera zmq
 char docking_tracker_cfg[30];
@@ -122,10 +122,10 @@ static void dockCommunicationUSVInit(void)
 	memset(&docking_control_cmd,0,sizeof(docking_control_cmd));
 }
 
-void powerON(void) //���?
+void powerON(void) //���?
 {
 	uint8 ret = 0;
-	if (IHC_rev_msg.b1_St_Motor1OnOff && IHC_rev_msg.b1_St_Motor2OnOff){ //先判断发动机是否为启动状�?
+	if (IHC_rev_msg.b1_St_Motor1OnOff && IHC_rev_msg.b1_St_Motor2OnOff){ //先判断发动机是否为启动状�?
 		return ;
 	}
 	jet_system.jetL.b2_Cmd_MotorOnOff = 1;		//����
@@ -143,7 +143,7 @@ void powerON(void) //���?
 void powerOff(void)//熄火
 {
 
-	if (IHC_rev_msg.b1_St_Motor1OnOff == 0 && IHC_rev_msg.b1_St_Motor2OnOff == 0){ //先判断发动机是否为启动状�?
+	if (IHC_rev_msg.b1_St_Motor1OnOff == 0 && IHC_rev_msg.b1_St_Motor2OnOff == 0){ //先判断发动机是否为启动状�?
 		return ;
 	}
 	jet_system.jetL.b2_Cmd_MotorOnOff = 2;		//ֹͣ
@@ -227,7 +227,7 @@ int8 dockingIn()
 int8 dockingInFinish()
 {
 	int8 ret = 0;
-	if ((!IHC_rev_msg.b1_St_Motor1OnOff && !IHC_rev_msg.b1_St_Motor2OnOff && dock_sign.x_in) || dock_sumlink.x_in){ //����Ϩ��ɹ�?
+	if ((!IHC_rev_msg.b1_St_Motor1OnOff && !IHC_rev_msg.b1_St_Motor2OnOff && dock_sign.x_in) || dock_sumlink.x_in){ //����Ϩ��ɹ�?
 		dockCoilWriteTask(SET_USV_POWEROFF_COIL, 1); //��λ�ѽ������Ϩ��ɹ�״̬
 		br_usv_cmd.u8_cmd_getAuthority = 1; //��ȡȨ�� ����Ϩ��
 		ret = 1;
@@ -241,7 +241,7 @@ int8 dockingInFinish()
 int8 powerOnUSV()
 {
 	int8 ret = 0;
-	dockCoilWriteTask(SET_USV_POWERON_COIL, 1); //��λ�ϵ��ʼ���ɹ�?����������
+	dockCoilWriteTask(SET_USV_POWERON_COIL, 1); //��λ�ϵ��ʼ���ɹ�?����������
 	if ((1 == dock_sign.x_outgoing) || (1 == dock_sumlink.x_outgoing)){ //�ɳ���״̬
 		ret = 1;//
 	}
@@ -254,7 +254,7 @@ int8 powerOnUSV()
 int8 dockingOut()
 {
 	int8 ret = 0;
-	dockCoilWriteTask(SET_USV_POWERON_COIL, 1); //��λ�ϵ��ʼ���ɹ�?����������
+	dockCoilWriteTask(SET_USV_POWERON_COIL, 1); //��λ�ϵ��ʼ���ɹ�?����������
 	if ((1 == dock_sign.x_outgoing) || (1 == dock_sumlink.x_outgoing)){ //�ɳ���״̬
 		ret = 1;//
 	}
@@ -267,8 +267,8 @@ int8 dockingOut()
 int8 dockingOutFinish()
 {
 	int8 ret = 0;
-	dockCoilWriteTask(SET_USV_OUTSUCCESS_COIL, 1); //��λ�ϵ��ʼ���ɹ�?����������
-	if (1 == usv_sign.succcessed_out){ //������ɹ�����������־�?
+	dockCoilWriteTask(SET_USV_OUTSUCCESS_COIL, 1); //��λ�ϵ��ʼ���ɹ�?����������
+	if (1 == usv_sign.succcessed_out){ //������ɹ�����������־�?
 		ret = 1;
 	}else{
 		ret = 0;
@@ -292,7 +292,7 @@ void sumlinkBtnEvent()
 			return_pos_btn = sumlink_cmd.u8_return_set;
 			if (return_pos_btn == 1) //��λ��ȡ���뷵����
 			{
-				return_point[2].longitude = ins_msg.longitude;//��¼���һ��������?�����?
+				return_point[2].longitude = ins_msg.longitude;//��¼���һ��������?�����?
 				return_point[2].latitude = ins_msg.latitude;
 				return_point[2].heading = ins_msg.heading;
 
@@ -446,17 +446,17 @@ void *dockCommunicationUSVRun(void*)
 	for (;;)//����<-->USV�¼��߳�
 	{
 		
-// 		if (COMM_CONNECT_FAIL == DOCK_comm_sign.comm_sign){ //通信中断则打�?
+// 		if (COMM_CONNECT_FAIL == DOCK_comm_sign.comm_sign){ //通信中断则打�?
 // 			sleep_1(100);
 // 			continue;
 // 		}
-		sumlinkBtnEvent();  //刷仿真工具状�?
+		sumlinkBtnEvent();  //刷仿真工具状�?
 		setDockReturnPoint();//刷设置返航点操作
 		if (1 == command_signal.func_mode_cmd.b1_dock_cmd || sumlink_cmd.u8_dockin)
 		{
 			pAutoReturnInst->TurnOnAutoReturn();
 		}
-		if ((0 == flag_return) && pAutoReturnInst->isAutoReturnRunning()){ //进坞命令 暂时用泊岸对应字节调�?进坞
+		if ((0 == flag_return) && pAutoReturnInst->isAutoReturnRunning()){ //进坞命令 暂时用泊岸对应字节调�?进坞
 			flag_return = 1;
 			flag_out = 1;
 			event_state = EVENT_ENTRY_DOCK_READY; //切入进坞模式
@@ -468,7 +468,7 @@ void *dockCommunicationUSVRun(void*)
 		if ((0 == flag_out) /*&& 1 == usv_sign.power_on */&& (2 == command_signal.func_mode_cmd.b1_dock_cmd)){ //�������� ��ʱ�ò�����Ӧ�ֽڵ��� ����
 			flag_out = 1;
 			flag_return = 1;
-			//powerON();//���?Ŀǰ��Ϊ��������ͨ������ᱻ����?todo
+			//powerON();//���?Ŀǰ��Ϊ��������ͨ������ᱻ����?todo
 			event_state = EVENT_POWERON_USV;//切入出坞模式
 			usv_sign.cmd_feedback = 2;//出坞命令反馈
 			pAutoReturnInst->reset_AutoReturn();//复位返航状态机和相关标志位
@@ -476,19 +476,19 @@ void *dockCommunicationUSVRun(void*)
 		//	SysLogMsgPost("�յ��������ĳ���ָ��");
 
 		}
-		if (1 == sumlink_cmd.u8_reset)//模拟工具复位 或者重新返�?
+		if (1 == sumlink_cmd.u8_reset)//模拟工具复位 或者重新返�?
 		{
 			flag_return = 0;
 			flag_out = 0;
 			memset(&usv_sign, 0, sizeof(usv_sign));
 			//event_state = EVENT_POWERON_USV;
-			dock_zmq_cmd.dockin_cmd = CMAERA_TRACKOFF;//关闭摄像头目标跟�?
+			dock_zmq_cmd.dockin_cmd = CMAERA_TRACKOFF;//关闭摄像头目标跟�?
 			pAutoReturnInst->reset_AutoReturn();
 		//	SysPubMsgPost("Docking Reset...\n");
 		}
 		if (reDockIn()) //���½���
 		{
-			memset(&usv_sign, 0, sizeof(usv_sign));//清楚usv状态标�?
+			memset(&usv_sign, 0, sizeof(usv_sign));//清楚usv状态标�?
 			event_state = EVENT_ENTRY_DOCK_READY;//重新请求进坞
 			resetDockControlEvent();
 		}
@@ -500,8 +500,8 @@ void *dockCommunicationUSVRun(void*)
 		switch (event_state)
 		{
 		case EVENT_POWERON_USV:
-			if (1 == powerOnUSV()){//船上电成�?
-				memset(&usv_sign, 0, sizeof(usv_sign));//清楚usv状态标�?
+			if (1 == powerOnUSV()){//船上电成�?
+				memset(&usv_sign, 0, sizeof(usv_sign));//清楚usv状态标�?
 				usv_sign.power_on = 1;
 				event_state = EVENT_OUTDOCK_READY;
 			}
@@ -516,7 +516,7 @@ void *dockCommunicationUSVRun(void*)
 				event_state = EVENT_OUTING;
 			}
 			break;
-		case EVENT_OUTING://出坞�?
+		case EVENT_OUTING://出坞�?
 			if (usv_sign.succcessed_out){
 				if (1 == dockingOutFinish()){
 					usv_sign.succcessed_out = 0;
@@ -535,23 +535,23 @@ void *dockCommunicationUSVRun(void*)
 				event_state = EVENT_ENTRYING;
 			}
 			break;
-		case EVENT_ENTRYING://进坞�?
+		case EVENT_ENTRYING://进坞�?
 			if (usv_sign.succcessed_entry && (1 == dockingInFinish())){
 				usv_sign.succcessed_entry = 0;
 				usv_sign.entry_docking = 0;
 				flag_out = 0;//进坞完成后复位出坞命令标志位
-				return_pos_set = 0;//复位自动获取返航点的标志�?
+				return_pos_set = 0;//复位自动获取返航点的标志�?
 				usv_sign.cmd_feedback = 0;//命令反馈置零
 				usv_sign.power_on = 0;
 				event_state = EVENT_ENTRYED_USV;
 			}
 			break;
 		case EVENT_ENTRYED_USV:
-			dock_zmq_cmd.dockin_cmd = CMAERA_TRACKOFF;//关闭摄像头目标跟�?
+			dock_zmq_cmd.dockin_cmd = CMAERA_TRACKOFF;//关闭摄像头目标跟�?
 			//event_state = EVENT_POWERON_USV; //Ϊ��ѭ�������� �����ѽ�״̬ѭ��
 			break;
 		case EVENT_OUTED_USV:
-			dock_zmq_cmd.dockin_cmd = CMAERA_TRACKOFF;//关闭摄像头目标跟�?
+			dock_zmq_cmd.dockin_cmd = CMAERA_TRACKOFF;//关闭摄像头目标跟�?
 			break;
 		default:
 			break;
@@ -621,7 +621,7 @@ void * cameraTrackPosFlush(void *)
 		}
 		else
 		{
-			flushZmqDockPostion();//ʵʱ��������ͷĿ���������?
+			flushZmqDockPostion();//ʵʱ��������ͷĿ���������?
 			//printf("flush camera data\n");
 		}
 		s_sleep(20);
@@ -729,8 +729,8 @@ int8  read_usv_docking_inf(void)
 	if (read_sub_setting(s1, s2, 0, &number, INT_TYPE) == FALSE){
 		ret_val = FALSE;
 	}
-	return_num = number;//���뷵�������?
-	if (number > RETURN_POINT_MAX_NUMBER){ //������󷵺�����?
+	return_num = number;//���뷵�������?
+	if (number > RETURN_POINT_MAX_NUMBER){ //������󷵺�����?
 		input_cfg_ini_err_sub(s1, s2, 0);
 		ret_val = FALSE;
 		number = 0;
@@ -835,11 +835,11 @@ void setDockReturnPoint(void)
 	static uint8 log_retpos_set = 0;
 	if (ins_msg.insState.c_rmcValid == 'A') //判断惯导是否锁星锁上 A:定位有效 V:无效定位
 	{
-		if (log_retpos_set != command_signal.func_mode_cmd.b1_setReturn){   //TODO 后台加入获取船坞的位置按�?
+		if (log_retpos_set != command_signal.func_mode_cmd.b1_setReturn){   //TODO 后台加入获取船坞的位置按�?
 			log_retpos_set = command_signal.func_mode_cmd.b1_setReturn;
-			if (log_retpos_set == 1) //置位获取近坞返航�?
+			if (log_retpos_set == 1) //置位获取近坞返航�?
 			{
-				return_point[2].longitude = ins_msg.longitude;//记录最后一个返航点 近坞�?
+				return_point[2].longitude = ins_msg.longitude;//记录最后一个返航点 近坞�?
 				return_point[2].latitude = ins_msg.latitude;
 				return_point[2].heading = ins_msg.heading;
 
@@ -893,11 +893,11 @@ void DOCK_Init()
 
 void DOCK_reInit()
 {
-	dock_comm_coil_read.dock_entrydock_readyon	= 0;
-	dock_comm_coil_read.dock_entrydock_success	= 0;
-	dock_comm_coil_read.dock_outdock_readyon	= 0;
-	dock_comm_coil_read.dock_entrydock_entrance = 0;
-
+	//dock_comm_coil_read.dock_entrydock_readyon	= 0;
+	//dock_comm_coil_read.dock_entrydock_success	= 0;
+	//dock_comm_coil_read.dock_outdock_readyon	= 0;
+	//dock_comm_coil_read.dock_entrydock_entrance = 0;
+	dock_sign.x_in_entrance=0;
 }
 void DOCK_recv(uint8 ps_id, uint8* data)
 {
@@ -909,7 +909,7 @@ void DOCK_recv(uint8 ps_id, uint8* data)
 		dock_comm_coil_read.dock_entrydock_entrance = (data[1]&0x08) >> 3;
 	}
 	//printf("�ɽ��� == %d\n",dock_comm_coil_read.dock_entrydock_readyon);
-	//printf("����ɹ�?== %d\n", dock_comm_coil_read.dock_entrydock_success);
+	//printf("����ɹ�?== %d\n", dock_comm_coil_read.dock_entrydock_success);
 	//printf("�ɳ��� == %d\n", dock_comm_coil_read.dock_outdock_readyon);
 	//printf("�������� == %d\n", dock_comm_coil_read.dock_entrydock_entrance);
 
@@ -956,7 +956,7 @@ void * lidarTrackerPosFlush(void *)
 		}
 		else
 		{
-			flushZmqDockPostionLidar();//ʵʱ�����״�Ŀ���������?
+			flushZmqDockPostionLidar();//ʵʱ�����״�Ŀ���������?
 			//printf("flush Lidar data\n");
 		}
 		s_sleep(20);

@@ -134,19 +134,17 @@ void *uart_deal_ins(void *aa)
 			insUdpRecReport(ins_sockid);
 			//insNanoRecReport();
 		}
-
+		
 		if(!ekf_origin_is_set && 
 		   (ins_msg.insState.c_rmcValid == 'A' || irtk_msg.rtk_state.c_rmcValid == 'A')&&
-		   delay_time == 0){
+		   (ins_msg.latitude >0.1 && ins_msg.longitude >0.1)){
 			   ekf_origin_is_set = true;
 
 			// get ekf_origin
          	   ekf_origin_.lat = ins_msg.latitude*1e7;
                ekf_origin_.lng = ins_msg.longitude*1e7;
                ekf_origin_.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
-			   printf("EKF ORIGIN SET [lat = %ld,lng = %ld]", ekf_origin_.lat,ekf_origin_.lng);
-		   }else{
-			   delay_time--;
+			   printf("EKF ORIGIN SET [lat = %ld,lng = %ld]\n", ekf_origin_.lat,ekf_origin_.lng);
 		   }
 	
 		sleep_1(INS_REC_TIMESLICE);	//10ms
@@ -181,7 +179,7 @@ int8 uart_ins_init( void )
 	{
 		iret = -1;
 	}
-	if(AP::conf()->boat_conf_.ins_type==1)
+	if(AP::conf()->boat_conf_.ins_type==1) //ins type old
 	{
 		if (set_com_config(UART5_Fd, 115200, 8, 'N', 1)<0)
 		{
@@ -189,7 +187,7 @@ int8 uart_ins_init( void )
 		}
 		INS_Init();
 	}
-	else
+	else  //ins type new
 	{
 		if (set_com_config(UART5_Fd, 460800, 8, 'N', 1)<0)
 		{
@@ -244,49 +242,63 @@ int8 uart_ins_rec_report( UART_TYPE uartid )
 			//У��
 			if((insMsg[0]=='$')&&(insMsg[ins_jco-1]==10)&&(insMsg[ins_jco-2]==13))
 			{
-				msg_len = ins_jco-2;
-				ins_jco = 0;
-				if (GetCRC32(insMsg,msg_len))
+				if(AP::conf()->boat_conf_.ins_type==2)
 				{
-					//printf("INS = %s\n",insMsg);
+					char* ptr=nullptr;
+					msg_len = ins_jco-2;
+				 	if (GetCRC32(insMsg,msg_len))
+					{
+						if ((ptr = strstr(insMsg, "$GPRMC")) != NULL)			
+					}		
+				}
+				else
+				{
+					msg_len = ins_jco-2;
+					ins_jco = 0;
+					if (GetCRC32(insMsg,msg_len))
+					{
+						//printf("INS = %s\n",insMsg);
 
-					if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='R')&&(insMsg[4]=='O')&&(insMsg[5]=='T'))
-					{
-						INS_GPROT_Analytical(insMsg);
-					}
-					if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='H')&&(insMsg[4]=='E')&&(insMsg[5]=='V'))
-					{
-						INS_GPHEV_Analytical(insMsg);
-					}
-					if((insMsg[0]=='$')&&(insMsg[1]=='P')&&(insMsg[2]=='S')&&(insMsg[3]=='A')&&(insMsg[4]=='T')&&(insMsg[5]==',')&&(insMsg[6]=='H')&&(insMsg[7]=='P')&&(insMsg[8]=='R'))
-					{
-						INS_PSAT_Analytical(insMsg,msg_len);//heading receive
-					}
-					if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='R')&&(insMsg[4]=='M')&&(insMsg[5]=='C'))
-					{
-						INS_GPRMC_Analytical(insMsg,msg_len);
-					}
-					if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='G')&&(insMsg[4]=='G')&&(insMsg[5]=='A'))
-					{
-						INS_GPGGA_Analytical(insMsg,msg_len);
-					}
-					if ((insMsg[0] == '$') && (insMsg[1] == 'G') && (insMsg[2] == 'P') && (insMsg[3] == 'G') && (insMsg[4] == 'S') && (insMsg[5] == 'T'))
-					{
-						INS_GPGST_Analytical(insMsg, msg_len);
-					}
-					if ((insMsg[0] == '$') && (insMsg[1] == 'G') && (insMsg[2] == 'P') && (insMsg[3] == 'H') && (insMsg[4] == 'D') && (insMsg[5] == 'T'))
-					{
+						if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='R')&&(insMsg[4]=='O')&&(insMsg[5]=='T'))
+						{
+							INS_GPROT_Analytical(insMsg);
+						}
+						if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='H')&&(insMsg[4]=='E')&&(insMsg[5]=='V'))
+						{
+							INS_GPHEV_Analytical(insMsg);
+						}
+						if((insMsg[0]=='$')&&(insMsg[1]=='P')&&(insMsg[2]=='S')&&(insMsg[3]=='A')&&(insMsg[4]=='T')&&(insMsg[5]==',')&&(insMsg[6]=='H')&&(insMsg[7]=='P')&&(insMsg[8]=='R'))
+						{
+							INS_PSAT_Analytical(insMsg,msg_len);//heading receive
+						}
+						if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='R')&&(insMsg[4]=='M')&&(insMsg[5]=='C'))
+						{
+							INS_GPRMC_Analytical(insMsg,msg_len);
+						}
+						if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='G')&&(insMsg[4]=='G')&&(insMsg[5]=='A'))
+						{
+							INS_GPGGA_Analytical(insMsg,msg_len);
+						}
+						if ((insMsg[0] == '$') && (insMsg[1] == 'G') && (insMsg[2] == 'P') && (insMsg[3] == 'G') && (insMsg[4] == 'S') && (insMsg[5] == 'T'))
+						{
+							INS_GPGST_Analytical(insMsg, msg_len);
+						}
+						if ((insMsg[0] == '$') && (insMsg[1] == 'G') && (insMsg[2] == 'P') && (insMsg[3] == 'H') && (insMsg[4] == 'D') && (insMsg[5] == 'T'))
+						{
 
+						}
+						if (ins_sockid > 0){
+							insUdpSend((int8*)insMsg, msg_len + 2);
+						}
 					}
-					if (ins_sockid > 0){
-						insUdpSend((int8*)insMsg, msg_len + 2);
-					}
+
 				}
 				memset(insMsg,0,128);
 				ins_re_sign=0;
 				monitor_all_inf.monitor_comm_inf[MONITOR_COMM_INS_SN].rec_ok_number++;	//������ȷ����
 				comm_time_return(&(ins_sign.timer),&(ins_sign.comm_sign));
 				last_time = user_time::get_millis();
+				
 			}
 		}
 	}

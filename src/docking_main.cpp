@@ -461,20 +461,21 @@ void *dockCommunicationUSVRun(void*)
 			flag_out = 1;
 			event_state = EVENT_ENTRY_DOCK_READY; //切入进坞模式
 			usv_sign.cmd_feedback = 1; //进坞命令反馈
-		//	SysPubMsgPost("�յ�����ָ�� \n");
-		//	SysLogMsgPost("�յ��������Ľ���ָ��");
 
 		}
+<<<<<<< HEAD
 		if ((0 == flag_out) /*&& 1 == usv_sign.power_on */&& (2 == command_signal.func_mode_cmd.b1_dock_cmd)){ //�������� ��ʱ�ò�����Ӧ�ֽڵ��� ����
 			flag_out = 1;
 			flag_return = 1;
 			//powerON();//���?Ŀǰ��Ϊ��������ͨ������ᱻ����?todo
+=======
+		if ((2 == command_signal.func_mode_cmd.b1_dock_cmd)){ //�������� ��ʱ�ò�����Ӧ�ֽڵ��� ����
+			flag_return = 0;
+			flag_out = 0;
+>>>>>>> b21d4da2478a2af2837925039d98df7526eec51b
 			event_state = EVENT_POWERON_USV;//切入出坞模式
 			usv_sign.cmd_feedback = 2;//出坞命令反馈
 			pAutoReturnInst->reset_AutoReturn();//复位返航状态机和相关标志位
-		//	SysPubMsgPost("�յ�����ָ�� \n");
-		//	SysLogMsgPost("�յ��������ĳ���ָ��");
-
 		}
 		if (1 == sumlink_cmd.u8_reset)//模拟工具复位 或者重新返�?
 		{
@@ -893,11 +894,17 @@ void DOCK_Init()
 
 void DOCK_reInit()
 {
+<<<<<<< HEAD
 	//dock_comm_coil_read.dock_entrydock_readyon	= 0;
 	//dock_comm_coil_read.dock_entrydock_success	= 0;
 	//dock_comm_coil_read.dock_outdock_readyon	= 0;
 	//dock_comm_coil_read.dock_entrydock_entrance = 0;
 	dock_sign.x_in_entrance=0;
+=======
+
+	dock_comm_coil_read.dock_entrydock_entrance = 0;
+
+>>>>>>> b21d4da2478a2af2837925039d98df7526eec51b
 }
 void DOCK_recv(uint8 ps_id, uint8* data)
 {

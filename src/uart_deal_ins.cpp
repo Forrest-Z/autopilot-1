@@ -197,7 +197,22 @@ int8 uart_ins_init( void )
 	
 	return iret;
 }
-
+typedef struct __GPGGA__
+{
+	float	utc_time;		//UTC时分秒
+	double	lat;			//纬度
+	char	c_lat;			//纬度标志 N 北纬 S 南纬
+	double	lon;			//经度
+	char	c_lon;			//经度标志 E 东经 W 西经
+	char	c_posType;		//GPS定位标识： 0 无定位 1 单点定位 2 差分定位 4 RTK定位 5 RTK浮点
+	unsigned int satelliteNum;	//用于定位的卫星数目
+	float	HDOP;			//HDOP = 0.0~9.9 水平位置精度因子
+	double	height;			//天线海拔高度 saaaa.aa
+	double	seaLvlSeparation;	//海平面分离度 ±xxxx.xx
+	unsigned int diffCorrDelay;	//差分校正时延 sss
+	unsigned int refStID;		//参考站ID		
+}GPGGA;
+GPGGA m_GPGGA;
 // receive message from name0183
 int8 uart_ins_rec_report( UART_TYPE uartid )
 {
@@ -248,7 +263,16 @@ int8 uart_ins_rec_report( UART_TYPE uartid )
 					msg_len = ins_jco-2;
 				 	if (GetCRC32(insMsg,msg_len))
 					{
-						if ((ptr = strstr(insMsg, "$GPRMC")) != NULL)			
+						if ((ptr = strstr(insMsg, "$GPGGA")) != NULL)
+						{
+						
+	sscanf(insMsg, "$GPGGA,%f,%lf,%c,%lf,%c,%d,%d,%f,%lf,M,%lf,M,%d,%d", &m_GPGGA.utc_time, &m_GPGGA.lat, &m_GPGGA.c_lat, &m_GPGGA.lon, &m_GPGGA.c_lon, \
+		&m_GPGGA.c_posType, &m_GPGGA.satelliteNum, &m_GPGGA.HDOP, &m_GPGGA.height, &m_GPGGA.seaLvlSeparation, &m_GPGGA.diffCorrDelay, \
+		&m_GPGGA.refStID);
+
+
+
+						}			
 					}		
 				}
 				else

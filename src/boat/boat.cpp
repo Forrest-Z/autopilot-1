@@ -182,20 +182,48 @@ void Boat::update_navigation_task()
         cmd.set_steering_target(steer_cmd);
         cmd.set_throttle(0.0);
     }else{
-        double speed_cd = sqrt_controller(autoNaviSt.double_dst,position_kp,position_second_limit,loop_ts_);
+        double des_speed_lim = sqrt_controller(autoNaviSt.double_dst,position_kp,position_second_limit,loop_ts_);
+
+        #if 0
         // reduce desired speed if yaw_error is large
         // 45deg of error reduces speed to 75%,90deg of error reduces speed to 50%
-        double yaw_error_ratio = 1.0 - math::Clamp(abs(relative_angle / 90.0),0.0,1.0);
-        speed_cd *= yaw_error_ratio;
+        double yaw_error_ratio = 1.0 - math::Clamp(abs(relative_angle / 90.0),0.0,1.0)*0.9;
+        des_speed_lim *= yaw_error_ratio;
 
         // reduce desired speed if lateral error is large
         double track_error_ratio = 1.0 -math::Clamp(abs(lateral_error/5.0),0.0,1.0) * 0.5;
-        speed_cd *= track_error_ratio;
+        des_speed_lim *= track_error_ratio;
 
-        speed_cd = math::Clamp(speed_cd,0.0,desired_speed);
+        #else
 
+        const float turn_angle_rad = fabsf(math::radians(relative_angle));
+
+        // calculate distance from vehicle to line + wp_overshoot
+        const float line_yaw_diff      = -relative_angle;
+        const float _cross_track_error = -lateral_error;
+        const float dist_from_line     = fabsf(lateral_error);
+        const bool heading_away        = IS_POSITIVE(line_yaw_diff) == IS_POSITIVE(_cross_track_error);
+        const float wp_overshoot_adj   = heading_away ? -dist_from_line : dist_from_line;
+
+        // calculate radius of circle that touches vehicle's current position and heading and target position and heading
+        float radius_m = 999.0f;
+        const float radius_calc_denom = fabsf(1.0f - cosf(turn_angle_rad));
+        if (!is_zero(radius_calc_denom)) {
+            radius_m = MAX(0.0f, _overshoot + wp_overshoot_adj) / radius_calc_denom;
+        }
+
+        // calculate and limit speed to allow vehicle to stay on circle
+        // ensure limit does not force speed below minimum
+        double overshoot_speed_max = sqrtf(_turn_max_g * GRAVITY_MSS* std::fmax(_turn_radius, radius_m));
+        // ensure speed does not fall below minimum
+        overshoot_speed_max = std::fmax(overshoot_speed_max, 0.0);
+        des_speed_lim = math::Clamp(des_speed_lim, -overshoot_speed_max, overshoot_speed_max);
+
+        #endif
+
+        des_speed_lim = math::Clamp(des_speed_lim,0.0,desired_speed);
         lat_controller_.ComputeControlCommand(0.0,&cmd,loop_ts_);
-        lon_controller_.ComputeControlCommand(speed_cd,&cmd,loop_ts_);
+        lon_controller_.ComputeControlCommand(des_speed_lim,&cmd,loop_ts_);
     }
       set_steering(cmd.get_steering_target()/steering_limit);
       set_throttle(cmd.get_throttle()/throttle_limit);

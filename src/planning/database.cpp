@@ -3,6 +3,12 @@
 #include <math/math_utils.h>
 #include <cmath>
 #include <user_time/user_time.h>
+#include <math/Location.h>
+
+#include "nanoObstacleSender.h"
+
+
+extern nanoObstacleSender senderTestV1;
 
 #ifndef AP_OADATABASE_TIMEOUT_SECONDS_DEFAULT
     #define AP_OADATABASE_TIMEOUT_SECONDS_DEFAULT   10
@@ -256,9 +262,37 @@ bool AP_OADatabase::is_close_to_item_in_database(const uint16_t index, const OA_
 }
 
 // send ADSB_VEHICLE mavlink messages
+using namespace LOC;
+extern LOC::Location ekf_origin_;
 void AP_OADatabase::send_adsb_vehicle(void)
 {
-    
+    StruApfObstacle zmqObsSingle;
+	vector <StruApfObstacle> zmqObsVec;	
+    zmqObsVec.clear();
+
+    if ((_output_level <= (int8_t)OA_DbOutputLevel::OUTPUT_LEVEL_DISABLED) || !healthy()) {
+        return;
+    }
+
+    if(ekf_origin_.lat == 0 || ekf_origin_.lng == 0){
+        return;
+    }
+
+    // send unsent objects until output buffer is full or have sent enough
+    for (uint16_t i=0; i < _database.count; i++) {
+          // convert object's position as an offset from EKF origin to Location
+         const Location obstacle_loc(Vector3f(_database.items[i].pos.x * 100.0f, _database.items[i].pos.y * 100.0f, _database.items[i].pos.z * 100.0f),
+         ekf_origin_);
+
+        zmqObsSingle.lat = 1e-7 * obstacle_loc.lat;
+        zmqObsSingle.lng = 1e-7 * obstacle_loc.lng;
+        zmqObsSingle.radius = _database.items[i].radius;
+        zmqObsSingle.infactRadius = _database.items[i].radius;
+        zmqObsSingle.speed = 0.0;
+        zmqObsSingle.heading = 0.0;
+        zmqObsVec.push_back(zmqObsSingle);
+    }
+     senderTestV1.obstacleEnqueue(zmqObsVec);
 }
 
 // singleton instance

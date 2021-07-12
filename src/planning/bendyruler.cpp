@@ -17,8 +17,6 @@ const float OA_BENDYRULER_LOOKAHEAD_STEP2_MIN = 2.0f;   // step2 checks at least
 const float OA_BENDYRULER_LOOKAHEAD_PAST_DEST = 2.0f;   // lookahead length will be at least this many meters past the destination
 const float OA_BENDYRULER_LOW_SPEED_SQUARED = (0.2f * 0.2f);    // when ground course is below this speed squared, vehicle's heading will be used
 
-
-
 AP_OABendyRuler::AP_OABendyRuler() 
 { 
     _bearing_prev = FLT_MAX;
@@ -26,14 +24,15 @@ AP_OABendyRuler::AP_OABendyRuler()
 
 // run background task to find best path and update avoidance_results
 // returns true and updates origin_new and destination_new if a best path has been found
-bool AP_OABendyRuler::update(const Location& current_loc, const Location& destination, const float ground_course_deg, Location &origin_new, Location &destination_new, bool proximity_only)
+bool AP_OABendyRuler::update(const Location& current_loc,const Location &origin,const Location& destination, const float ground_course_deg, Location &origin_new, Location &destination_new, bool proximity_only)
 {   
     // bendy ruler always sets origin to current_loc
     origin_new = current_loc;
 
     // calculate bearing and distance to final destination
-    const float bearing_to_dest = current_loc.get_bearing_to(destination) * 0.01f;
+    const float bearing_to_dest  = current_loc.get_bearing_to(destination) * 0.01f;
     const float distance_to_dest = current_loc.get_distance(destination);
+    const float origin_to_dest   = origin.get_bearing_to(destination) * 0.01f;
 
     // make sure user has set a meaningful value for _lookahead
     _lookahead = std::fmax(_lookahead,1.0f);
@@ -50,19 +49,21 @@ bool AP_OABendyRuler::update(const Location& current_loc, const Location& destin
 
     bool ret;
 
-    ret = search_xy_path(current_loc, destination, ground_course_deg, destination_new, lookahead_step1_dist, lookahead_step2_dist, bearing_to_dest, distance_to_dest, proximity_only);
+    ret = search_xy_path(current_loc, destination, ground_course_deg, destination_new, lookahead_step1_dist, lookahead_step2_dist, origin_to_dest,bearing_to_dest, distance_to_dest, proximity_only);
     
     return ret;
 }
 
 // Search for path in the horizontal directions
-bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location& destination, float ground_course_deg, Location &destination_new, float lookahead_step1_dist, float lookahead_step2_dist, float bearing_to_dest, float distance_to_dest, bool proximity_only) 
+bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location& destination, float ground_course_deg, Location &destination_new, float lookahead_step1_dist, float lookahead_step2_dist,float origin_to_dest,float bearing_to_dest, float distance_to_dest, bool proximity_only) 
 {
     // check OA_BEARING_INC definition allows checking in all directions
     static_assert(360 % OA_BENDYRULER_BEARING_INC_XY == 0, "check 360 is a multiple of OA_BEARING_INC");
 
+    destination_unreachable_   = false;
     destinatoin_near_obstacle_ = check_near_obstacle(current_loc,destination);
     if(destinatoin_near_obstacle_ == true){
+        printf("destination is too close obstacle\n");
         return false;
     }
 
@@ -132,9 +133,9 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
                         destination_new = current_loc;
                         destination_new.offset_bearing(final_bearing, distance_to_dest);
                         _current_lookahead = std::fmin(_lookahead, _current_lookahead * 1.1f);
-
+                        //printf("final_bearing = %f,bearing_to_dest = %f\n",final_bearing,origin_to_dest);
                         // if final_bearing is too away from bearing_to_dest,we will give up destination
-                        if(fabs(bearing_delta) >_bendy_max_change_angle){
+                        if(fabs(math::wrap_180(final_bearing -bearing_to_dest )) >_bendy_max_change_angle){
                             destination_unreachable_ = true;
                             printf("bendyruler:: destination is unreachable!");
                             return false;
@@ -162,6 +163,8 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
     // calculate new target based on best effort
     destination_new = current_loc;
     destination_new.offset_bearing(chosen_bearing, distance_to_dest);
+
+   // printf("chosen_bearing = %f,bearing_to_dest = %f\n",chosen_bearing,origin_to_dest);
 
     // if final_bearing is too away from bearing_to_dest,we will give up destination
     if(fabs(math::wrap_180(chosen_bearing -bearing_to_dest )) >_bendy_max_change_angle){
@@ -295,21 +298,20 @@ bool AP_OABendyRuler::check_near_obstacle(const Location &start, const Location 
     // check each obstacle's distance from segment
     float m_smallest_margin = FLT_MAX;
     float n_smallest_margin = FLT_MAX;
+    bool res = false;
     for (uint16_t i=0; i<oaDb->database_count(); i++) {
         const AP_OADatabase::OA_DbItem& item = oaDb->get_item(i);
         Location obs(Vector3f(item.pos.x * 100.0f,item.pos.y *100.0f,0.0f),ekf_origin_);
         // margin is distance between line segment and obstacle minus obstacle's radius
         const float m = start.get_distance(obs);
         const float n = end.get_distance(obs);
-        if (m < m_smallest_margin) {
-            m_smallest_margin = m;
+
+        if(m < _bendy_min_near_obstacle && 
+           n <_bendy_min_near_obstacle){
+            res = true;
         }
-        if (n < n_smallest_margin) {
-            n_smallest_margin = n;
-        }
+        
     }
 
-    return (n_smallest_margin < _bendy_min_near_obstacle)?(true):(false);
-
-
+   return res;
 }

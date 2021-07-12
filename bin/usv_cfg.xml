@@ -12,8 +12,8 @@
 			<entry id="1" value="0.222" name="route_switch_steering_cmd" type="double" desc="控制器类型0"/>
 			<entry id="2" value="0.1" name="position_kp" type="double" desc="控制器类型0"/>
 			<entry id="3" value="0.25" name="position_second_limit" type="double" desc="控制器类型0"/>
-			<entry id="4" value="192.168.7.199" name="master_ip" type="string" desc="控制器类型0"/>
-			<entry id="5" value="192.168.7.222" name="console_ip" type="string" desc="控制器类型0"/>
+			<entry id="4" value="192.168.2.199" name="master_ip" type="string" desc="控制器类型0"/>
+			<entry id="5" value="192.168.2.222" name="console_ip" type="string" desc="控制器类型0"/>
 			<entry id="6" value="14550" name="master_port" type="int16_t" desc="控制器类型0"/>
 			<entry id="7" value="14551" name="console_port" type="int16_t" desc="控制器类型0"/>
 		</LDevice>
@@ -26,7 +26,7 @@
 			<entry id="6" value="true" name="heading_error_td_angle" tpye="bool" desc="6"/>
 		</LDevice>
 		<LDevice name="CONTROL_TYPE" desc="NULL">
-			<entry id="1" value="LAT_CONTROLLER_MRAC" name="lat_controller_type" tpye="test" desc="test"/>
+			<entry id="1" value="LAT_CONTROLLER_PID" name="lat_controller_type" tpye="test" desc="test"/>
 			<entry id="2" value="LON_CONTROLLER_ADRC" name="lon_controller_type" tpye="test" desc="test"/>
 		</LDevice>
 		<LDevice name="LAT_CONTROLLER_COMMON" desc="NULL">

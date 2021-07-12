@@ -1796,6 +1796,7 @@ CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o
  ../3rdLibs/protobuf/include/google/protobuf/unknown_field_set.h
  ../3rdLibs/protobuf/include/google/protobuf/wire_format_lite.h
  ../3rdLibs/protobuf/include/google/protobuf/wire_format_lite_inl.h
+<<<<<<< HEAD
  /home/foo/Projects/autopilot/include/AisMsgQue.h
  /home/foo/Projects/autopilot/include/Algorithm_path.h
  /home/foo/Projects/autopilot/include/ApfMethod.h
@@ -1866,6 +1867,89 @@ CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o
  /home/foo/Projects/autopilot/src/proto/obstacle/gnss_un237.pb.h
  /home/foo/Projects/autopilot/src/proto/obstacle/header.pb.h
  /home/foo/Projects/autopilot/src/stdafx.h
+=======
+ ../src/common/commom.h
+ ../src/math/Location.h
+ ../src/math/RingBuffer.h
+ ../src/math/common_math.h
+ ../src/math/definitions.h
+ ../src/math/rotations.h
+ ../src/math/vector2.h
+ ../src/math/vector3.h
+ ../src/planning/bendyruler.h
+ ../src/planning/database.h
+ ../src/planning/pathplanner.h
+ /home/xlk/sf_ws/autopilot/include/AisMsgQue.h
+ /home/xlk/sf_ws/autopilot/include/Algorithm_path.h
+ /home/xlk/sf_ws/autopilot/include/ApfMethod.h
+ /home/xlk/sf_ws/autopilot/include/BaseComponent.h
+ /home/xlk/sf_ws/autopilot/include/BradioUdpThread.h
+ /home/xlk/sf_ws/autopilot/include/Component.h
+ /home/xlk/sf_ws/autopilot/include/GlobalFunction.h
+ /home/xlk/sf_ws/autopilot/include/MsgQue.h
+ /home/xlk/sf_ws/autopilot/include/SysLog.h
+ /home/xlk/sf_ws/autopilot/include/SysMsgPub.h
+ /home/xlk/sf_ws/autopilot/include/TaskQue.h
+ /home/xlk/sf_ws/autopilot/include/USV_const.h
+ /home/xlk/sf_ws/autopilot/include/adrc.h
+ /home/xlk/sf_ws/autopilot/include/auto_return.h
+ /home/xlk/sf_ws/autopilot/include/bd.h
+ /home/xlk/sf_ws/autopilot/include/bd_comm.h
+ /home/xlk/sf_ws/autopilot/include/can_api.h
+ /home/xlk/sf_ws/autopilot/include/can_deal_IDU.h
+ /home/xlk/sf_ws/autopilot/include/can_deal_IHC.h
+ /home/xlk/sf_ws/autopilot/include/can_deal_IOP.h
+ /home/xlk/sf_ws/autopilot/include/can_deal_main.h
+ /home/xlk/sf_ws/autopilot/include/comm_main.h
+ /home/xlk/sf_ws/autopilot/include/control_BD.h
+ /home/xlk/sf_ws/autopilot/include/control_assistance.h
+ /home/xlk/sf_ws/autopilot/include/control_auto.h
+ /home/xlk/sf_ws/autopilot/include/control_cmd.h
+ /home/xlk/sf_ws/autopilot/include/control_jetCtrlFunc.h
+ /home/xlk/sf_ws/autopilot/include/control_main.h
+ /home/xlk/sf_ws/autopilot/include/control_manual.h
+ /home/xlk/sf_ws/autopilot/include/control_operation.h
+ /home/xlk/sf_ws/autopilot/include/control_semiAuto.h
+ /home/xlk/sf_ws/autopilot/include/control_signalSt.h
+ /home/xlk/sf_ws/autopilot/include/control_stanby.h
+ /home/xlk/sf_ws/autopilot/include/ctrl_semiAuto_berth.h
+ /home/xlk/sf_ws/autopilot/include/ctrl_semiAuto_headingConstant.h
+ /home/xlk/sf_ws/autopilot/include/ctrl_semiAuto_speedConstant.h
+ /home/xlk/sf_ws/autopilot/include/docking_main.h
+ /home/xlk/sf_ws/autopilot/include/docking_pid_loop.h
+ /home/xlk/sf_ws/autopilot/include/docking_sumlink_tuning.h
+ /home/xlk/sf_ws/autopilot/include/docking_usv_control.h
+ /home/xlk/sf_ws/autopilot/include/docking_visual_guid.h
+ /home/xlk/sf_ws/autopilot/include/input_monitor_data.h
+ /home/xlk/sf_ws/autopilot/include/ins_recorder.h
+ /home/xlk/sf_ws/autopilot/include/lan_api.h
+ /home/xlk/sf_ws/autopilot/include/lan_deal_BRadio.h
+ /home/xlk/sf_ws/autopilot/include/lan_deal_CtrlCenter.h
+ /home/xlk/sf_ws/autopilot/include/monitor.h
+ /home/xlk/sf_ws/autopilot/include/pid_control.h
+ /home/xlk/sf_ws/autopilot/include/read_usv_cfg.h
+ /home/xlk/sf_ws/autopilot/include/read_usv_state.h
+ /home/xlk/sf_ws/autopilot/include/sailWaypoint.h
+ /home/xlk/sf_ws/autopilot/include/samplingComm.h
+ /home/xlk/sf_ws/autopilot/include/threadexp.h
+ /home/xlk/sf_ws/autopilot/include/uart_api.h
+ /home/xlk/sf_ws/autopilot/include/uart_deal_BD.h
+ /home/xlk/sf_ws/autopilot/include/uart_deal_DRadio.h
+ /home/xlk/sf_ws/autopilot/include/uart_deal_ins.h
+ /home/xlk/sf_ws/autopilot/include/uart_irtk.h
+ /home/xlk/sf_ws/autopilot/include/usv_include.h
+ /home/xlk/sf_ws/autopilot/include/warnProcess.h
+ /home/xlk/sf_ws/autopilot/include/watch_dog.h
+ /home/xlk/sf_ws/autopilot/include/zhelper.h
+ /home/xlk/sf_ws/autopilot/include/zmq.h
+ /home/xlk/sf_ws/autopilot/include/zmqGetObstacles.h
+ /home/xlk/sf_ws/autopilot/src/auto_return.cpp
+ /home/xlk/sf_ws/autopilot/src/proto/obstacle/error_code.pb.h
+ /home/xlk/sf_ws/autopilot/src/proto/obstacle/geometry.pb.h
+ /home/xlk/sf_ws/autopilot/src/proto/obstacle/gnss_un237.pb.h
+ /home/xlk/sf_ws/autopilot/src/proto/obstacle/header.pb.h
+ /home/xlk/sf_ws/autopilot/src/stdafx.h
+>>>>>>> b21d4da2478a2af2837925039d98df7526eec51b
 CMakeFiles/S99USV_ARM.dir/src/bd.cpp.o
  ../3rdLibs/nanomsg/include/nanomsg/nn.h
  ../3rdLibs/nanomsg/include/nanomsg/pubsub.h
@@ -14136,14 +14220,142 @@ CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o
  ../3rdLibs/eigen/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
  ../3rdLibs/eigen/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  ../3rdLibs/eigen/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ ../3rdLibs/nanomsg/include/nanomsg/nn.h
+ ../3rdLibs/nanomsg/include/nanomsg/pubsub.h
+ ../3rdLibs/nanomsg/include/nanomsg/ws.h
+ ../3rdLibs/protobuf/include/google/protobuf/arena.h
+ ../3rdLibs/protobuf/include/google/protobuf/arena_impl.h
+ ../3rdLibs/protobuf/include/google/protobuf/arenastring.h
+ ../3rdLibs/protobuf/include/google/protobuf/descriptor.h
+ ../3rdLibs/protobuf/include/google/protobuf/extension_set.h
+ ../3rdLibs/protobuf/include/google/protobuf/generated_enum_reflection.h
+ ../3rdLibs/protobuf/include/google/protobuf/generated_enum_util.h
+ ../3rdLibs/protobuf/include/google/protobuf/generated_message_table_driven.h
+ ../3rdLibs/protobuf/include/google/protobuf/generated_message_util.h
+ ../3rdLibs/protobuf/include/google/protobuf/has_bits.h
+ ../3rdLibs/protobuf/include/google/protobuf/io/coded_stream.h
+ ../3rdLibs/protobuf/include/google/protobuf/map.h
+ ../3rdLibs/protobuf/include/google/protobuf/map_entry_lite.h
+ ../3rdLibs/protobuf/include/google/protobuf/map_type_handler.h
+ ../3rdLibs/protobuf/include/google/protobuf/message.h
+ ../3rdLibs/protobuf/include/google/protobuf/message_lite.h
+ ../3rdLibs/protobuf/include/google/protobuf/metadata.h
+ ../3rdLibs/protobuf/include/google/protobuf/metadata_lite.h
+ ../3rdLibs/protobuf/include/google/protobuf/repeated_field.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomic_sequence_num.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_arm64_gcc.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_arm_gcc.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_arm_qnx.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_atomicword_compat.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_generic_c11_atomic.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_generic_gcc.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_mips_gcc.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_power.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_ppc_gcc.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_solaris.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_tsan.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_x86_gcc.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/atomicops_internals_x86_msvc.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/callback.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/casts.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/common.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/fastmem.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/hash.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/logging.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/macros.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/mutex.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/once.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/platform_macros.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/port.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/scoped_ptr.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/shared_ptr.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/template_util.h
+ ../3rdLibs/protobuf/include/google/protobuf/stubs/type_traits.h
+ ../3rdLibs/protobuf/include/google/protobuf/unknown_field_set.h
+ ../3rdLibs/protobuf/include/google/protobuf/wire_format_lite.h
+ ../3rdLibs/protobuf/include/google/protobuf/wire_format_lite_inl.h
+ ../include/AisMsgQue.h
+ ../include/Algorithm_path.h
+ ../include/ApfMethod.h
+ ../include/BaseComponent.h
+ ../include/BradioUdpThread.h
+ ../include/Component.h
+ ../include/GlobalFunction.h
+ ../include/MsgQue.h
+ ../include/SysLog.h
+ ../include/SysMsgPub.h
+ ../include/TaskQue.h
+ ../include/USV_const.h
+ ../include/adrc.h
+ ../include/auto_return.h
+ ../include/bd.h
+ ../include/bd_comm.h
+ ../include/can_api.h
+ ../include/can_deal_IDU.h
+ ../include/can_deal_IHC.h
+ ../include/can_deal_IOP.h
+ ../include/can_deal_main.h
+ ../include/commMsgQueue/commMsgQueue.h
+ ../include/comm_main.h
+ ../include/control_BD.h
+ ../include/control_assistance.h
+ ../include/control_auto.h
+ ../include/control_cmd.h
+ ../include/control_jetCtrlFunc.h
+ ../include/control_main.h
+ ../include/control_manual.h
+ ../include/control_operation.h
+ ../include/control_semiAuto.h
+ ../include/control_signalSt.h
+ ../include/control_stanby.h
+ ../include/ctrl_semiAuto_berth.h
+ ../include/ctrl_semiAuto_headingConstant.h
+ ../include/ctrl_semiAuto_speedConstant.h
+ ../include/docking_main.h
+ ../include/docking_pid_loop.h
+ ../include/docking_sumlink_tuning.h
+ ../include/docking_usv_control.h
+ ../include/docking_visual_guid.h
+ ../include/input_monitor_data.h
+ ../include/ins_recorder.h
+ ../include/lan_api.h
+ ../include/lan_deal_BRadio.h
+ ../include/lan_deal_CtrlCenter.h
+ ../include/monitor.h
+ ../include/nanoObstacleSender.h
+ ../include/pid_control.h
+ ../include/read_usv_cfg.h
+ ../include/read_usv_state.h
+ ../include/sailWaypoint.h
+ ../include/samplingComm.h
+ ../include/threadexp.h
+ ../include/uart_api.h
+ ../include/uart_deal_BD.h
+ ../include/uart_deal_DRadio.h
+ ../include/uart_deal_ins.h
+ ../include/uart_irtk.h
+ ../include/usv_include.h
+ ../include/warnProcess.h
+ ../include/watch_dog.h
+ ../include/zhelper.h
+ ../include/zmq.h
+ ../include/zmqGetObstacles.h
  ../src/common/commom.h
+ ../src/math/Location.h
  ../src/math/RingBuffer.h
  ../src/math/common_math.h
  ../src/math/definitions.h
  ../src/math/math_utils.h
  ../src/math/rotations.h
  ../src/math/vec2d.h
+ ../src/math/vector2.h
  ../src/math/vector3.h
+ ../src/proto/obstacle/error_code.pb.h
+ ../src/proto/obstacle/geometry.pb.h
+ ../src/proto/obstacle/gnss_un237.pb.h
+ ../src/proto/obstacle/header.pb.h
+ ../src/proto/obstacle/obstacle_radar.pb.h
  ../src/user_time/user_time.h
  /home/foo/Projects/autopilot/src/planning/database.cpp
  /home/foo/Projects/autopilot/src/planning/database.h
@@ -14540,7 +14752,10 @@ CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o
  .././include/zhelper.h
  .././include/zmq.h
  .././include/zmqGetObstacles.h
+ .././src/proto/obstacle/error_code.pb.h
+ .././src/proto/obstacle/geometry.pb.h
  .././src/proto/obstacle/gnss_un237.pb.h
+ .././src/proto/obstacle/header.pb.h
  ../3rdLibs/eigen/include/eigen3/Eigen/Core
  ../3rdLibs/eigen/include/eigen3/Eigen/src/Core/Array.h
  ../3rdLibs/eigen/include/eigen3/Eigen/src/Core/ArrayBase.h
@@ -14683,7 +14898,6 @@ CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o
  ../3rdLibs/eigen/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  ../3rdLibs/nanomsg/include/nanomsg/nn.h
  ../3rdLibs/nanomsg/include/nanomsg/pubsub.h
- ../3rdLibs/nanomsg/include/nanomsg/ws.h
  ../3rdLibs/protobuf/include/google/protobuf/arena.h
  ../3rdLibs/protobuf/include/google/protobuf/arena_impl.h
  ../3rdLibs/protobuf/include/google/protobuf/arenastring.h
@@ -14736,8 +14950,6 @@ CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o
  ../3rdLibs/protobuf/include/google/protobuf/unknown_field_set.h
  ../3rdLibs/protobuf/include/google/protobuf/wire_format_lite.h
  ../3rdLibs/protobuf/include/google/protobuf/wire_format_lite_inl.h
- ../include/commMsgQueue/commMsgQueue.h
- ../include/nanoObstacleSender.h
  ../src/common/commom.h
  ../src/filter/filter.h
  ../src/filter/filter_class.h
@@ -14753,10 +14965,6 @@ CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o
  ../src/math/vector2.h
  ../src/math/vector3.h
  ../src/planning/database.h
- ../src/proto/obstacle/error_code.pb.h
- ../src/proto/obstacle/geometry.pb.h
- ../src/proto/obstacle/header.pb.h
- ../src/proto/obstacle/obstacle_radar.pb.h
  ../src/user_time/user_time.h
  ../src/util/easylogging++.h
  /home/foo/Projects/autopilot/src/radar/mypublic.h

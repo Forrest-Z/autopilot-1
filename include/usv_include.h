@@ -1,6 +1,6 @@
 #pragma once
 
-//#define MCU_V1				//大机箱版本
+//#define MCU_V1				// 大机箱版本
 //#define MCU_V2					// metal 金属主控 
 #define MCU_V3				// plastic 1号船
 

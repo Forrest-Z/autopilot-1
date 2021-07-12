@@ -138,6 +138,9 @@ int main(int argc,char **argv)
 			updateMeterClock();
 			feedWatchDog();
 			
+			AP_OADatabase *oaDb = AP::oadatabase();
+			oaDb->send_adsb_vehicle();
+			
 			senderTestV1.obstacleGetHeadOfQueue();
 			senderTestV1.obstacleSend();
 

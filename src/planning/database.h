@@ -25,7 +25,7 @@ public:
     };
 
     struct OA_DbItem {
-        Vector3f pos;          // position of the object as an offset in meters from the EKF origin
+        Vector3f pos;             // position of the object as an offset in meters from the EKF origin
         uint32_t timestamp_ms;    // system time that object was last updated
         float radius;             // objects radius in meters
         uint8_t send_to_gcs;      // bitmask of mavlink comports to which details of this object should be sent
@@ -81,7 +81,6 @@ private:
         OUTPUT_LEVEL_SEND_ALL = 3
     };
 
-
     struct {
         ObjectBuffer<OA_DbItem> *items;                     // thread safe incoming queue of points from proximity sensor to be put into database
         uint16_t        size;                               // cached value of _queue_size_param.
@@ -104,14 +103,13 @@ private:
 private:
     // parameters
     int16_t      _queue_size_param{200};                       // queue size
-    int16_t      _database_size_param{500.0};                  // db size
+    int16_t      _database_size_param{400.0};                  // db size
     int16_t      _database_expiry_seconds{10};                 // objects expire after this timeout
     int16_t      _output_level{3};                             // controls which items should be sent to GCS
     float        _beam_width{10.0};                            // beam width used when converting lidar readings to object radius
-    float        _radius_min{0.2f};                            // objects minimum radius (in meters)
-    float        _dist_max{0.0f};                              // objects maximum distance (in meters)
-    float        _min_alt{2.0f};                               // OADatabase minimum vehicle height check (in meters)
-
+    float        _radius_min{1.0f};                            // objects minimum radius (in meters)
+    float        _dist_max{50.f};                              // objects maximum distance (in meters)
+    float        _min_alt{0.0f};                               // OADatabase minimum vehicle height check (in meters)
 };
 
 namespace AP {

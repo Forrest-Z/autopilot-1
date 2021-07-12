@@ -11,7 +11,6 @@
 #include <boat/boat.h>
 
 #include <util/easylogging++.h>
-
 #include "vehicle_state.h"
 
 extern LOC::Location ekf_origin_;
@@ -92,9 +91,16 @@ void VehicleState::update(double ts)
     bool _oa_was_active = _oa_active;
     _oa_dest_unreachable = false;
     
+    double current_yaw = 0.0;
+  //  if(gps_msg_ok){
+   //     current_yaw = (ins_msg.speed >1.0)?(ins_msg.motionDirection):(ins_msg.heading);
+   // }else{
+        current_yaw = ins_msg.heading;
+  //  }
+    
     AP_OAPathPlanner *oa = AP_OAPathPlanner::get_singleton();
     if (oa != nullptr) {
-        const AP_OAPathPlanner::OA_RetState oa_retstate = oa->mission_avoidance(current_loc, _origin, _destination,ins_msg.heading, _oa_origin, _oa_destination);
+        const AP_OAPathPlanner::OA_RetState oa_retstate = oa->mission_avoidance(current_loc, _origin, _destination,current_yaw, _oa_origin, _oa_destination);
         switch (oa_retstate) {
         case AP_OAPathPlanner::OA_RetState::OA_NOT_REQUIRED:
             _oa_active = false;
@@ -147,7 +153,7 @@ void VehicleState::update(double ts)
     PA.set_y(PA_distance * sin(math::radians(PA_bearing)));
 
     lateral_error_ = (OA.Length() >= 1e-6)?PA.CrossProd(OA)/OA.Length():0.0;
-    heading_error_ = math::wrap_180(ins_msg.heading - OA_bearing);
+    heading_error_ = math::wrap_180(current_yaw - OA_bearing);
     linear_velocity_ = (gps_msg_ok == true)?(ins_msg.speed):(linear_velocity_);
     angular_velocity_ = (use_external_angular_velocity_ == true)?(ins_msg.rotRate):heading_error_td_filter.z2();
     time_stamp_ = cur_time;

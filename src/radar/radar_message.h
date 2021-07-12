@@ -6,14 +6,19 @@
 #include "radar_conf.h"
 #include <filter/filter.h>
 
+#define IPC2ARM_RELATIVE    1
+
 class RadarMessage{
 public:
 #pragma pack(1)
     struct IPC2ARM{
+        #if IPC2ARM_RELATIVE == 1
+        float lat;
+        float lng;
+        #else 
         int32_t lat;
         int32_t lng;
-        IPC2ARM():lat(0),lng(0){}
-        IPC2ARM(int32_t lat0,int32_t lng0):lat(lat0),lng(lng0){}
+        #endif
     };
 
     struct ARM2IPC{
@@ -22,7 +27,8 @@ public:
         int32_t lng;
         float   heading_deg;
         float   ground_course_deg;
-        float   ground_speed_kn;
+        float   ground_speed_ms;
+        float   omega;
     };
 #pragma pack()
 
@@ -61,6 +67,8 @@ private:
 
     // push an object into the database. Pos is  lat and lng
     void database_push(const int32_t lat,const int32_t lng);
+
+    void database_push(const float distance,const float angle);
 
 private:
     static RadarMessage* singleton_;

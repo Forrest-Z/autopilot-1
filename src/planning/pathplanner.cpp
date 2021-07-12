@@ -7,7 +7,7 @@
 const float OA_MARGIN_MAX_DEFAULT = 5;
 const int16_t OA_OPTIONS_DEFAULT = 1;
 
-const int16_t OA_UPDATE_MS = 1000;      // path planning updates run at 1hz
+const int16_t OA_UPDATE_MS  = 200;      // path planning updates run at 5hz
 const int16_t OA_TIMEOUT_MS = 3000;     // results over 3 seconds old are ignored
 
 
@@ -157,7 +157,7 @@ void AP_OAPathPlanner::avoidance_thread()
                 printf("OAPathPlanner need reboot");
                 continue;
             }
-            if (_oabendyruler->update(avoidance_request2.current_loc, avoidance_request2.destination, avoidance_request2.ground_course_deg, origin_new, destination_new, false)) {
+            if (_oabendyruler->update(avoidance_request2.current_loc, avoidance_request2.origin,avoidance_request2.destination, avoidance_request2.ground_course_deg, origin_new, destination_new, false)) {
                 res = OA_SUCCESS;
             }else if(_oabendyruler->give_up_current_waypoint() == true){
                 res = OA_CAN_NOT_ARRIVAL;

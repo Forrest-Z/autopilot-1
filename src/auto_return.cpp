@@ -3,6 +3,8 @@
 #include <stdarg.h>
 #include <string>
 #include <iostream>
+#include <planning/pathplanner.h>
+
 
 using std::cout;
 using std::endl;
@@ -356,26 +358,80 @@ void CAutoReturn::AutoReturn_SailPath(void)
 void CAutoReturn::AutoReturn_GDPoint(void)
 {
 	POSITION last_point, target_point;
-	//�������
 	last_point = init_ret_point;
 
 	getLatLng(return_point[2].latitude, return_point[2].longitude, temp_dockin_distance, (180 + return_point[2].heading), &target_point.lat, &target_point.lng); //��ȡ���󷽵ķ�����
-
 	double dst = Get_distance(ins_msg.latitude,ins_msg.longitude,target_point.lat,target_point.lng);
-
 	double heading = Get_heading(ins_msg.latitude,ins_msg.longitude,target_point.lat,target_point.lng);
 
-
-	//���ϼ�������
-	auto_return_st.b1_st_apf = APF_calc(target_point);
+	// auto_return_st.b1_st_apf = APF_calc(target_point);
 	auto_return_st.double_dst = Get_distance(ins_msg.latitude, ins_msg.longitude, target_point.lat, target_point.lng);
 
-	if (auto_return_st.b1_st_apf == 1)	{ 
-		auto_aovid_return_plan(last_point, target_point);	
-	}
-	else{
-		auto_return_plan(last_point, target_point);			
-	}
+	// if (auto_return_st.b1_st_apf == 1)	{ 
+	// 	auto_aovid_return_plan(last_point, target_point);	
+	// }
+	// else{
+	// 	auto_return_plan(last_point, target_point);			
+	// }
+
+
+    // translate current lat-lng into xy  
+    LOC::Location _oa_origin;            // intermediate origin during avoidance
+    LOC::Location _oa_destination;       // intermediate destination during avoidance
+    LOC::Location _origin;               // origin Location (vehicle will travel from the origin to the destination)
+    LOC::Location _destination;          // destination Location when in Guided_WP
+
+    _origin.lat = last_point.lat*1e7;
+    _origin.lng = last_point.lng*1e7;
+    _origin.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
+    _destination.lat = target_point.lat*1e7;
+    _destination.lng = target_point.lng*1e7;
+    _destination.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
+
+    Location current_loc;
+    current_loc.lat = ins_msg.latitude*1e7;
+    current_loc.lng = ins_msg.longitude*1e7;
+    current_loc.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
+
+    // run path planning around obstacles
+    bool stop_vehicle = false;
+    // true if OA has been recently active;
+	bool _oa_active = false;
+
+	 AP_OAPathPlanner *oa = AP_OAPathPlanner::get_singleton();
+    if (oa != nullptr) {
+        const AP_OAPathPlanner::OA_RetState oa_retstate = oa->mission_avoidance(current_loc, _origin, _destination,ins_msg.heading, _oa_origin, _oa_destination);
+        switch (oa_retstate) {
+        case AP_OAPathPlanner::OA_RetState::OA_NOT_REQUIRED:
+            _oa_active = false;
+            break;
+        case AP_OAPathPlanner::OA_RetState::OA_PROCESSING:
+        case AP_OAPathPlanner::OA_RetState::OA_ERROR:
+            // during processing or in case of error, slow vehicle to a stop
+            stop_vehicle = true;
+            _oa_active = false;
+            break;
+        case AP_OAPathPlanner::OA_RetState::OA_SUCCESS:
+            _oa_active = true;
+            break;
+        case AP_OAPathPlanner::OA_RetState::OA_CAN_NOT_ARRIVAL:
+             stop_vehicle = true;
+            _oa_active = false;
+            break;
+        }
+    }
+    if (!_oa_active) {
+        _oa_origin = _origin;
+        _oa_destination = _destination;
+    }
+
+	POSITION start,end;
+	start.lat = 1e-7*_oa_origin.lat;
+	start.lng = 1e-7*_oa_origin.lng;
+	end.lat   = 1e-7*_oa_destination.lat;
+	end.lng   = 1e-7*_oa_destination.lng;
+
+	auto_return_plan(start, end);
 
 	if (auto_return_st.double_dst < autoNaviCfg.u16_arrival_distance1){ 
 		if (usv_sign.entry_docking == 1){
@@ -392,7 +448,6 @@ void CAutoReturn::AutoReturn_GDPoint(void)
 	else{
 
 		nCalRudderOpenDeg(auto_return_st.double_heading_exp, auto_return_st.double_speed_exp); //�ٶȺ��� ���
-
 	}
 }
 

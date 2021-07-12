@@ -4,12 +4,9 @@
 #include <user_time/user_time.h>
 #include <math/common_math.h>
 #include <util/easylogging++.h>
-#include "nanoObstacleSender.h"
 #include <math/Location.h>
 #include <planning/database.h>
 using namespace LOC;
-
-extern nanoObstacleSender senderTestV1;
 
 RadarMessage *RadarMessage::singleton_ = nullptr;
 
@@ -77,39 +74,52 @@ void RadarMessage::update_receive(void)
 
 void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
 {
-    StruApfObstacle zmqObsSingle;
-	vector <StruApfObstacle> zmqObsVec;	
+    if(ins_msg.latitude == 0 || ins_msg.longitude == 0){
+        return;
+    }
 
     switch (msgid)
     {
+        #if IPC2ARM_RELATIVE == 1
         case UnMsgID_BoatLidar_IPC_Arm_Cross:
         {
             receive_time_stamp_= user_time::get_millis();
             uint32_t obstalce_size = pBuf[0];
             uint16_t i = 0;
             IPC2ARM msg;
-            zmqObsVec.clear();
-         //  printf("obstacle_size = %d\n",obstalce_size);
+           
             while( i <8*obstalce_size){
+                memcpy(&msg,&pBuf[i+1],sizeof(msg));
 
-               memcpy(&msg,&pBuf[i+1],sizeof(msg));
-               database_push(msg.lat,msg.lng);
+                float distance =  msg.lat;
+				float angle = math::wrap_360(msg.lng + ins_msg.heading);
+                database_push(distance,angle);
 
-              // printf("lat = %ld,lng =%ld\n",msg.lat,msg.lng);
-
-               	zmqObsSingle.lat = 1e-7*msg.lat;
-				zmqObsSingle.lng = 1e-7*msg.lng;
-				zmqObsSingle.radius = 0.5;
-				zmqObsSingle.infactRadius = 0.5;
-				zmqObsSingle.speed = 0.0;
-				zmqObsSingle.heading =0.0;
-                zmqObsVec.push_back(zmqObsSingle);
-
-               i+=8;
+                i+=8;
             }
-            senderTestV1.obstacleEnqueue(zmqObsVec);
+           
         }
         break;
+        #else
+        case UnMsgID_BoatLidar_IPC_Arm_Cross:
+        {
+            receive_time_stamp_= user_time::get_millis();
+            uint32_t obstalce_size = pBuf[0];
+            uint16_t i = 0;
+            IPC2ARM msg;
+         
+            while( i <8*obstalce_size){
+                memcpy(&msg,&pBuf[i+1],sizeof(msg));
+
+                int32_t lat = msg.lat;
+                int32_t lng = msg.lng;
+                database_push(lat,lng);
+                
+                i+=8;
+            }
+        }
+        break;
+        #endif
         default:{}break;
     }
 
@@ -140,7 +150,6 @@ void RadarMessage::database_push(const int32_t lat,const int32_t lng)
         return;
     }
 
- 
     Vector2f obstacle_pos;
     Location obstacle_loc;
     obstacle_loc.lat = lat;
@@ -155,8 +164,44 @@ void RadarMessage::database_push(const int32_t lat,const int32_t lng)
     Vector3f pos{obstacle_pos.x*0.01f,obstacle_pos.y*0.01f,0.0f};
 
     oaDb->queue_push(pos,user_time::get_millis(),distance);
-
 }
+
+void RadarMessage::database_push(const float distance,const float angle)
+{
+    AP_OADatabase *oaDb = AP::oadatabase();
+    if(oaDb == nullptr || !oaDb->healthy()){
+        printf("OADatabase is unhealthy!\n");
+        return;
+    }
+
+    // get current position
+    if(ekf_origin_.lng == 0 || ekf_origin_.lat == 0){
+        printf("OADatabase : EKF original not set!\n");
+        return;
+    }
+
+
+    Vector2f current_pos;
+    Location current_loc;
+    current_loc.lat = ins_msg.latitude*1e7;
+    current_loc.lng = ins_msg.longitude*1e7;
+    current_loc.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
+     if(!current_loc.get_vector_xy_from_origin_NE(current_pos,ekf_origin_)){
+        return;
+    }
+
+    Vector2f obstacle_pos;
+    Location obstacle_loc = current_loc;
+    obstacle_loc.offset_bearing(angle,distance);
+    if(!obstacle_loc.get_vector_xy_from_origin_NE(obstacle_pos,ekf_origin_)){
+        return;
+    }
+
+    Vector3f pos{obstacle_pos.x*0.01f,obstacle_pos.y*0.01f,0.0f};
+    oaDb->queue_push(pos,user_time::get_millis(),distance);
+}
+
+
 
 void RadarMessage::send_message(int sysid, int componetid, int msgid)
 {
@@ -175,7 +220,8 @@ void RadarMessage::send_message(int sysid, int componetid, int msgid)
         arm2ipc_msg_.lng               =  static_cast<int32_t>(ins_msg.longitude * 1e7);
         arm2ipc_msg_.heading_deg       = ins_msg.heading;
         arm2ipc_msg_.ground_course_deg = ins_msg.motionDirection;
-        arm2ipc_msg_.ground_speed_kn   = ins_msg.speed;
+        arm2ipc_msg_.ground_speed_ms   = kn2ms(ins_msg.speed);
+        arm2ipc_msg_.omega             = ins_msg.rotRate;
         memcpy(datapadu.databuf,&arm2ipc_msg_,sizeof(arm2ipc_msg_));
         datapadu.len = sizeof(arm2ipc_msg_);
     }

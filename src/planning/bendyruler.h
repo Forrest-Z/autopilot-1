@@ -4,7 +4,6 @@
 #include <math/Location.h>
 #include <math/vector2.h>
 
-
 using namespace LOC;
 
 /*
@@ -23,12 +22,12 @@ public:
 
     // run background task to find best path and update avoidance_results
     // returns true and populates origin_new and destination_new if OA is required.  returns false if OA is not required
-    bool update(const Location& current_loc, const Location& destination, const float ground_course_deg, Location &origin_new, Location &destination_new, bool proximity_only);
+    bool update(const Location& current_loc, const Location &origin,const Location& destination, const float ground_course_deg, Location &origin_new, Location &destination_new, bool proximity_only);
 
     bool give_up_current_waypoint(void) const { return (destinatoin_near_obstacle_ == true) || (destination_unreachable_ == true);}
 
     // search for path in XY direction
-    bool search_xy_path(const Location& current_loc, const Location& destination, float ground_course_deg, Location &destination_new, float lookahead_step_1_dist, float lookahead_step_2_dist, float bearing_to_dest, float distance_to_dest, bool proximity_only);
+    bool search_xy_path(const Location& current_loc, const Location& destination, float ground_course_deg, Location &destination_new, float lookahead_step_1_dist, float lookahead_step_2_dist, float origin_to_dest,float bearing_to_dest, float distance_to_dest, bool proximity_only);
 
 private:
 
@@ -56,10 +55,10 @@ private:
 private:
     
     // OA common parameters
-    float _margin_max{1.5f};            // object avoidance will ignore objects more than this many meters from vehicle
-    float _lookahead{20.0f};            // object avoidance will look this many meters ahead of vehicle
+    float _margin_max{2.0f};            // object avoidance will ignore objects more than this many meters from vehicle
+    float _lookahead{10.0f};            // object avoidance will look this many meters ahead of vehicle
     float _bendy_ratio{1.5f};           // object avoidance will avoid major directional change if change in margin ratio is less than this param
     float _bendy_angle{75.0f};          // object avoidance will try avoding change in direction over this much angle
-    float _bendy_max_change_angle{135};
-    float _bendy_min_near_obstacle{1.0};
+    float _bendy_max_change_angle{100};
+    float _bendy_min_near_obstacle{5.0};
 };

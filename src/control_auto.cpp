@@ -757,7 +757,7 @@ void nCalRudderOpenDeg(float expHeading, float expSpeed)
 	// reduce desired speed if yaw_error is large
 	// 45deg of error reduces speed to 75%,90deg of error reduces speed to 50%
 	float relative_angle = wrap_180( expHeading - ins_msg.heading);
-	double yaw_error_ratio = 1.0 - Clamp(abs(relative_angle / 180.0),0.0,1.0)*0.25;
+	double yaw_error_ratio = 1.0 - Clamp(abs(relative_angle / 180.0),0.0,1.0)*1.0;
 	expSpeed *= yaw_error_ratio;
 
 	

@@ -336,7 +336,10 @@ uint8 autoReturnLOS(double fix_heading)
 		speed_fix = 1;
 		float speed_temp  = constrain_value(sqrt_controller(local_distance,0.1,0.25,0.05),1,docking_speed);
 		dockin_exp_speed = MAX(speed_temp,1.0f);
-		dspControlCmd(tracker_angle + fix_heading, dockin_exp_speed, 0);
+		//if((tracker_angle + fix_heading)<20)
+			dspControlCmd(tracker_angle + fix_heading, dockin_exp_speed, 0);
+		//else
+		  //  dspControlCmd(tracker_angle + fix_heading, 0, 0);
 	}
 	return 1;
 }

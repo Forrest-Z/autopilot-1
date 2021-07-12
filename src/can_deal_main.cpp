@@ -272,13 +272,13 @@ void canModelCommCal(void *)
 		{
 		case COMM_CONNECT_OK:	
 			{
-				printf(" dock connect ok\n");
+				//printf(" dock connect ok\n");
 			 }
 			break;
 		case COMM_CONNECT_FAIL:	
 			{
 				DOCK_reInit();
-				printf(" dock disconnect \n");
+			//	printf(" dock disconnect \n");
 			}
 			break;
 		default:

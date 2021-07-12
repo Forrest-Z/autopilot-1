@@ -6,9 +6,9 @@
 /******************************  Local Variable  *****************************/
 char obsCommCfg[30];
 OBS_STRU	obs_var;
-COMM_SIGN	obsComm_sign={0,0};
-uint8 log_b1_obsComm_sign=0;
-uint8 log_b1_obsFault_sign = 1;
+COMM_SIGN	obsComm_sign         ={0,0};
+uint8       log_b1_obsComm_sign  =0;
+uint8       log_b1_obsFault_sign = 1;
 
 
 

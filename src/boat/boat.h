@@ -86,6 +86,11 @@ private:
    double position_kp;
    double position_second_limit;
 
+private:
+   float _overshoot{1.0};    // [0~10m,inc:0.1m]
+   float _turn_radius{1.0};  // [0~10m,inc:0.1m]
+   float _turn_max_g{0.1}; // [0~0.3g,inc:0.01g]
+
 };
 
 namespace AP {

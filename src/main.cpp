@@ -1108,8 +1108,6 @@ int GPIO_Init()
 }
 
 
-
-
 void Watch_Dog()
 {
 #ifndef WINNT
@@ -1156,7 +1154,7 @@ void *radar_message_send_thread(void *aa)
 		AP::radar_message()->update_send();	
 		sleep_1(20);			
 	}
-	
+
 	return ((void *)0);
 }
 

@@ -63,7 +63,7 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
     destination_unreachable_   = false;
     destinatoin_near_obstacle_ = check_near_obstacle(current_loc,destination);
     if(destinatoin_near_obstacle_ == true){
-        printf("destination is too close obstacle\n");
+        printf("destination is too close obstacle or destination can not arrival\n");
         return false;
     }
 
@@ -135,11 +135,11 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
                         _current_lookahead = std::fmin(_lookahead, _current_lookahead * 1.1f);
                         //printf("final_bearing = %f,bearing_to_dest = %f\n",final_bearing,origin_to_dest);
                         // if final_bearing is too away from bearing_to_dest,we will give up destination
-                        if(fabs(math::wrap_180(final_bearing -bearing_to_dest )) >_bendy_max_change_angle){
-                            destination_unreachable_ = true;
-                            printf("bendyruler1:: destination is unreachable!\n");
-                            return false;
-                        }
+                        // if(fabs(math::wrap_180(final_bearing -bearing_to_dest )) >_bendy_max_change_angle){
+                        //     destination_unreachable_ = true;
+                        //     printf("bendyruler1:: destination is unreachable!\n");
+                        //     return false;
+                        // }
                         return active;
                     }
                 }
@@ -167,11 +167,11 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
    // printf("chosen_bearing = %f,bearing_to_dest = %f\n",chosen_bearing,origin_to_dest);
 
     // if final_bearing is too away from bearing_to_dest,we will give up destination
-    if(fabs(math::wrap_180(chosen_bearing -bearing_to_dest )) >_bendy_max_change_angle){
-        destination_unreachable_ = true;
-        printf("bendyruler2:: destination is unreachable!\n");
-        return false;
-    }
+    // if(fabs(math::wrap_180(chosen_bearing -bearing_to_dest )) >_bendy_max_change_angle){
+    //     destination_unreachable_ = true;
+    //     printf("bendyruler2:: destination is unreachable!\n");
+    //     return false;
+    // }
     return true;
 }
 
@@ -299,19 +299,46 @@ bool AP_OABendyRuler::check_near_obstacle(const Location &start, const Location 
     float m_smallest_margin = FLT_MAX;
     float n_smallest_margin = FLT_MAX;
     bool res = false;
+
+    const int16_t N = _bendy_max_change_angle/OA_BENDYRULER_BEARING_INC_XY;
+    int16_t obstacle_distribution[2*N+1];
+    memset(obstacle_distribution,0,sizeof(obstacle_distribution));
+    float smallest_distance = FLT_MAX;
+
     for (uint16_t i=0; i<oaDb->database_count(); i++) {
         const AP_OADatabase::OA_DbItem& item = oaDb->get_item(i);
         Location obs(Vector3f(item.pos.x * 100.0f,item.pos.y *100.0f,0.0f),ekf_origin_);
+
         // margin is distance between line segment and obstacle minus obstacle's radius
         const float m = start.get_distance(obs);
         const float n = end.get_distance(obs);
-
         if(m < _bendy_min_near_obstacle && 
            n <_bendy_min_near_obstacle){
             res = true;
         }
-        
+
+        // fill obstacle_distribution array
+        const float theta  = math::wrap_180(start.get_bearing_to(obs) *0.01f - start.get_bearing_to(end)*0.01f);
+        if(std::fabs(theta) < _bendy_max_change_angle + (OA_BENDYRULER_BEARING_INC_XY * 0.5f)){
+            int16_t  sector = (theta + (OA_BENDYRULER_BEARING_INC_XY * 0.5f))/OA_BENDYRULER_BEARING_INC_XY;
+            if(sector > N){sector = N;}
+            if(sector < -N){sector = -N;}
+            obstacle_distribution[sector + N] ++;
+            if(smallest_distance > m){
+                smallest_distance = m;
+            }
+        }
     }
 
-   return res;
+    // check obstacle_distribution array
+    bool      ret = false;
+    uint16_t  no_obstacle_size = 0;
+    for(uint16_t k = 0; k<2*N+1;k++){
+        if(obstacle_distribution[k] == 0){
+            no_obstacle_size++;
+        }
+    }
+    if(no_obstacle_size <= (_bendy_give_up_p * (2*N+1)) && smallest_distance <= _lookahead){ ret = true;}
+
+   return (ret == true || res == true)?(true):(false);
 }

@@ -51,7 +51,7 @@ private:
 
     bool destinatoin_near_obstacle_{false};
     bool destination_unreachable_{false};
-
+    
 private:
     
     // OA common parameters
@@ -61,4 +61,5 @@ private:
     float _bendy_angle{75.0f};          // object avoidance will try avoding change in direction over this much angle
     float _bendy_max_change_angle{100};
     float _bendy_min_near_obstacle{5.0};
+    float _bendy_give_up_p{0.1};
 };

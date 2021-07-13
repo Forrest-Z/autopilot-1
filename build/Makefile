@@ -2823,6 +2823,33 @@ src/planning/bendyruler.cpp.s:
 	$(MAKE) -f CMakeFiles/S99USV_ARM.dir/build.make CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.s
 .PHONY : src/planning/bendyruler.cpp.s
 
+src/planning/boundary.o: src/planning/boundary.cpp.o
+
+.PHONY : src/planning/boundary.o
+
+# target to build an object file
+src/planning/boundary.cpp.o:
+	$(MAKE) -f CMakeFiles/S99USV_ARM.dir/build.make CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o
+.PHONY : src/planning/boundary.cpp.o
+
+src/planning/boundary.i: src/planning/boundary.cpp.i
+
+.PHONY : src/planning/boundary.i
+
+# target to preprocess a source file
+src/planning/boundary.cpp.i:
+	$(MAKE) -f CMakeFiles/S99USV_ARM.dir/build.make CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.i
+.PHONY : src/planning/boundary.cpp.i
+
+src/planning/boundary.s: src/planning/boundary.cpp.s
+
+.PHONY : src/planning/boundary.s
+
+# target to generate assembly for a file
+src/planning/boundary.cpp.s:
+	$(MAKE) -f CMakeFiles/S99USV_ARM.dir/build.make CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.s
+.PHONY : src/planning/boundary.cpp.s
+
 src/planning/database.o: src/planning/database.cpp.o
 
 .PHONY : src/planning/database.o
@@ -3969,6 +3996,9 @@ help:
 	@echo "... src/planning/bendyruler.o"
 	@echo "... src/planning/bendyruler.i"
 	@echo "... src/planning/bendyruler.s"
+	@echo "... src/planning/boundary.o"
+	@echo "... src/planning/boundary.i"
+	@echo "... src/planning/boundary.s"
 	@echo "... src/planning/database.o"
 	@echo "... src/planning/database.i"
 	@echo "... src/planning/database.s"

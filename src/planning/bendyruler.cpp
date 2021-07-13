@@ -137,7 +137,7 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
                         // if final_bearing is too away from bearing_to_dest,we will give up destination
                         if(fabs(math::wrap_180(final_bearing -bearing_to_dest )) >_bendy_max_change_angle){
                             destination_unreachable_ = true;
-                            printf("bendyruler:: destination is unreachable!");
+                            printf("bendyruler1:: destination is unreachable!\n");
                             return false;
                         }
                         return active;
@@ -169,7 +169,7 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
     // if final_bearing is too away from bearing_to_dest,we will give up destination
     if(fabs(math::wrap_180(chosen_bearing -bearing_to_dest )) >_bendy_max_change_angle){
         destination_unreachable_ = true;
-        printf("bendyruler:: destination is unreachable!");
+        printf("bendyruler2:: destination is unreachable!\n");
         return false;
     }
     return true;

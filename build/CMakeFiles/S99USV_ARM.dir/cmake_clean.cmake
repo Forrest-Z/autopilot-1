@@ -128,6 +128,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.o"
   "CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.o"
   "CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o"
+  "CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o"
   "CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o"
   "CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o"
   "../bin/S99USV_ARM.pdb"

@@ -6,6 +6,9 @@
 #include <util/easylogging++.h>
 #include <math/Location.h>
 #include <planning/database.h>
+
+
+
 using namespace LOC;
 
 RadarMessage *RadarMessage::singleton_ = nullptr;
@@ -91,9 +94,40 @@ void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
             while( i <8*obstalce_size){
                 memcpy(&msg,&pBuf[i+1],sizeof(msg));
 
+                #if 0
                 float distance =  msg.lat;
 				float angle = math::wrap_360(msg.lng + ins_msg.heading);
                 database_push(distance,angle);
+                #else
+                float distance_m    = msg.lat;
+                float angle_deg     = msg.lng;
+                const AP_Proximity_Boundary_3D::Face face = boundary.get_face(angle_deg);
+
+                if (face != _last_face) {
+                    // distance is for a new face, the previous one can be updated now
+                    if (_last_distance_valid) {
+                        boundary.set_face_attributes(_last_face, _last_angle_deg, _last_distance_m);
+                    } else {
+                        // reset distance from last face
+                        boundary.reset_face(face);
+                    }
+
+                    // initialize the new face
+                    _last_face = face;
+                    _last_distance_valid = false;
+                }
+
+                if (distance_m > 0.20f) {
+                    // update shortest distance
+                    if (!_last_distance_valid || (distance_m < _last_distance_m)) {
+                        _last_distance_m = distance_m;
+                        _last_distance_valid = true;
+                        _last_angle_deg = angle_deg;
+                    }
+                    // update OA database
+                    database_push( _last_distance_m, math::wrap_360(_last_angle_deg + ins_msg.heading););
+                }
+                #endif
 
                 i+=8;
             }

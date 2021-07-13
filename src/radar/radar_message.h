@@ -5,6 +5,8 @@
 #include "proc_apdu.h"
 #include "radar_conf.h"
 #include <filter/filter.h>
+#include <planning/boundary.h>
+
 
 #define IPC2ARM_RELATIVE    1
 
@@ -77,9 +79,14 @@ private:
     std::unique_ptr<ProcAPDU> m_pProcAPDU;
     std::unique_ptr<MeanFilter> lateral_error_filter_;
 
-    //std::vector<IPC2ARM> obstacle_list_;
-
-
+    // Methods to manipulate 3D boundary in this class
+    AP_Proximity_Boundary_3D boundary;
+    // face related variables
+    AP_Proximity_Boundary_3D::Face _last_face;///< last face requested
+    float _last_angle_deg{0.0f};                    ///< yaw angle (in degrees) of _last_distance_m
+    float _last_distance_m{999.0f};                 ///< shortest distance for _last_face
+    bool _last_distance_valid{false};               ///< true if _last_distance_m is valid
+    
 private:
     IPC2ARM ipc2arm_msg_;
     ARM2IPC arm2ipc_msg_;

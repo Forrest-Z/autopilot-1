@@ -104,6 +104,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/xlk/sf_ws/autopilot/src/pid/pid_controller.cpp" "/home/xlk/sf_ws/autopilot/build/CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.o"
   "/home/xlk/sf_ws/autopilot/src/pid_control.cpp" "/home/xlk/sf_ws/autopilot/build/CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.o"
   "/home/xlk/sf_ws/autopilot/src/planning/bendyruler.cpp" "/home/xlk/sf_ws/autopilot/build/CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o"
+  "/home/xlk/sf_ws/autopilot/src/planning/boundary.cpp" "/home/xlk/sf_ws/autopilot/build/CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o"
   "/home/xlk/sf_ws/autopilot/src/planning/database.cpp" "/home/xlk/sf_ws/autopilot/build/CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o"
   "/home/xlk/sf_ws/autopilot/src/planning/pathplanner.cpp" "/home/xlk/sf_ws/autopilot/build/CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o"
   "/home/xlk/sf_ws/autopilot/src/proto/obstacle/error_code.pb.cc" "/home/xlk/sf_ws/autopilot/build/CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o"

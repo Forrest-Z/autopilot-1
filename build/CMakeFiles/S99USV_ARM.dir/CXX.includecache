@@ -3524,6 +3524,12 @@ math/Location.h
 math/vector2.h
 -
 
+../src/planning/boundary.h
+filter/low_pass_filter.h
+-
+math/vector3.h
+-
+
 ../src/planning/database.h
 math/RingBuffer.h
 -
@@ -3720,6 +3726,8 @@ proc_apdu.h
 radar_conf.h
 ../src/radar/radar_conf.h
 filter/filter.h
+-
+planning/boundary.h
 -
 
 ../src/simulation/sim_boat.h
@@ -6140,6 +6148,22 @@ math/Location.h
 math/vector2.h
 -
 
+/home/xlk/sf_ws/autopilot/src/planning/boundary.cpp
+boundary.h
+/home/xlk/sf_ws/autopilot/src/planning/boundary.h
+math/common_math.h
+-
+math/math_utils.h
+-
+user_time/user_time.h
+-
+
+/home/xlk/sf_ws/autopilot/src/planning/boundary.h
+filter/low_pass_filter.h
+-
+math/vector3.h
+-
+
 /home/xlk/sf_ws/autopilot/src/planning/database.cpp
 database.h
 /home/xlk/sf_ws/autopilot/src/planning/database.h
@@ -6522,6 +6546,8 @@ proc_apdu.h
 radar_conf.h
 /home/xlk/sf_ws/autopilot/src/radar/radar_conf.h
 filter/filter.h
+-
+planning/boundary.h
 -
 
 /home/xlk/sf_ws/autopilot/src/read_usv_cfg.cpp

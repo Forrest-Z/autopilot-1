@@ -1166,7 +1166,7 @@ void *radar_message_receive_thread(void *aa)
 
   for(;;){		
 		AP::radar_message()->update_receive();	
-		sleep_1(10);				
+		sleep_1(1);				
 	}
 	return ((void *)0);
 }

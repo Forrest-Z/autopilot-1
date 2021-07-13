@@ -3155,16 +3155,16 @@ CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o: ../src/planning/boundary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xlk/sf_ws/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o"
-	/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o -c /home/xlk/sf_ws/autopilot/src/planning/boundary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o"
+	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o -c /home/foo/Projects/autopilot/src/planning/boundary.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.i"
-	/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xlk/sf_ws/autopilot/src/planning/boundary.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.i
+	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/planning/boundary.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.s"
-	/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xlk/sf_ws/autopilot/src/planning/boundary.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.s
+	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/planning/boundary.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o.requires:
 
@@ -3179,13 +3179,8 @@ CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o: ../src/planning/database.cpp
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o"
 	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o -c /home/foo/Projects/autopilot/src/planning/database.cpp
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xlk/sf_ws/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o"
-	/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o -c /home/xlk/sf_ws/autopilot/src/planning/database.cpp
->>>>>>> ad9033192bb3f53655cf8cd89261b9f0be129062
 
 CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.i"
@@ -3208,13 +3203,8 @@ CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/planning/pathplanner.cpp
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o"
 	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o -c /home/foo/Projects/autopilot/src/planning/pathplanner.cpp
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xlk/sf_ws/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o"
-	/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o -c /home/xlk/sf_ws/autopilot/src/planning/pathplanner.cpp
->>>>>>> ad9033192bb3f53655cf8cd89261b9f0be129062
 
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.i"
@@ -3507,11 +3497,7 @@ S99USV_ARM_EXTERNAL_OBJECTS =
 ../bin/S99USV_ARM: CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o
 ../bin/S99USV_ARM: CMakeFiles/S99USV_ARM.dir/build.make
 ../bin/S99USV_ARM: CMakeFiles/S99USV_ARM.dir/link.txt
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Linking CXX executable ../bin/S99USV_ARM"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xlk/sf_ws/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Linking CXX executable ../bin/S99USV_ARM"
->>>>>>> ad9033192bb3f53655cf8cd89261b9f0be129062
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Linking CXX executable ../bin/S99USV_ARM"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/S99USV_ARM.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

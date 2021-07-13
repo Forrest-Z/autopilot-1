@@ -143,16 +143,16 @@ void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
             uint32_t obstalce_size = pBuf[0];
             uint16_t i = 0;
             IPC2ARM msg;
-         
+           // printf("obstalce_size = %d,",obstalce_size);
             while( i <8*obstalce_size){
                 memcpy(&msg,&pBuf[i+1],sizeof(msg));
 
                 int32_t lat = msg.lat;
                 int32_t lng = msg.lng;
                 database_push(lat,lng);
-                
                 i+=8;
             }
+         //printf("lat=%f,lng=%f\n",msg.lat*1e-7,msg.lng*1e-7);
         }
         break;
         #endif

@@ -1152,11 +1152,11 @@ void sleep_1(int delay_ms)
 
 void *radar_message_send_thread(void *aa)   
 { 
-
   for(;;){		
 		AP::radar_message()->update_send();	
-		sleep_1(50);			
+		sleep_1(20);			
 	}
+	
 	return ((void *)0);
 }
 

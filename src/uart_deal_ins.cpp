@@ -295,12 +295,17 @@ int8 uart_ins_rec_report( UART_TYPE uartid )
 						}
 						if(AP::conf()->boat_conf_.ins_type==2)
 					   {
+						   	if ((ptr = strstr(insMsg, "$GPTXT")) != NULL)
+							{
+								printf("GPTXT =%s\n",insMsg);
+							}
 
 							if ((ptr = strstr(insMsg, "$PASHR")) != NULL)
 							{
 								float heading_T,roll,pitch,heaving;
 								float tm;
-								printf("get PASHR =%s\n",insMsg);
+								static int32_t count = 0;
+							//	printf("get PASHR =%s\n",insMsg);
 								sscanf(insMsg, "$PASHR,%f,%f,T,%f,%f,%f",&tm, &heading_T, &roll, &pitch,&heaving);
 								Smart_Navigation_St.USV_Move_Heading = (uint16)(heading_T*100);	
 								Smart_Navigation_St.USV_Roll = roll*100;
@@ -318,15 +323,18 @@ int8 uart_ins_rec_report( UART_TYPE uartid )
 								ins_msg.i16_roll = roll*10;
 								ins_msg.i16_pitch = pitch*10;
 								ins_msg.i16_heaving = heaving*10;
-								printf("ins_msg.heading=%lf,roll=%d,pitch=%d,heaving=%d\n",ins_msg.heading,ins_msg.i16_roll,ins_msg.i16_pitch,ins_msg.i16_heaving);
-								
+								if(count++>10)
+								{
+										count=0;
+										printf("1===>ins_msg.heading=%lf,roll=%d,pitch=%d,heaving=%d\n",ins_msg.heading,ins_msg.i16_roll,ins_msg.i16_pitch,ins_msg.i16_heaving);
+								}
 							}
 							if ((ptr = strstr(insMsg, "$GPZDA")) != NULL)
 							{
 
 								float tm;
 								int year,month,day;
-								printf("get GPZDA =%s\n",insMsg);
+							//	printf("get GPZDA =%s\n",insMsg);
 								sscanf(insMsg, "$GPZDA,%f,%d,%d,%d",&tm, &day,&month,&year);
 								Smart_Navigation_St.USV_Date =day;
 								Smart_Navigation_St.USV_Month = month;
@@ -338,12 +346,11 @@ int8 uart_ins_rec_report( UART_TYPE uartid )
 
 								if(ins_msg.u8_year > 0)
 								ins_msg.insState.b1_dateValid = 1;	
-								printf("==========%d-%d-%d\n",ins_msg.u8_year,ins_msg.u8_month,ins_msg.u8_date);
 							}
 							if ((ptr = strstr(insMsg, "$GPVTG")) != NULL)
 							{
 								float heading_T,heading_M,speed_kn;
-								printf("get GPVTG =%s\n",insMsg);
+								//printf("get GPVTG =%s\n",insMsg);
 								sscanf(insMsg, "$GPVTG,%f,T,%f,M,%f,N", &heading_T, &heading_M, &speed_kn);
 
 								Smart_Navigation_St.USV_Speed=(uint16)(speed_kn*100);				//�����ٶ�  000.0~999.9�� 1.852KM/h
@@ -357,9 +364,12 @@ int8 uart_ins_rec_report( UART_TYPE uartid )
 								if(heading_T<0.0)
 									heading_T +=360.0;
 								ins_msg.motionDirection=heading_T;
-								
-								printf("%d-%d-%d,ins_msg.speed =%f,motionDirection=%d\n",ins_msg.u8_year,ins_msg.u8_month,ins_msg.u8_date,speed_kn,ins_msg.motionDirection);
-							
+								static int32_t count =0;
+								if(count++>10)
+								{
+									count=0;
+									printf("3===>%d-%d-%d,ins_msg.speed =%f,motionDirection=%lf\n",(int32_t)(ins_msg.u8_year+1970),ins_msg.u8_month,ins_msg.u8_date,speed_kn,ins_msg.motionDirection);
+								}
 							}
 						}
 						if (ins_sockid > 0){
@@ -1099,6 +1109,7 @@ void INS_GPGGA_Analytical(char  *buff,int length)
 	uint8 temp_EW;
 	uint8 temp_u8_longiDeg, temp_u8_longiMin, temp_u8_longiSec, temp_u8_longiSecDec, temp_u8_longiSecDec2; 
 
+	
 
 	if (rtk_locating_fuc){ 
 		//echo app
@@ -1190,7 +1201,16 @@ void INS_GPGGA_Analytical(char  *buff,int length)
 		ins_msg.longitude = temp_lng;
 	}
 
-	printf("ins_msg.latitude=%f,ins_msg.longitude=%f\n",ins_msg.latitude,ins_msg.longitude);
+	ins_msg.u8_hour    = (uint8)(value[0]/10000);
+	ins_msg.u8_minute  = (uint8)(value[0]/100-100*ins_msg.u8_hour);
+	ins_msg.u8_second  = (uint8)(value[0]-10000*ins_msg.u8_hour-100*ins_msg.u8_minute);
+
+	static int32_t count=0;
+	if(count++>10)
+	{
+		printf("2===>%d:%d:%d:%d==ins_msg.latitude=%f,ins_msg.longitude=%f\n",ins_msg.u8_hour ,ins_msg.u8_minute,ins_msg.u8_second,ins_msg.u8_second_2,ins_msg.latitude,ins_msg.longitude);
+		count = 0;
+	}
 	u16_pseudoRangeError = (uint16)((rtk_locating_fuc == 1 ? irtk_msg.pseudorRangeError : ins_msg.pseudorRangeError) * 100);//rtk / ins ��λ
     u8_locationState = rtk_locating_fuc == 1 ? irtk_msg.rtk_state.b1_diffSignalValid : ins_msg.insState.b1_diffSignalValid;
 

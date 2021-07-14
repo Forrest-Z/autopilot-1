@@ -97,9 +97,11 @@ void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
                 memcpy(&msg,&pBuf[i+1],sizeof(msg));
 
                 #if 1
+                
                 float distance =  msg.lat;
 				float angle = math::wrap_360(msg.lng + ins_msg.heading);
                 database_push(distance,angle);
+                
                 #else
                 float distance_m    = msg.lat;
                 float angle_deg     = msg.lng;

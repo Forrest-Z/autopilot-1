@@ -1807,6 +1807,7 @@ CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+<<<<<<< HEAD
  /home/foo/Projects/autopilot/include/AisMsgQue.h
  /home/foo/Projects/autopilot/include/Algorithm_path.h
  /home/foo/Projects/autopilot/include/ApfMethod.h
@@ -1877,6 +1878,79 @@ CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o
  /home/foo/Projects/autopilot/src/proto/obstacle/gnss_un237.pb.h
  /home/foo/Projects/autopilot/src/proto/obstacle/header.pb.h
  /home/foo/Projects/autopilot/src/stdafx.h
+=======
+ ../src/planning/planning_conf.h
+ /home/xlk/sf_ws/autopilot/include/AisMsgQue.h
+ /home/xlk/sf_ws/autopilot/include/Algorithm_path.h
+ /home/xlk/sf_ws/autopilot/include/ApfMethod.h
+ /home/xlk/sf_ws/autopilot/include/BaseComponent.h
+ /home/xlk/sf_ws/autopilot/include/BradioUdpThread.h
+ /home/xlk/sf_ws/autopilot/include/Component.h
+ /home/xlk/sf_ws/autopilot/include/GlobalFunction.h
+ /home/xlk/sf_ws/autopilot/include/MsgQue.h
+ /home/xlk/sf_ws/autopilot/include/SysLog.h
+ /home/xlk/sf_ws/autopilot/include/SysMsgPub.h
+ /home/xlk/sf_ws/autopilot/include/TaskQue.h
+ /home/xlk/sf_ws/autopilot/include/USV_const.h
+ /home/xlk/sf_ws/autopilot/include/adrc.h
+ /home/xlk/sf_ws/autopilot/include/auto_return.h
+ /home/xlk/sf_ws/autopilot/include/bd.h
+ /home/xlk/sf_ws/autopilot/include/bd_comm.h
+ /home/xlk/sf_ws/autopilot/include/can_api.h
+ /home/xlk/sf_ws/autopilot/include/can_deal_IDU.h
+ /home/xlk/sf_ws/autopilot/include/can_deal_IHC.h
+ /home/xlk/sf_ws/autopilot/include/can_deal_IOP.h
+ /home/xlk/sf_ws/autopilot/include/can_deal_main.h
+ /home/xlk/sf_ws/autopilot/include/comm_main.h
+ /home/xlk/sf_ws/autopilot/include/control_BD.h
+ /home/xlk/sf_ws/autopilot/include/control_assistance.h
+ /home/xlk/sf_ws/autopilot/include/control_auto.h
+ /home/xlk/sf_ws/autopilot/include/control_cmd.h
+ /home/xlk/sf_ws/autopilot/include/control_jetCtrlFunc.h
+ /home/xlk/sf_ws/autopilot/include/control_main.h
+ /home/xlk/sf_ws/autopilot/include/control_manual.h
+ /home/xlk/sf_ws/autopilot/include/control_operation.h
+ /home/xlk/sf_ws/autopilot/include/control_semiAuto.h
+ /home/xlk/sf_ws/autopilot/include/control_signalSt.h
+ /home/xlk/sf_ws/autopilot/include/control_stanby.h
+ /home/xlk/sf_ws/autopilot/include/ctrl_semiAuto_berth.h
+ /home/xlk/sf_ws/autopilot/include/ctrl_semiAuto_headingConstant.h
+ /home/xlk/sf_ws/autopilot/include/ctrl_semiAuto_speedConstant.h
+ /home/xlk/sf_ws/autopilot/include/docking_main.h
+ /home/xlk/sf_ws/autopilot/include/docking_pid_loop.h
+ /home/xlk/sf_ws/autopilot/include/docking_sumlink_tuning.h
+ /home/xlk/sf_ws/autopilot/include/docking_usv_control.h
+ /home/xlk/sf_ws/autopilot/include/docking_visual_guid.h
+ /home/xlk/sf_ws/autopilot/include/input_monitor_data.h
+ /home/xlk/sf_ws/autopilot/include/ins_recorder.h
+ /home/xlk/sf_ws/autopilot/include/lan_api.h
+ /home/xlk/sf_ws/autopilot/include/lan_deal_BRadio.h
+ /home/xlk/sf_ws/autopilot/include/lan_deal_CtrlCenter.h
+ /home/xlk/sf_ws/autopilot/include/monitor.h
+ /home/xlk/sf_ws/autopilot/include/pid_control.h
+ /home/xlk/sf_ws/autopilot/include/read_usv_cfg.h
+ /home/xlk/sf_ws/autopilot/include/read_usv_state.h
+ /home/xlk/sf_ws/autopilot/include/sailWaypoint.h
+ /home/xlk/sf_ws/autopilot/include/samplingComm.h
+ /home/xlk/sf_ws/autopilot/include/threadexp.h
+ /home/xlk/sf_ws/autopilot/include/uart_api.h
+ /home/xlk/sf_ws/autopilot/include/uart_deal_BD.h
+ /home/xlk/sf_ws/autopilot/include/uart_deal_DRadio.h
+ /home/xlk/sf_ws/autopilot/include/uart_deal_ins.h
+ /home/xlk/sf_ws/autopilot/include/uart_irtk.h
+ /home/xlk/sf_ws/autopilot/include/usv_include.h
+ /home/xlk/sf_ws/autopilot/include/warnProcess.h
+ /home/xlk/sf_ws/autopilot/include/watch_dog.h
+ /home/xlk/sf_ws/autopilot/include/zhelper.h
+ /home/xlk/sf_ws/autopilot/include/zmq.h
+ /home/xlk/sf_ws/autopilot/include/zmqGetObstacles.h
+ /home/xlk/sf_ws/autopilot/src/auto_return.cpp
+ /home/xlk/sf_ws/autopilot/src/proto/obstacle/error_code.pb.h
+ /home/xlk/sf_ws/autopilot/src/proto/obstacle/geometry.pb.h
+ /home/xlk/sf_ws/autopilot/src/proto/obstacle/gnss_un237.pb.h
+ /home/xlk/sf_ws/autopilot/src/proto/obstacle/header.pb.h
+ /home/xlk/sf_ws/autopilot/src/stdafx.h
+>>>>>>> 2c8fde0a2d3ee01ee4605acc43853415c3872f77
 CMakeFiles/S99USV_ARM.dir/src/bd.cpp.o
  ../3rdLibs/nanomsg/include/nanomsg/nn.h
  ../3rdLibs/nanomsg/include/nanomsg/pubsub.h
@@ -2502,6 +2576,7 @@ CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.o
  ../src/planning/boundary.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/radar/mypublic.h
  ../src/radar/proc_apdu.h
  ../src/radar/radar_conf.h
@@ -3674,6 +3749,7 @@ CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.o
  ../src/pid/pid_conf.h
  ../src/pid/pid_inc_conf.h
  ../src/pid/pid_sqrt_conf.h
+ ../src/planning/planning_conf.h
  ../src/radar/radar_conf.h
  ../src/vehicle_state/vehicle_state_conf.h
  /home/foo/Projects/autopilot/src/conf/conf.cpp
@@ -3829,6 +3905,7 @@ CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.o
  ../src/pid/pid_conf.h
  ../src/pid/pid_inc_conf.h
  ../src/pid/pid_sqrt_conf.h
+ ../src/planning/planning_conf.h
  ../src/radar/radar_conf.h
  ../src/vehicle_state/vehicle_state_conf.h
  /home/foo/Projects/autopilot/src/conf/conf.h
@@ -3989,6 +4066,7 @@ CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.o
  ../src/pid/pid_conf.h
  ../src/pid/pid_inc_conf.h
  ../src/pid/pid_sqrt_conf.h
+ ../src/planning/planning_conf.h
  ../src/radar/radar_conf.h
  ../src/vehicle_state/vehicle_state_conf.h
  ../src/xml/xml_cfg.h
@@ -4277,6 +4355,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -4522,6 +4601,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -4697,6 +4777,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/util/easylogging++.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -4946,6 +5027,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -5190,6 +5272,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -5436,6 +5519,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/util/easylogging++.h
  ../src/vehicle_state/vehicle_state.h
@@ -5612,6 +5696,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/util/easylogging++.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -5861,6 +5946,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/util/easylogging++.h
  ../src/vehicle_state/vehicle_state.h
@@ -6106,6 +6192,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -6598,6 +6685,7 @@ CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.o
  ../src/planning/boundary.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/radar/mypublic.h
  ../src/radar/proc_apdu.h
  ../src/radar/radar_conf.h
@@ -10371,6 +10459,7 @@ CMakeFiles/S99USV_ARM.dir/src/main.cpp.o
  ../src/planning/boundary.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/radar/mypublic.h
  ../src/radar/proc_apdu.h
  ../src/radar/radar_conf.h
@@ -13934,9 +14023,16 @@ CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o
  ../src/math/vec2d.h
  ../src/math/vector2.h
  ../src/math/vector3.h
+<<<<<<< HEAD
  /home/foo/Projects/autopilot/src/planning/bendyruler.cpp
  /home/foo/Projects/autopilot/src/planning/bendyruler.h
  /home/foo/Projects/autopilot/src/planning/database.h
+=======
+ /home/xlk/sf_ws/autopilot/src/planning/bendyruler.cpp
+ /home/xlk/sf_ws/autopilot/src/planning/bendyruler.h
+ /home/xlk/sf_ws/autopilot/src/planning/database.h
+ /home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
+>>>>>>> 2c8fde0a2d3ee01ee4605acc43853415c3872f77
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o
  ../3rdLibs/eigen/include/eigen3/Eigen/Cholesky
  ../3rdLibs/eigen/include/eigen3/Eigen/Core
@@ -14512,8 +14608,14 @@ CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o
  ../src/proto/obstacle/header.pb.h
  ../src/proto/obstacle/obstacle_radar.pb.h
  ../src/user_time/user_time.h
+<<<<<<< HEAD
  /home/foo/Projects/autopilot/src/planning/database.cpp
  /home/foo/Projects/autopilot/src/planning/database.h
+=======
+ /home/xlk/sf_ws/autopilot/src/planning/database.cpp
+ /home/xlk/sf_ws/autopilot/src/planning/database.h
+ /home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
+>>>>>>> 2c8fde0a2d3ee01ee4605acc43853415c3872f77
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o
  ../src/common/commom.h
  ../src/math/Location.h
@@ -14524,10 +14626,18 @@ CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o
  ../src/math/vector2.h
  ../src/math/vector3.h
  ../src/user_time/user_time.h
+<<<<<<< HEAD
  /home/foo/Projects/autopilot/src/planning/bendyruler.h
  /home/foo/Projects/autopilot/src/planning/database.h
  /home/foo/Projects/autopilot/src/planning/pathplanner.cpp
  /home/foo/Projects/autopilot/src/planning/pathplanner.h
+=======
+ /home/xlk/sf_ws/autopilot/src/planning/bendyruler.h
+ /home/xlk/sf_ws/autopilot/src/planning/database.h
+ /home/xlk/sf_ws/autopilot/src/planning/pathplanner.cpp
+ /home/xlk/sf_ws/autopilot/src/planning/pathplanner.h
+ /home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
+>>>>>>> 2c8fde0a2d3ee01ee4605acc43853415c3872f77
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o
  ../3rdLibs/protobuf/include/google/protobuf/arena.h
  ../3rdLibs/protobuf/include/google/protobuf/arena_impl.h
@@ -15121,6 +15231,7 @@ CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o
  ../src/math/vector3.h
  ../src/planning/boundary.h
  ../src/planning/database.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/util/easylogging++.h
  /home/foo/Projects/autopilot/src/radar/mypublic.h
@@ -16939,6 +17050,7 @@ CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.o
  ../src/pid/pid_conf.h
  ../src/pid/pid_inc_conf.h
  ../src/pid/pid_sqrt_conf.h
+ ../src/planning/planning_conf.h
  ../src/radar/radar_conf.h
  ../src/simulation/sim_boat.h
  ../src/user_time/user_time.h
@@ -17521,6 +17633,7 @@ CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.o
  ../src/planning/boundary.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/radar/mypublic.h
  ../src/radar/proc_apdu.h
  ../src/radar/radar_conf.h

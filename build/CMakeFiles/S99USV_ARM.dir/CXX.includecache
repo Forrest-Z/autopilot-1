@@ -3235,6 +3235,8 @@ radar/radar_conf.h
 -
 vehicle_state/vehicle_state_conf.h
 -
+planning/planning_conf.h
+-
 
 ../src/conf/read_config_xml.h
 stdio.h
@@ -3523,6 +3525,8 @@ math/Location.h
 -
 math/vector2.h
 -
+planning_conf.h
+../src/planning/planning_conf.h
 
 ../src/planning/boundary.h
 filter/low_pass_filter.h
@@ -3537,6 +3541,8 @@ mutex
 -
 math/vector3.h
 -
+planning_conf.h
+../src/planning/planning_conf.h
 
 ../src/planning/pathplanner.h
 bendyruler.h
@@ -3546,6 +3552,12 @@ database.h
 mutex
 -
 stdio.h
+-
+planning_conf.h
+../src/planning/planning_conf.h
+
+../src/planning/planning_conf.h
+stdint.h
 -
 
 ../src/proto/obstacle/error_code.pb.h
@@ -4973,6 +4985,8 @@ radar/radar_conf.h
 -
 vehicle_state/vehicle_state_conf.h
 -
+planning/planning_conf.h
+-
 
 /home/foo/Projects/autopilot/src/conf/read_config.cpp
 read_config.h
@@ -6147,6 +6161,8 @@ math/Location.h
 -
 math/vector2.h
 -
+planning_conf.h
+/home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
 
 /home/foo/Projects/autopilot/src/planning/boundary.cpp
 boundary.h
@@ -6187,6 +6203,8 @@ mutex
 -
 math/vector3.h
 -
+planning_conf.h
+/home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
 
 /home/foo/Projects/autopilot/src/planning/pathplanner.cpp
 pathplanner.h
@@ -6206,6 +6224,12 @@ database.h
 mutex
 -
 stdio.h
+-
+planning_conf.h
+/home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
+
+/home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
+stdint.h
 -
 
 /home/foo/Projects/autopilot/src/proto/obstacle/error_code.pb.cc

@@ -3,6 +3,7 @@
 #include <common/commom.h>
 #include <math/Location.h>
 #include <math/vector2.h>
+#include "planning_conf.h"
 
 using namespace LOC;
 
@@ -12,6 +13,8 @@ using namespace LOC;
 class AP_OABendyRuler {
 public:
     AP_OABendyRuler();
+
+    void Init(const PlanningConf &conf);
 
     /* Do not allow copies */
     AP_OABendyRuler(const AP_OABendyRuler &other) = delete;
@@ -47,7 +50,6 @@ private:
     float _current_lookahead;       // distance (in meters) ahead of the vehicle we are looking for obstacles
     float _bearing_prev;            // stored bearing in degrees 
     Location _destination_prev;     // previous destination, to check if there has been a change in destination
-   // Location _ekf_origin;
 
     bool destinatoin_near_obstacle_{false};
     bool destination_unreachable_{false};
@@ -59,7 +61,11 @@ private:
     float _lookahead{10.0f};            // object avoidance will look this many meters ahead of vehicle
     float _bendy_ratio{1.5f};           // object avoidance will avoid major directional change if change in margin ratio is less than this param
     float _bendy_angle{75.0f};          // object avoidance will try avoding change in direction over this much angle
-    float _bendy_max_change_angle{100};
-    float _bendy_min_near_obstacle{5.0};
-    float _bendy_give_up_p{0.1};
+
+    float _max_deviate_angle{100};
+    float _min_near_distance{5.0};
+
+    float _shoreline_safe_pb{0.1f};
+    float _shoreline_safe_distance{15.0f};
+    float _shoreline_safe_angle{50.0f};
 };

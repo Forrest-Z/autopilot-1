@@ -18,8 +18,11 @@ AP_OAPathPlanner::AP_OAPathPlanner()
 }
 
 // perform any required initialisation
-void AP_OAPathPlanner::init()
+void AP_OAPathPlanner::init(const PlanningConf &conf)
 {
+    // load parameters
+    _type = conf.PP_type;
+
     // run background task looking for best alternative destination
     switch (_type) {
     case OA_PATHPLAN_DISABLED:
@@ -28,11 +31,12 @@ void AP_OAPathPlanner::init()
     case OA_PATHPLAN_BENDYRULER:
         if (_oabendyruler == nullptr) {
             _oabendyruler = new AP_OABendyRuler();
+            _oabendyruler->Init(conf);
         }
         break;
     }
 
-    _oadatabase.init();
+    _oadatabase.init(conf);
     start_thread();
 }
 

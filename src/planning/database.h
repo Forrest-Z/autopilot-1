@@ -3,6 +3,7 @@
 #include <math/RingBuffer.h>
 #include <mutex>
 #include <math/vector3.h>
+#include "planning_conf.h"
 
 #define MAVLINK_COMM_NUM_BUFFERS 1
 
@@ -32,7 +33,7 @@ public:
         OA_DbItemImportance importance;
     };
 
-    void init(void);
+    void init(const PlanningConf &conf);
     void update();
 
     // push an object into the database.  Pos is the offset in meters from the EKF origin, angle is in degrees, distance in meters
@@ -86,6 +87,7 @@ private:
         uint16_t        size;                               // cached value of _queue_size_param.
         std::mutex   sem;                                   // semaphore for multi-thread use of queue
     } _queue;
+    
     float dist_to_radius_scalar;                            // scalar to convert the distance and beam width to an object radius
 
     struct {
@@ -102,13 +104,18 @@ private:
 
 private:
     // parameters
-    int16_t      _queue_size_param{300};                       // queue size
-    int16_t      _database_size_param{400.0};                  // db size
-    int16_t      _database_expiry_seconds{10};                 // objects expire after this timeout
+    int16_t      _queue_size_param{360};                       // queue size
+    int16_t      _database_size_param{720};                    // db size
+    int16_t      _database_expiry_seconds{5};                  // objects expire after this timeout
     int16_t      _output_level{3};                             // controls which items should be sent to GCS
     float        _beam_width{10.0};                            // beam width used when converting lidar readings to object radius
+<<<<<<< HEAD
     float        _radius_min{0.1f};                            // objects minimum radius (in meters)
     float        _dist_max{10.0f};                              // objects maximum distance (in meters)
+=======
+    float        _radius_min{1.5f};                            // objects minimum radius (in meters)
+    float        _dist_max{50.0f};                             // objects maximum distance (in meters)
+>>>>>>> 2c8fde0a2d3ee01ee4605acc43853415c3872f77
     float        _min_alt{0.0f};                               // OADatabase minimum vehicle height check (in meters)
 };
 

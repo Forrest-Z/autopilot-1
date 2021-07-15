@@ -29,7 +29,7 @@ private:
 	bool read_config_radar(RadarConf &config_msg,string &_error);
 	bool read_config_control_lat(ControlConf &config_msg,string &_error);
 	bool read_config_control_lon(ControlConf &config_msg,string &_error);
-
+	bool read_config_path_planning(PlanningConf &config_msg,string &_error);
 
 private:
     string file_path_;

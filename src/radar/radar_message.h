@@ -8,7 +8,7 @@
 #include <planning/boundary.h>
 
 
-#define IPC2ARM_RELATIVE    1
+#define IPC2ARM_RELATIVE    0
 
 class RadarMessage{
 public:

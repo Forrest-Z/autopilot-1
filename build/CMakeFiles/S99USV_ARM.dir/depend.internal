@@ -1807,6 +1807,7 @@ CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  /home/xlk/sf_ws/autopilot/include/AisMsgQue.h
  /home/xlk/sf_ws/autopilot/include/Algorithm_path.h
  /home/xlk/sf_ws/autopilot/include/ApfMethod.h
@@ -2502,6 +2503,7 @@ CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.o
  ../src/planning/boundary.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/radar/mypublic.h
  ../src/radar/proc_apdu.h
  ../src/radar/radar_conf.h
@@ -3674,6 +3676,7 @@ CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.o
  ../src/pid/pid_conf.h
  ../src/pid/pid_inc_conf.h
  ../src/pid/pid_sqrt_conf.h
+ ../src/planning/planning_conf.h
  ../src/radar/radar_conf.h
  ../src/vehicle_state/vehicle_state_conf.h
  /home/xlk/sf_ws/autopilot/src/conf/conf.cpp
@@ -3829,6 +3832,7 @@ CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.o
  ../src/pid/pid_conf.h
  ../src/pid/pid_inc_conf.h
  ../src/pid/pid_sqrt_conf.h
+ ../src/planning/planning_conf.h
  ../src/radar/radar_conf.h
  ../src/vehicle_state/vehicle_state_conf.h
  /home/xlk/sf_ws/autopilot/src/conf/conf.h
@@ -3989,6 +3993,7 @@ CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.o
  ../src/pid/pid_conf.h
  ../src/pid/pid_inc_conf.h
  ../src/pid/pid_sqrt_conf.h
+ ../src/planning/planning_conf.h
  ../src/radar/radar_conf.h
  ../src/vehicle_state/vehicle_state_conf.h
  ../src/xml/xml_cfg.h
@@ -4277,6 +4282,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -4522,6 +4528,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -4697,6 +4704,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/util/easylogging++.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -4946,6 +4954,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -5190,6 +5199,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -5436,6 +5446,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/util/easylogging++.h
  ../src/vehicle_state/vehicle_state.h
@@ -5612,6 +5623,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/util/easylogging++.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -5861,6 +5873,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/util/easylogging++.h
  ../src/vehicle_state/vehicle_state.h
@@ -6106,6 +6119,7 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.o
  ../src/planning/bendyruler.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/vehicle_state/vehicle_state.h
  ../src/vehicle_state/vehicle_state_conf.h
@@ -6598,6 +6612,7 @@ CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.o
  ../src/planning/boundary.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/radar/mypublic.h
  ../src/radar/proc_apdu.h
  ../src/radar/radar_conf.h
@@ -10371,6 +10386,7 @@ CMakeFiles/S99USV_ARM.dir/src/main.cpp.o
  ../src/planning/boundary.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/radar/mypublic.h
  ../src/radar/proc_apdu.h
  ../src/radar/radar_conf.h
@@ -13937,6 +13953,7 @@ CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o
  /home/xlk/sf_ws/autopilot/src/planning/bendyruler.cpp
  /home/xlk/sf_ws/autopilot/src/planning/bendyruler.h
  /home/xlk/sf_ws/autopilot/src/planning/database.h
+ /home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o
  ../3rdLibs/eigen/include/eigen3/Eigen/Cholesky
  ../3rdLibs/eigen/include/eigen3/Eigen/Core
@@ -14514,6 +14531,7 @@ CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o
  ../src/user_time/user_time.h
  /home/xlk/sf_ws/autopilot/src/planning/database.cpp
  /home/xlk/sf_ws/autopilot/src/planning/database.h
+ /home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o
  ../src/common/commom.h
  ../src/math/Location.h
@@ -14528,6 +14546,7 @@ CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o
  /home/xlk/sf_ws/autopilot/src/planning/database.h
  /home/xlk/sf_ws/autopilot/src/planning/pathplanner.cpp
  /home/xlk/sf_ws/autopilot/src/planning/pathplanner.h
+ /home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o
  ../3rdLibs/protobuf/include/google/protobuf/arena.h
  ../3rdLibs/protobuf/include/google/protobuf/arena_impl.h
@@ -15121,6 +15140,7 @@ CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o
  ../src/math/vector3.h
  ../src/planning/boundary.h
  ../src/planning/database.h
+ ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  ../src/util/easylogging++.h
  /home/xlk/sf_ws/autopilot/src/radar/mypublic.h
@@ -16939,6 +16959,7 @@ CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.o
  ../src/pid/pid_conf.h
  ../src/pid/pid_inc_conf.h
  ../src/pid/pid_sqrt_conf.h
+ ../src/planning/planning_conf.h
  ../src/radar/radar_conf.h
  ../src/simulation/sim_boat.h
  ../src/user_time/user_time.h
@@ -17521,6 +17542,7 @@ CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.o
  ../src/planning/boundary.h
  ../src/planning/database.h
  ../src/planning/pathplanner.h
+ ../src/planning/planning_conf.h
  ../src/radar/mypublic.h
  ../src/radar/proc_apdu.h
  ../src/radar/radar_conf.h

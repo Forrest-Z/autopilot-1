@@ -64,7 +64,7 @@ void Boat::setup(void)
     sim_boat_.init();
 
     // initialise object avoidance
-    oa.init();
+    oa.init(conf_.planning_conf_);
 
     LOG(INFO) << "Boat setup finished!";
 }

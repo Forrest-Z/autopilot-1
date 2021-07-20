@@ -334,8 +334,7 @@ bool AP_OABendyRuler::check_near_obstacle(const Location &start, const Location 
         // margin is distance between line segment and obstacle minus obstacle's radius
         const float m = start.get_distance(obs);
         const float n = end.get_distance(obs);
-        if(m < _shoreline_safe_distance && 
-           n <_shoreline_safe_distance){
+        if(m < _min_near_distance &&   n <_min_near_distance){
             res = true;
         }
 
@@ -360,7 +359,7 @@ bool AP_OABendyRuler::check_near_obstacle(const Location &start, const Location 
             no_obstacle_size++;
         }
     }
-    if(no_obstacle_size <= (_shoreline_safe_pb * (2*N+1)) && smallest_distance <= 1.5*_lookahead){ ret = true;}
+    if(no_obstacle_size <= (_shoreline_safe_pb * (2*N+1)) && smallest_distance <= _shoreline_safe_distance){ ret = true;}
 
    return (ret == true || res == true)?(true):(false);
 }

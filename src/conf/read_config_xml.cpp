@@ -113,8 +113,12 @@ bool ReadConfigXml::read_config_value(Conf &config_msg, string &_error)
         return false;
     }else{
         config_msg.old_code_test_enable = (str== "false")?(false):(true);
-	
     }
+
+    // path planning
+    ret = read_config_path_planning(config_msg.planning_conf_,_error);
+    if(ret == false){return false;}
+
     return true;
 }
 
@@ -571,4 +575,94 @@ bool ReadConfigXml::read_config_control_lon(ControlConf &config_msg,string &_err
     return true;
 }
 
+bool ReadConfigXml::read_config_path_planning(PlanningConf &config_msg,string &_error)
+{
+    string str="";
 
+    // [LON_CONTROLLER_COMMON]
+    if(!get_value("PATH_PLANNING","BR_lookahead",str,_error)){
+        return false;
+    }else{
+        config_msg.BR_lookahead = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","BR_bendy_ratio",str,_error)){
+        return false;
+    }else{
+        config_msg.BR_bendy_ratio = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","BR_bendy_angle",str,_error)){
+        return false;
+    }else{
+        config_msg.BR_bendy_angle = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","BR_margin_max",str,_error)){
+        return false;
+    }else{
+        config_msg.BR_margin_max = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","BR_max_deviate_angle",str,_error)){
+        return false;
+    }else{
+        config_msg.BR_max_deviate_angle = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","BR_min_near_distance",str,_error)){
+        return false;
+    }else{
+        config_msg.BR_min_near_distance = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","BR_shoreline_safe_pb",str,_error)){
+        return false;
+    }else{
+        config_msg.BR_shoreline_safe_pb = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","BR_shoreline_safe_distance",str,_error)){
+        return false;
+    }else{
+        config_msg.BR_shoreline_safe_distance = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","BR_shoreline_safe_angle",str,_error)){
+        return false;
+    }else{
+        config_msg.BR_shoreline_safe_angle = atof(str.c_str());
+    }
+
+
+    if(!get_value("PATH_PLANNING","DB_queue_size_param",str,_error)){
+        return false;
+    }else{
+        config_msg.DB_queue_size_param = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","DB_database_size_param",str,_error)){
+        return false;
+    }else{
+        config_msg.DB_database_size_param = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","DB_database_expiry_seconds",str,_error)){
+        return false;
+    }else{
+        config_msg.DB_database_expiry_seconds = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","DB_beam_width",str,_error)){
+        return false;
+    }else{
+        config_msg.DB_beam_width = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","DB_radius_min",str,_error)){
+        return false;
+    }else{
+        config_msg.DB_radius_min = atof(str.c_str());
+    }
+    if(!get_value("PATH_PLANNING","DB_dist_max",str,_error)){
+        return false;
+    }else{
+        config_msg.DB_dist_max = atof(str.c_str());
+    }
+
+    if(!get_value("PATH_PLANNING","PP_type",str,_error)){
+        return false;
+    }else{
+        config_msg.PP_type = atof(str.c_str());
+    }
+    
+    return true;
+}

@@ -36,8 +36,16 @@ AP_OADatabase::AP_OADatabase()
 }
 
 
-void AP_OADatabase::init(void)
+void AP_OADatabase::init(const PlanningConf &conf)
 {
+
+    _queue_size_param         = conf.DB_queue_size_param;                       // queue size
+    _database_size_param      = conf.DB_database_size_param;                    // db size
+    _database_expiry_seconds  = conf.DB_database_expiry_seconds;                // objects expire after this timeout
+    _beam_width               = conf.DB_beam_width;                             // beam width used when converting lidar readings to object radius
+    _radius_min               = conf.DB_radius_min;                             // objects minimum radius (in meters)
+    _dist_max                 = conf.DB_dist_max;                               // objects maximum distance (in meters)
+        
     init_database();
     init_queue();
 

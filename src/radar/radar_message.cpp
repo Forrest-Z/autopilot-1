@@ -88,14 +88,18 @@ void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
             uint32_t obstalce_size = pBuf[0];
             uint16_t i = 0;
             IPC2ARM msg;
-           
+
+            boundary.reset();
+
             while( i <8*obstalce_size){
                 memcpy(&msg,&pBuf[i+1],sizeof(msg));
 
-                #if 0
+                #if 1
+                
                 float distance =  msg.lat;
 				float angle = math::wrap_360(msg.lng + ins_msg.heading);
                 database_push(distance,angle);
+                
                 #else
                 float distance_m    = msg.lat;
                 float angle_deg     = msg.lng;

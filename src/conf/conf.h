@@ -9,6 +9,7 @@
 #include <control/control_conf.h>
 #include <radar/radar_conf.h>
 #include <vehicle_state/vehicle_state_conf.h>
+#include <planning/planning_conf.h>
 
 class Conf{
 public:
@@ -39,6 +40,9 @@ public:
     uint8_t navigation_info_source; // 0: auto 1:GNSS 2: Radar
     bool    simualtion_enable;      // true or false
     bool    old_code_test_enable;   // true or false
+
+    /* path planning */
+    PlanningConf planning_conf_;
 
 private:
     static Conf *singleton_;

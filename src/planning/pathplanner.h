@@ -4,6 +4,7 @@
 #include "database.h"
 #include <mutex>
 #include <stdio.h>
+#include "planning_conf.h"
 
 using namespace LOC;
 
@@ -25,7 +26,7 @@ public:
     }
 
     // perform any required initialisation
-    void init();
+    void init(const PlanningConf &conf);
 
    // void set_ekf_origin(const Location &ekf_origin){ _ekf_origin = ekf_origin;origin_set = true;printf("SET ekf original successed for AP_OAPathPlanner!\n");}
 

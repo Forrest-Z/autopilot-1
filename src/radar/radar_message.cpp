@@ -7,8 +7,6 @@
 #include <math/Location.h>
 #include <planning/database.h>
 
-
-
 using namespace LOC;
 
 RadarMessage *RadarMessage::singleton_ = nullptr;
@@ -147,8 +145,8 @@ void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
 
                 int32_t lat = msg.lat;
                 int32_t lng = msg.lng;
+
                 database_push(lat,lng);
-                
                 i+=8;
             }
         }

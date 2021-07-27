@@ -6204,7 +6204,7 @@ mutex
 math/vector3.h
 -
 planning_conf.h
-/home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
+/home/foo/Projects/autopilot/src/planning/planning_conf.h
 
 /home/foo/Projects/autopilot/src/planning/pathplanner.cpp
 pathplanner.h
@@ -6228,7 +6228,7 @@ stdio.h
 planning_conf.h
 /home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
 
-/home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
+/home/foo/Projects/autopilot/src/planning/planning_conf.h
 stdint.h
 -
 

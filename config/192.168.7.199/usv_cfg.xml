@@ -128,12 +128,12 @@
 			<entry id="5" value="100.0" name="BR_max_deviate_angle" desc="max deviation angle"/>
 			<entry id="6" value="5.0" name="BR_min_near_distance" desc="min close to obstacle and waypoint distance"/>
 			<entry id="7" value="0.10" name="BR_shoreline_safe_pb" desc="shoreline safe probability"/>
-			<entry id="8" value="15.0" name="BR_shoreline_safe_distance" desc="shoreline safe distance"/>
+			<entry id="8" value="10.0" name="BR_shoreline_safe_distance" desc="shoreline safe distance"/>
 			<entry id="9" value="50.0" name="BR_shoreline_safe_angle" desc="shoreline safe angle"/>
 			<entry id="10" value="360" name="DB_queue_size_param" desc="queue size"/>
 			<entry id="11" value="720" name="DB_database_size_param" desc="db size"/>
-			<entry id="12" value="10" name="DB_database_expiry_seconds" desc="objects expire after this timeout"/>
-			<entry id="13" value="10.0" name="DB_beam_width" desc="beam width used when converting lidar readings to object radius"/>
+			<entry id="12" value="5" name="DB_database_expiry_seconds" desc="objects expire after this timeout"/>
+			<entry id="13" value="1.0" name="DB_beam_width" desc="beam width used when converting lidar readings to object radius"/>
 			<entry id="14" value="0.5" name="DB_radius_min" desc="objects minimum radius (in meters)"/>
 			<entry id="15" value="50.0" name="DB_dist_max" desc="objects maximum distance (in meters)"/>
 			<entry id="16" value="1" name="PP_type" desc="0:disable;1:bendyruler;2:apf;3:hybrid-astar"/>

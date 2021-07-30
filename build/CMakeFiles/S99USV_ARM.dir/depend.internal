@@ -13950,10 +13950,10 @@ CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o
  ../src/math/vec2d.h
  ../src/math/vector2.h
  ../src/math/vector3.h
- ../src/planning/planning_conf.h
  /home/foo/Projects/autopilot/src/planning/bendyruler.cpp
  /home/foo/Projects/autopilot/src/planning/bendyruler.h
  /home/foo/Projects/autopilot/src/planning/database.h
+ /home/foo/Projects/autopilot/src/planning/planning_conf.h
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o
  ../3rdLibs/eigen/include/eigen3/Eigen/Cholesky
  ../3rdLibs/eigen/include/eigen3/Eigen/Core
@@ -14541,12 +14541,12 @@ CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o
  ../src/math/rotations.h
  ../src/math/vector2.h
  ../src/math/vector3.h
- ../src/planning/planning_conf.h
  ../src/user_time/user_time.h
  /home/foo/Projects/autopilot/src/planning/bendyruler.h
  /home/foo/Projects/autopilot/src/planning/database.h
  /home/foo/Projects/autopilot/src/planning/pathplanner.cpp
  /home/foo/Projects/autopilot/src/planning/pathplanner.h
+ /home/foo/Projects/autopilot/src/planning/planning_conf.h
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o
  ../3rdLibs/protobuf/include/google/protobuf/arena.h
  ../3rdLibs/protobuf/include/google/protobuf/arena_impl.h

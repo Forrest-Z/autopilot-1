@@ -13949,10 +13949,10 @@ CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/math/rotations.h
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/math/vec2d.h
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/math/vector2.h
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/math/vector3.h
-CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/planning/planning_conf.h
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/planning/bendyruler.cpp
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/planning/bendyruler.h
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/planning/database.h
+CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/planning/planning_conf.h
 
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o: ../3rdLibs/eigen/include/eigen3/Eigen/Cholesky
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o: ../3rdLibs/eigen/include/eigen3/Eigen/Core
@@ -14540,12 +14540,12 @@ CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/math/definition
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/math/rotations.h
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/math/vector2.h
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/math/vector3.h
-CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/planning/planning_conf.h
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/user_time/user_time.h
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/planning/bendyruler.h
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/planning/database.h
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/planning/pathplanner.cpp
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/planning/pathplanner.h
+CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/planning/planning_conf.h
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o: ../3rdLibs/protobuf/include/google/protobuf/arena.h
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o: ../3rdLibs/protobuf/include/google/protobuf/arena_impl.h

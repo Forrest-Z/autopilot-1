@@ -6162,7 +6162,7 @@ math/Location.h
 math/vector2.h
 -
 planning_conf.h
-/home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
+/home/foo/Projects/autopilot/src/planning/planning_conf.h
 
 /home/foo/Projects/autopilot/src/planning/boundary.cpp
 boundary.h
@@ -6226,7 +6226,7 @@ mutex
 stdio.h
 -
 planning_conf.h
-/home/xlk/sf_ws/autopilot/src/planning/planning_conf.h
+/home/foo/Projects/autopilot/src/planning/planning_conf.h
 
 /home/foo/Projects/autopilot/src/planning/planning_conf.h
 stdint.h

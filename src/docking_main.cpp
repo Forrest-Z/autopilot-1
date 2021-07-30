@@ -81,7 +81,7 @@ uint8 dockin_fun_enable;
 RETURN_POINT return_point[RETURN_POINT_MAX_NUMBER];
 
 int8 return_num = RETURN_POINT_MAX_NUMBER;
-
+uint32 dock_number = 0;
 //dock can
 COMM_SIGN DOCK_comm_sign;
 
@@ -724,6 +724,15 @@ int8  read_usv_docking_inf(void)
 	if (read_sub_setting(s1, s2, 0, &number, INT_TYPE) == FALSE){
 		ret_val = FALSE;
 	}
+
+	sprintf_usv(s1, "Return_Point");
+	sprintf_usv(s2, "dock_num");
+
+	if (read_sub_setting(s1, s2, 0, &dock_number, INT_TYPE) == FALSE){
+		dock_number = 0;
+		printf("would set dock_number to 0");
+	}
+	printf("dock_numer=%d\n",dock_number);
 	return_num = number;//���뷵�������?
 	if (number > RETURN_POINT_MAX_NUMBER){ //������󷵺�����?
 		input_cfg_ini_err_sub(s1, s2, 0);
@@ -897,7 +906,7 @@ void DOCK_reInit()
 void DOCK_recv(uint8 ps_id, uint8* data)
 {
 
-	if (CAN_DOCK_PS == ps_id && data[0] == 0x83){
+	if (CAN_DOCK_PS == ps_id && data[0] == (0x83-dock_number)){
 		dock_comm_coil_read.dock_entrydock_readyon	= (data[1]&0x01) >> 0;
 		dock_comm_coil_read.dock_entrydock_success  = (data[1]&0x02) >> 1;
 		dock_comm_coil_read.dock_outdock_readyon	= (data[1]&0x04) >> 2;
@@ -916,12 +925,12 @@ void DOCK_sendMsg()
 {
 	uint8 data[8];
 	memset(data, 0, 8);
-	data[0] = 0x83;
+	data[0] = 0x83-dock_number;
 	data[1] |= ((0x01 & dock_comm_coil_set.usv_entrydock_req) << 0);
 	data[1] |= ((0x01 & dock_comm_coil_set.usv_prower_off_successed) << 1);
 	data[1] |= ((0x01 & dock_comm_coil_set.usv_prower_on_successed) << 2);
 	data[1] |= ((0x01 & dock_comm_coil_set.usv_outdock_successed) << 3);
-	sendCanMsg(can_0, 255, CAN_DOCK_PS, CAN_USV_ADD,data);
+	sendCanMsg(can_0, 255, CAN_DOCK_PS, CAN_USV_ADD+dock_number,data);
 }
 
 void DOCK_CommCal(void)

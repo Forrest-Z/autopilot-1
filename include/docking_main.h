@@ -1,5 +1,5 @@
 /********************************************************************
--	Copyright (c),2017-	,ËÄ·½¼Ì±££¨Îäºº£©Èí¼þÓÐÏÞ¹«Ë¾
+-	Copyright (c),2017-	,ï¿½Ä·ï¿½ï¿½Ì±ï¿½ï¿½ï¿½ï¿½äººï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¹ï¿½Ë¾
 -	File name  : dock_communication.h
 -	Author	   : fushuai
 -	Date	   : 2019/05/13 16:50
@@ -10,12 +10,14 @@
 #ifndef  __DOCK_COMMUNICATION_H_
 #define  __DOCK_COMMUNICATION_H_
 
-#define CMAERA_TRACKON	1				//ÉãÏñÍ·¸ú×Ù¿ªÊ¼
-#define CMAERA_TRACKOFF 2				//ÉãÏñÍ·¸ú×Ù¹Ø±Õ
+#define CMAERA_TRACKON	1				//ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Ù¿ï¿½Ê¼
+#define CMAERA_TRACKOFF 2				//ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Ù¹Ø±ï¿½
+#define USV_1
 #define CAN_USV_ADD 0x80
 #define CAN_DOCK_ADD 0x8a
+
 #define CAN_DOCK_PS 0xe9
-#define  CAN_DOCK_DISCONNECT_MAX 100 //50msÒ»¸öÖÜÆÚ
+#define  CAN_DOCK_DISCONNECT_MAX 100 //50msÒ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #include "usv_include.h"
 
 #ifndef WINNT
@@ -23,11 +25,11 @@
 #else
 #include<winsock.h>
 #endif
-#define		RETURN_POINT_MAX_NUMBER			3			//×î´óµÄ·µº½µãÊý
+#define		RETURN_POINT_MAX_NUMBER			3			//ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #ifndef WINNT 
-const char USV_DOCKING_FILE_NAME[] = "../cfg/usv_flash_docking.inf";		//usvÔËÐÐ×´Ì¬
+const char USV_DOCKING_FILE_NAME[] = "../cfg/usv_flash_docking.inf";		//usvï¿½ï¿½ï¿½ï¿½×´Ì¬
 #else
-const char USV_DOCKING_FILE_NAME[] = "../../cfg/usv_flash_docking.inf";		//usvÔËÐÐ×´Ì¬
+const char USV_DOCKING_FILE_NAME[] = "../../cfg/usv_flash_docking.inf";		//usvï¿½ï¿½ï¿½ï¿½×´Ì¬
 #endif
 
 
@@ -40,8 +42,8 @@ enum STATS
 	STATS_ON,
 	STATS_OFF,
 };
-//Íâ²¿µ÷ÓÃ¿ØÖÆ½á¹¹Ìå
-//¶ÔÓ¦canÍøÖÐµÄps = 13
+//ï¿½â²¿ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½Æ½á¹¹ï¿½ï¿½
+//ï¿½ï¿½Ó¦canï¿½ï¿½ï¿½Ðµï¿½ps = 13
 #pragma pack(1)
 typedef struct
 {
@@ -54,89 +56,89 @@ typedef struct
 #pragma pack()
 
 
-//Íâ²¿µ÷ÓÃ×´Ì¬½á¹¹Ìå
+//ï¿½â²¿ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½á¹¹ï¿½ï¿½
 #pragma pack(1)
 typedef struct
 {
-	uint8 x_open;					/*¿É½øÎë*/
-	uint8 x_in;						/*´¬ÔÚÎë*/
-	uint8 x_outgoing;				/*¿É³öÎë*/
-	uint8 x_in_entrance;			/*µ½´ï´¬Îë¿Ú*/
+	uint8 x_open;					/*ï¿½É½ï¿½ï¿½ï¿½*/
+	uint8 x_in;						/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8 x_outgoing;				/*ï¿½É³ï¿½ï¿½ï¿½*/
+	uint8 x_in_entrance;			/*ï¿½ï¿½ï¿½ï´¬ï¿½ï¿½ï¿½*/
 }DOCK_STATE;
 #pragma pack()
 
-//·ÂÕæ°´Å¥½Ó¿Ú
+//ï¿½ï¿½ï¿½æ°´Å¥ï¿½Ó¿ï¿½
 #pragma pack(1)
 typedef struct
 {
-	uint8 x_reset;					/*¸´Î»*/
-	uint8 x_open;					/*¿É½øÎë*/
-	uint8 x_in;						/*´¬ÔÚÎë*/
-	uint8 x_outgoing;				/*¿É³öÎë*/
-	uint8 x_outsuccess;				/*ÒÑ³öÎë*/
+	uint8 x_reset;					/*ï¿½ï¿½Î»*/
+	uint8 x_open;					/*ï¿½É½ï¿½ï¿½ï¿½*/
+	uint8 x_in;						/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8 x_outgoing;				/*ï¿½É³ï¿½ï¿½ï¿½*/
+	uint8 x_outsuccess;				/*ï¿½Ñ³ï¿½ï¿½ï¿½*/
 }DOCK_SUMLINK;
 #pragma pack()
 
 typedef struct 
 {
-	uint8 power_on;					/*ÉÏµç³É¹¦*/
-	uint8 set_retpos_on;			/*ÉèÖÃ·µº½µã³É¹¦×´Ì¬ 0:È±Ê¡ 1:³É¹¦ 2:¶¨Î»ÎÞÐ§ 3:·µº½µãÐ´ÈëÊ§°Ü*/
-	uint8 cmd_feedback;				/*½ø³öÎëÃüÁîÊÕµ½·´À¡*/
-	uint8 entry_docking;			/*½øÎëÖÐ*/
-	uint8 out_docking;				/*³öÎëÖÐ*/
-	uint8 succcessed_entry;			/*³É¹¦½øÎë*/
-	uint8 succcessed_out;			/*³É¹¦³öÎë*/
-	uint8 log_b1_dock_state;		/*»º´æ²´°¶×´Ì¬*/
-	uint8 log_b1_return_state;		/*»º´æ·µº½×´Ì¬*/
+	uint8 power_on;					/*ï¿½Ïµï¿½É¹ï¿½*/
+	uint8 set_retpos_on;			/*ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½×´Ì¬ 0:È±Ê¡ 1:ï¿½É¹ï¿½ 2:ï¿½ï¿½Î»ï¿½ï¿½Ð§ 3:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Ê§ï¿½ï¿½*/
+	uint8 cmd_feedback;				/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8 entry_docking;			/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8 out_docking;				/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8 succcessed_entry;			/*ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8 succcessed_out;			/*ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8 log_b1_dock_state;		/*ï¿½ï¿½ï¿½æ²´ï¿½ï¿½×´Ì¬*/
+	uint8 log_b1_return_state;		/*ï¿½ï¿½ï¿½æ·µï¿½ï¿½×´Ì¬*/
 }USV_STATE;
 #pragma pack(1)
 
 typedef struct {
 	
-	uint8   dock_entrydock_readyon;		/*´¬ÎëÊÇ·ñ¾ß±¸½øÎëÌõ¼þ*/
-	uint8   dock_entrydock_success;		/*´¬ÎëÊÇ·ñ³É¹¦½øÎë*/
-	uint8   dock_outdock_readyon;		/*´¬ÎëÊÇ·ñ¾ß±¸³öÎë*/
-	uint8   dock_entrydock_entrance;	/*´¬ÎëÊÇ·ñµ½´ï½øÎë¿Ú*/
+	uint8   dock_entrydock_readyon;		/*ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ß±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8   dock_entrydock_success;		/*ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8   dock_outdock_readyon;		/*ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ß±ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8   dock_entrydock_entrance;	/*ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ñµ½´ï¿½ï¿½ï¿½ï¿½ï¿½*/
 }DOCK_COMM_COIL_READ;
 #pragma pack()
 
 typedef struct 
 {
-	uint8 usv_entrydock_req;			/*´¬½ø´¬ÎëÇëÇó*/
-	uint8 usv_prower_off_successed;		/*´¬Ï¨»ð³É¹¦*/ 
-	uint8 usv_prower_on_successed;		/*´¬ÉÏµçÆô¶¯³õÊ¼»¯³É¹¦*/
-	uint8 usv_outdock_successed;		/*´¬³ö´¬Îë³É¹¦*/
+	uint8 usv_entrydock_req;			/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	uint8 usv_prower_off_successed;		/*ï¿½ï¿½Ï¨ï¿½ï¿½É¹ï¿½*/ 
+	uint8 usv_prower_on_successed;		/*ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½É¹ï¿½*/
+	uint8 usv_outdock_successed;		/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½*/
 
 }DOCK_COMM_COIL_SET;
 
 typedef enum
 {
-	EVENT_POWERON_USV = 0,		  /*´¬ÉÏµç³õÊ¼»¯Íê³É*/
-	EVENT_OUTDOCK_READY,		  /*´¬³öÎë×¼±¸*/
-	EVENT_OUTING,				  /*´¬³öÎëÖÐ*/
-	EVENT_ENTRY_DOCK_READY,		  /*´¬½øÎë×¼±¸*/
-	EVENT_ENTRYING,				  /*´¬½øÎëÖÐ*/
-	EVENT_ENTRYED_USV,		  /*´¬Ï¨»ð*/
-	EVENT_OUTED_USV,		  /*´¬ÒÑ³öÎë´ýÃüÖÐ*/
+	EVENT_POWERON_USV = 0,		  /*ï¿½ï¿½ï¿½Ïµï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	EVENT_OUTDOCK_READY,		  /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½*/
+	EVENT_OUTING,				  /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	EVENT_ENTRY_DOCK_READY,		  /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½*/
+	EVENT_ENTRYING,				  /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+	EVENT_ENTRYED_USV,		  /*ï¿½ï¿½Ï¨ï¿½ï¿½*/
+	EVENT_OUTED_USV,		  /*ï¿½ï¿½ï¿½Ñ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 }USVDockEventState;
 
-//·µº½µã
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 typedef struct  
 {
-	double	heading;	/*º½Ïò*/
-	double	longitude;	/*¾­¶È*/
-	double	latitude;	/*Î³¶È*/
+	double	heading;	/*ï¿½ï¿½ï¿½ï¿½*/
+	double	longitude;	/*ï¿½ï¿½ï¿½ï¿½*/
+	double	latitude;	/*Î³ï¿½ï¿½*/
 }RETURN_POINT;
 
-//´¬ÎëÄ¿±êÎ»ÖÃ
+//ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Î»ï¿½ï¿½
 typedef struct
 {
-	uint16 cols;		//Í¼ÏñµÄ¿í
-	uint16 rows;		//Í¼ÏñµÄ¸ß
-	uint16 target_w;	//Ä¿±êµÄ¿í
-	uint16 target_h;	//Ä¿±êµÄ¸ß
-	uint16 t_x;		//Ä¿±êµÄÏñËØÎ»ÖÃx
-	uint16 t_y;		//Ä¿±êµÄÏñËØÎ»ÖÃy
+	uint16 cols;		//Í¼ï¿½ï¿½Ä¿ï¿½
+	uint16 rows;		//Í¼ï¿½ï¿½Ä¸ï¿½
+	uint16 target_w;	//Ä¿ï¿½ï¿½Ä¿ï¿½
+	uint16 target_h;	//Ä¿ï¿½ï¿½Ä¸ï¿½
+	uint16 t_x;		//Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½x
+	uint16 t_y;		//Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½y
 	uint8 lock_on;
 }TargetPos;
 
@@ -147,13 +149,13 @@ typedef struct
 	uint8 lock_on;
 }TargetPosLidar;
 
-//usvÄÚ²¿¸ÐÖª½»»¥±äÁ¿
+//usvï¿½Ú²ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 extern char docking_tracker_cfg[30];
 extern TargetPos t_pos;
 extern char lidar_tracker_cfg[30];
 extern TargetPosLidar target_pos_lidar;
 
-//´¬¿ØÖÆ½»»¥½á¹¹Ìå
+//ï¿½ï¿½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
 extern DOCK_SUMLINK dock_sumlink;
 extern DOCK_STATE dock_sign;
 extern USV_STATE usv_sign;
@@ -165,12 +167,12 @@ extern float docking_speed;
 //dock can 
 extern COMM_SIGN DOCK_comm_sign;
 
-extern DockingControlCmd docking_control_cmd;//´¬Îë¿ØÖÆÃüÁî
-//´¬¡ª¡ª´¬Îë¹¦ÄÜº¯Êý
+extern DockingControlCmd docking_control_cmd;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¹¦ï¿½Üºï¿½ï¿½ï¿½
 
-extern void *dockCommunicationUSVRun(void *);//´¬ - Îë½»»¥²Ù×÷
-extern void *cameraTrackPosFlush(void *);//ÉãÏñÍ·¸ú×ÙÊý¾Ý
-extern void *lidarTrackerPosFlush(void *);//¼¤¹âÀ×´ï¸ú×ÙÊý¾Ý
+extern void *dockCommunicationUSVRun(void *);//ï¿½ï¿½ - ï¿½ë½»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern void *cameraTrackPosFlush(void *);//ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern void *lidarTrackerPosFlush(void *);//ï¿½ï¿½ï¿½ï¿½ï¿½×´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 //can
 extern void initDocksendTask(void);
@@ -180,13 +182,14 @@ extern void DOCK_reInit();
 extern void DOCK_sendMsg();
 extern void DOCK_CommCal(void);
 void runDocksendTask(void *);
-//los ²ÎÊý
-extern uint16 n_ship;//´¬³¤±¶Êý
-extern float l_ship;//´¬³¤
-extern float temp_dockin_distance;//ÁÙÊ±½üÎëµã¼ÆËã¾àÀë
-extern float image_servo_start_distance;//ÊÓ¾õ½éÈë¾àÀë
-extern float image_servo_end_distance;//ÊÓ¾õ½éÈë¾àÀë
-extern float image_servo_pix_multi;//ÏñËØ¾àÀë±ÈÏµÊý
-extern uint8 motorEnable_sign;//·¢¶¯»úÊ¹ÄÜ±êÖÂÎ»
+//los ï¿½ï¿½ï¿½ï¿½
+extern uint16 n_ship;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern float l_ship;//ï¿½ï¿½ï¿½ï¿½
+extern float temp_dockin_distance;//ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern float image_servo_start_distance;//ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern float image_servo_end_distance;//ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern float image_servo_pix_multi;//ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½
+extern uint8 motorEnable_sign;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ü±ï¿½ï¿½ï¿½Î»
 extern int8 dockingIn();
+extern uint32 dock_number ;
 #endif//DOCK_COMMUNICATION_H_

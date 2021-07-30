@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++")
+set(CMAKE_CXX_COMPILER "/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++")
 set(CMAKE_CXX_COMPILER_ARG1 " -std=c++11")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "4.7.3")

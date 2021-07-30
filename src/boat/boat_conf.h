@@ -17,5 +17,6 @@ public:
     std::string console_ip_;
     uint16_t    local_port_;
     uint16_t    console_port_;
+    uint16_t    ins_type;//1:old,2:new
                 
 };

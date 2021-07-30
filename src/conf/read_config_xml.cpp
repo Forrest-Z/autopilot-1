@@ -185,6 +185,11 @@ bool ReadConfigXml::read_config_boat(BoatConf &config_msg,string &_error)
         config_msg.console_port_ = atoi(str.c_str());
     }
 
+    if(!get_value("BOAT_CONF","ins_type",str,_error)){
+        config_msg.ins_type =1;
+    }else{
+        config_msg.ins_type = atoi(str.c_str());
+    }
 
     return true;
 }

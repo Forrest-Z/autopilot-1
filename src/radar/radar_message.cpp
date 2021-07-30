@@ -69,7 +69,7 @@ void RadarMessage::update_receive(void)
 
  void RadarMessage::update_send(void)
 {
-    send_message(SysID_Boat,ID_Lidar_IPC_Up,UnMsgID_BoatLidar_Arm_IPC_Cross);
+    send_message(SysID_Boat,ID_Lidar_IPC_Up,UnMsgID_BoatLidar_Arm_IPC_Pos);
 }
 
 
@@ -250,7 +250,7 @@ void RadarMessage::send_message(int sysid, int componetid, int msgid)
     datapadu.seq = seq;
     switch (msgid)
     {
-    case UnMsgID_BoatLidar_Arm_IPC_Cross:{ 
+    case UnMsgID_BoatLidar_Arm_IPC_Pos:{ 
         arm2ipc_msg_.gps_valid         = (ins_msg.insState.c_rmcValid != 'A' && irtk_msg.rtk_state.c_rmcValid != 'A') ?(false):(true);
         arm2ipc_msg_.lat               =  static_cast<int32_t>(ins_msg.latitude * 1e7);
         arm2ipc_msg_.lng               =  static_cast<int32_t>(ins_msg.longitude * 1e7);

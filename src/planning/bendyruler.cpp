@@ -78,7 +78,8 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
     // search in OA_BENDYRULER_BEARING_INC degree increments around the vehicle alternating left
     // and right. For each direction check if vehicle would avoid all obstacles
     float best_bearing = bearing_to_dest;
-    bool have_best_bearing = false;
+    float best_bearing_margin = -FLT_MAX;
+    bool  have_best_bearing = false;
     float best_margin = -FLT_MAX;
     float best_margin_bearing = best_bearing;
 
@@ -110,11 +111,13 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
                 // now check in there is a clear path in three directions towards the destination
                 if (!have_best_bearing) {
                     best_bearing = bearing_test;
+                    best_bearing_margin = margin;
                     have_best_bearing = true;
                 } else if (fabsf(math::wrap_180(ground_course_deg - bearing_test)) <
                            fabsf(math::wrap_180(ground_course_deg - best_bearing))) {
                     // replace bearing with one that is closer to our current ground course
                     best_bearing = bearing_test;
+                    best_bearing_margin = margin;
                 }
 
                 // perform second stage test in three directions looking for obstacles
@@ -139,7 +142,7 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
 
                         // all good, now project in the chosen direction by the full distance
                         destination_new = current_loc;
-                        destination_new.offset_bearing(final_bearing, distance_to_dest);
+                        destination_new.offset_bearing(final_bearing, std::fmin(distance_to_dest,lookahead_step1_dist));
                         _current_lookahead = std::fmin(_lookahead, _current_lookahead * 1.1f);
                         
                         //printf("final_bearing = %f,bearing_to_dest = %f\n",final_bearing,origin_to_dest);
@@ -164,21 +167,24 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
     }
 
     float chosen_bearing;
+    float chosen_distance;
     if (have_best_bearing) {
         // none of the directions tested were OK for 2-step checks. Choose the direction
         // that was best for the first step
         chosen_bearing = best_bearing;
+        chosen_distance = std::fmax(lookahead_step1_dist+std::fmin(best_bearing_margin,0),0);
         _current_lookahead = std::fmin(_lookahead, _current_lookahead * 1.05f);
     } else {
         // none of the possible paths had a positive margin. Choose
         // the one with the highest margin
         chosen_bearing = best_margin_bearing;
+        chosen_distance = std::fmax(lookahead_step1_dist+std::fmin(best_margin,0),0);
         _current_lookahead = std::fmax(_lookahead * 0.5f, _current_lookahead * 0.9f);
     }
 
     // calculate new target based on best effort
     destination_new = current_loc;
-    destination_new.offset_bearing(chosen_bearing, distance_to_dest);
+    destination_new.offset_bearing(chosen_bearing, chosen_distance);
 
    // printf("chosen_bearing = %f,bearing_to_dest = %f\n",chosen_bearing,origin_to_dest);
 

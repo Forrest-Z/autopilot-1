@@ -158,7 +158,6 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
                             printf("destination is too close obstacle or destination can not arrival\n");
                             return false;
                         }
-
                         return active;
                     }
                 }

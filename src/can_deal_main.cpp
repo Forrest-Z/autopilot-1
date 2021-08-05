@@ -195,7 +195,7 @@ void can0_rec_report( void )
 			IHC_recv(psID,can_data);
 			monitor_all_inf.monitor_comm_inf[MONITOR_COMM_IHC_SN].rec_ok_number++;	//接收正确计数
 		}
-		if (can_add == CAN_DOCK_ADD)
+		if (can_add == (CAN_DOCK_ADD+dock_number))
 		{
 			DOCK_recv(psID, can_data);
 		}

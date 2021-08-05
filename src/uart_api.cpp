@@ -114,6 +114,9 @@ int set_com_config(int fd,int baud_rate, int data_bits, char parity, int stop_bi
     case 115200:
         speed = B115200;
         break;
+	case 460800:
+        speed = B460800;
+        break;
     }
     cfsetispeed(&new_cfg, speed);
     cfsetospeed(&new_cfg, speed);

@@ -9,6 +9,7 @@
 #include "uart_irtk.h"
 #include "util/easylogging++.h"
 #include <math/Location.h>
+#include <conf/conf.h>
 using namespace LOC;
 
 #define INS_REC_TIMESLICE 10
@@ -114,6 +115,7 @@ void *uart_deal_ins(void *aa)
 		printf("Ins initialize failed!\n");
 		return ((void*)0);
 	}
+	printf("=======Ins initialize successful!=====\n");
 	memset((char*)&ins_msg,0,sizeof(ins_msg));					
 	comm_time_return(&(ins_sign.timer),&(ins_sign.comm_sign));
 	//	ins_cmd_init(UART5_Fd);
@@ -178,16 +180,41 @@ int8 uart_ins_init( void )
 	{
 		iret = -1;
 	}
-	if (set_com_config(UART5_Fd, 115200, 8, 'N', 1)<0)
-	//if(set_com_config(UART5_Fd,38400,8,'N',1)<0)
-	//if(set_com_config(UART5_Fd,19200,8,'N',1)<0)
+	if(AP::conf()->boat_conf_.ins_type==1) //ins type old
 	{
+		if (set_com_config(UART5_Fd, 115200, 8, 'N', 1)<0)
+		{
 		iret = -1;
+		}
+		INS_Init();
 	}
-	INS_Init();
+	else  //ins type new
+	{
+		if (set_com_config(UART5_Fd, 460800, 8, 'N', 1)<0)
+		{
+		iret = -1;
+		}
+		printf("init com5 bate 460800\n");
+	}
+	
 	return iret;
 }
-
+typedef struct __GPGGA__
+{
+	float	utc_time;		//UTC时分秒
+	double	lat;			//纬度
+	char	c_lat;			//纬度标志 N 北纬 S 南纬
+	double	lon;			//经度
+	char	c_lon;			//经度标志 E 东经 W 西经
+	char	c_posType;		//GPS定位标识： 0 无定位 1 单点定位 2 差分定位 4 RTK定位 5 RTK浮点
+	unsigned int satelliteNum;	//用于定位的卫星数目
+	float	HDOP;			//HDOP = 0.0~9.9 水平位置精度因子
+	double	height;			//天线海拔高度 saaaa.aa
+	double	seaLvlSeparation;	//海平面分离度 ±xxxx.xx
+	unsigned int diffCorrDelay;	//差分校正时延 sss
+	unsigned int refStID;		//参考站ID		
+}GPGGA;
+GPGGA m_GPGGA;
 // receive message from name0183
 int8 uart_ins_rec_report( UART_TYPE uartid )
 {
@@ -208,8 +235,7 @@ int8 uart_ins_rec_report( UART_TYPE uartid )
 	if(ret<=0){
 	//s	printf("ins:: null ins data\n");
 		return TRUE;
-	}
-	
+	}		
 	//insNanoSend((int8*)buff, ret);
 	for(i=0;i<ret;i++)
 	{
@@ -229,52 +255,135 @@ int8 uart_ins_rec_report( UART_TYPE uartid )
 		}
 		if(buff[i]==0x0A)//LF
 		{
-			//У��
+			char* ptr=nullptr;
 			if((insMsg[0]=='$')&&(insMsg[ins_jco-1]==10)&&(insMsg[ins_jco-2]==13))
 			{
-				msg_len = ins_jco-2;
-				ins_jco = 0;
-				if (GetCRC32(insMsg,msg_len))
-				{
-					//printf("INS = %s\n",insMsg);
+				
+					msg_len = ins_jco-2;
+					ins_jco = 0;
+					if (GetCRC32(insMsg,msg_len))
+					{
+					//	printf("INS = %s\n",insMsg);
 
-					if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='R')&&(insMsg[4]=='O')&&(insMsg[5]=='T'))
-					{
-						INS_GPROT_Analytical(insMsg);
-					}
-					if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='H')&&(insMsg[4]=='E')&&(insMsg[5]=='V'))
-					{
-						INS_GPHEV_Analytical(insMsg);
-					}
-					if((insMsg[0]=='$')&&(insMsg[1]=='P')&&(insMsg[2]=='S')&&(insMsg[3]=='A')&&(insMsg[4]=='T')&&(insMsg[5]==',')&&(insMsg[6]=='H')&&(insMsg[7]=='P')&&(insMsg[8]=='R'))
-					{
-						INS_PSAT_Analytical(insMsg,msg_len);//heading receive
-					}
-					if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='R')&&(insMsg[4]=='M')&&(insMsg[5]=='C'))
-					{
-						INS_GPRMC_Analytical(insMsg,msg_len);
-					}
-					if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='G')&&(insMsg[4]=='G')&&(insMsg[5]=='A'))
-					{
-						INS_GPGGA_Analytical(insMsg,msg_len);
-					}
-					if ((insMsg[0] == '$') && (insMsg[1] == 'G') && (insMsg[2] == 'P') && (insMsg[3] == 'G') && (insMsg[4] == 'S') && (insMsg[5] == 'T'))
-					{
-						INS_GPGST_Analytical(insMsg, msg_len);
-					}
-					if ((insMsg[0] == '$') && (insMsg[1] == 'G') && (insMsg[2] == 'P') && (insMsg[3] == 'H') && (insMsg[4] == 'D') && (insMsg[5] == 'T'))
-					{
+						if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='R')&&(insMsg[4]=='O')&&(insMsg[5]=='T'))
+						{
+							INS_GPROT_Analytical(insMsg);
+						}
+						if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='H')&&(insMsg[4]=='E')&&(insMsg[5]=='V'))
+						{
+							INS_GPHEV_Analytical(insMsg);
+						}
+						if((insMsg[0]=='$')&&(insMsg[1]=='P')&&(insMsg[2]=='S')&&(insMsg[3]=='A')&&(insMsg[4]=='T')&&(insMsg[5]==',')&&(insMsg[6]=='H')&&(insMsg[7]=='P')&&(insMsg[8]=='R'))
+						{
+							INS_PSAT_Analytical(insMsg,msg_len);//heading receive
+						}
+						if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='R')&&(insMsg[4]=='M')&&(insMsg[5]=='C'))
+						{
+							INS_GPRMC_Analytical(insMsg,msg_len);
+						}
+						if((insMsg[0]=='$')&&(insMsg[1]=='G')&&(insMsg[2]=='P')&&(insMsg[3]=='G')&&(insMsg[4]=='G')&&(insMsg[5]=='A'))
+						{
+							INS_GPGGA_Analytical(insMsg,msg_len);
+						}
+						if ((insMsg[0] == '$') && (insMsg[1] == 'G') && (insMsg[2] == 'P') && (insMsg[3] == 'G') && (insMsg[4] == 'S') && (insMsg[5] == 'T'))
+						{
+							INS_GPGST_Analytical(insMsg, msg_len);
+						}
+						if ((insMsg[0] == '$') && (insMsg[1] == 'G') && (insMsg[2] == 'P') && (insMsg[3] == 'H') && (insMsg[4] == 'D') && (insMsg[5] == 'T'))
+						{
 
+						}
+						if(AP::conf()->boat_conf_.ins_type==2)
+					   {
+						   	if ((ptr = strstr(insMsg, "$GPTXT")) != NULL)
+							{
+								printf("GPTXT =%s\n",insMsg);
+							}
+
+							if ((ptr = strstr(insMsg, "$PASHR")) != NULL)
+							{
+								float heading_T,roll,pitch,heaving;
+								float tm;
+								static int32_t count = 0;
+							//	printf("get PASHR =%s\n",insMsg);
+								sscanf(insMsg, "$PASHR,%f,%f,T,%f,%f,%f",&tm, &heading_T, &roll, &pitch,&heaving);
+								Smart_Navigation_St.USV_Move_Heading = (uint16)(heading_T*100);	
+								Smart_Navigation_St.USV_Roll = roll*100;
+								Smart_Navigation_St.USV_Pitch = pitch*100;
+								Smart_Navigation_St.USV_Heave= heaving*100;
+
+								if(heading_T>360.0)
+									heading_T -=360.0;
+								if(heading_T<0.0)
+									heading_T +=360.0;
+
+								ins_msg.heading     = heading_T;
+								ins_msg.u16_heading = (uint16)(heading_T*10);  
+
+								ins_msg.i16_roll = roll*10;
+								ins_msg.i16_pitch = pitch*10;
+								ins_msg.i16_heaving = heaving*10;
+								if(count++>10)
+								{
+										count=0;
+										printf("1===>ins_msg.heading=%lf,roll=%d,pitch=%d,heaving=%d\n",ins_msg.heading,ins_msg.i16_roll,ins_msg.i16_pitch,ins_msg.i16_heaving);
+								}
+							}
+							if ((ptr = strstr(insMsg, "$GPZDA")) != NULL)
+							{
+
+								float tm;
+								int year,month,day;
+							//	printf("get GPZDA =%s\n",insMsg);
+								sscanf(insMsg, "$GPZDA,%f,%d,%d,%d",&tm, &day,&month,&year);
+								Smart_Navigation_St.USV_Date =day;
+								Smart_Navigation_St.USV_Month = month;
+								Smart_Navigation_St.USV_Year = year-1970;
+
+								ins_msg.u8_month	= Smart_Navigation_St.USV_Month;
+								ins_msg.u8_date		= Smart_Navigation_St.USV_Date;
+								ins_msg.u8_year		= Smart_Navigation_St.USV_Year;
+
+								if(ins_msg.u8_year > 0)
+								ins_msg.insState.b1_dateValid = 1;	
+							}
+							if ((ptr = strstr(insMsg, "$GPVTG")) != NULL)
+							{
+								float heading_T,heading_M,speed_kn;
+								//printf("get GPVTG =%s\n",insMsg);
+								sscanf(insMsg, "$GPVTG,%f,T,%f,M,%f,N", &heading_T, &heading_M, &speed_kn);
+
+								Smart_Navigation_St.USV_Speed=(uint16)(speed_kn*100);				//�����ٶ�  000.0~999.9�� 1.852KM/h
+								Smart_Navigation_St.USV_Move_Heading = (uint16)(heading_T*100);		//���溽��  0~36000   0.01��/bit
+		
+								ins_msg.speed =speed_kn;
+								ins_msg.u16_speed   = (uint16)(speed_kn*10);
+								
+								if(heading_T>360.0)
+									heading_T -=360.0;
+								if(heading_T<0.0)
+									heading_T +=360.0;
+								ins_msg.motionDirection=heading_T;
+								static int32_t count =0;
+								if(count++>10)
+								{
+									count=0;
+									printf("3===>%d-%d-%d,ins_msg.speed =%f,motionDirection=%lf\n",(int32_t)(ins_msg.u8_year+1970),ins_msg.u8_month,ins_msg.u8_date,speed_kn,ins_msg.motionDirection);
+								}
+							}
+						}
+						if (ins_sockid > 0){
+							insUdpSend((int8*)insMsg, msg_len + 2);
+						}
 					}
-					if (ins_sockid > 0){
-						insUdpSend((int8*)insMsg, msg_len + 2);
-					}
-				}
+
+				
 				memset(insMsg,0,128);
 				ins_re_sign=0;
 				monitor_all_inf.monitor_comm_inf[MONITOR_COMM_INS_SN].rec_ok_number++;	//������ȷ����
 				comm_time_return(&(ins_sign.timer),&(ins_sign.comm_sign));
 				last_time = user_time::get_millis();
+				
 			}
 		}
 	}
@@ -852,7 +961,15 @@ M��
 */
 void INS_GPGGA_Analytical(char  *buff,int length)
 {
-	double value[20];
+
+	double value[20],lng=0.0,lat=0.0;
+	double temp_lat = 0.0, temp_lng = 0.0;
+	int sys_state_num=0;
+	static double last_lat=0;
+	static double last_long=0;
+	static	uint8	u8_locationState=0;
+	static uint16  u16_pseudoRangeError=0;
+
 	char begin_num[20],end_num[20],begin_sign[20],end_sign[20],count_sign[20],Symbol[20];
 //	int ico;
 	memset(Symbol,0,sizeof(Symbol));
@@ -888,7 +1005,7 @@ void INS_GPGGA_Analytical(char  *buff,int length)
 	ins_msg.insState.b1_diffSignalValid = value[5];
 
 	if (ins_msg.insState.b1_diffSignalValid != ins_msg.insState.b1_diffSignalValid_old && poweron_init){
-		if (ins_msg.insState.b1_diffSignalValid == 2)
+		if (ins_msg.insState.b1_diffSignalValid >= 2)
 		{
 			WarnMsgQueuePut(WARN_SRC_ARM, ARM_WARN_INS_DIF_INVALID, WARN_OFF);
 		}
@@ -911,6 +1028,209 @@ void INS_GPGGA_Analytical(char  *buff,int length)
 	printf("Differential_Position_Light=%d\n",Smart_Navigation_St.Differential_Position_Light);
 	printf("Satellite_Num_1=%d\n",Smart_Navigation_St.Satellite_Num_1);
 	printf("USV_Height=%d\n",Smart_Navigation_St.USV_Height);	*/
+	if(AP::conf()->boat_conf_.ins_type==2)
+	{
+
+	Smart_Navigation_St.USV_Hour=(uint8)(value[0]/10000);
+	Smart_Navigation_St.USV_Minute=(uint8)(value[0]/100-100*Smart_Navigation_St.USV_Hour);
+	Smart_Navigation_St.USV_Second=(uint8)(value[0]-10000*Smart_Navigation_St.USV_Hour-100*Smart_Navigation_St.USV_Minute);
+	Smart_Navigation_St.USV_Second_2=(uint8)(100*(value[0]-(int)(value[0])));
+	
+	ins_msg.u8_hour    = (uint8)(value[0]/10000);
+	ins_msg.u8_minute  = (uint8)(value[0]/100-100*ins_msg.u8_hour);
+	ins_msg.u8_second  = (uint8)(value[0]-10000*ins_msg.u8_hour-100*ins_msg.u8_minute);
+	ins_msg.u8_second_2=(uint8)(100*(value[0]-(int)(value[0])));
+
+	if(value[0]>0.0001)
+		ins_msg.insState.b1_timeValid = 1;
+
+
+
+	Smart_Navigation_St.USV_Longitude_Degree=(uint8)(value[1]/100);								//value[2]--����
+	Smart_Navigation_St.USV_Longitude_Minute=(uint8)(value[1]-100*((int)(value[1]/100)));
+	lng=(value[1]-(int)(value[1]))*60;
+	Smart_Navigation_St.USV_Longitude_Second=(int)(lng);										//��
+	Smart_Navigation_St.USV_Longitude_Decimal_2=(uint8)((lng-(int)(lng))*100);					//��С��λ1��2
+	Smart_Navigation_St.USV_Longitude_Decimal_4=(uint8)(((lng-(int)(lng))*100-(int)((lng-(int)(lng))*100))*100);  //��С��λ3��4
+	
+	sys_state_num=begin_num[2];							
+	if(buff[sys_state_num]=='N')						//������
+		Smart_Navigation_St.Longitude_Sign_St=1;
+	if(buff[sys_state_num]=='S')						//�ϰ���
+		Smart_Navigation_St.Longitude_Sign_St=2;	
+	
+	Smart_Navigation_St.USV_Latitude_Degree=(uint8)(value[3]/100);							//����
+	Smart_Navigation_St.USV_Latitude_Minute=(uint8)(value[3]-100*((int)(value[3]/100)));
+	lat=(value[3]-(int)(value[3]))*60;
+	Smart_Navigation_St.USV_Latitude_Second=(uint8)(lat);
+	Smart_Navigation_St.USV_Latitude_Decimal_2=(uint8)((lat-(int)(lat))*100);
+	Smart_Navigation_St.USV_Latitude_Decimal_4=(uint8)(((lat-(int)(lat))*100-(int)((lat-(int)(lat))*100))*100);
+	
+	sys_state_num=begin_num[4];
+	if(buff[sys_state_num]=='E')
+		Smart_Navigation_St.Latitude_Sign_St=1;
+	if(buff[sys_state_num]=='W')
+		Smart_Navigation_St.Latitude_Sign_St=2;	
+
+	Smart_Navigation_St.USV_Lat=Smart_Navigation_St.USV_Latitude_Degree;
+	Smart_Navigation_St.USV_Lat+=((double)(Smart_Navigation_St.USV_Latitude_Minute))/60.0;
+	Smart_Navigation_St.USV_Lat+=((double)(Smart_Navigation_St.USV_Latitude_Second))/3600.0;
+	Smart_Navigation_St.USV_Lat+=((double)(Smart_Navigation_St.USV_Latitude_Decimal_2))/360000.0;
+	Smart_Navigation_St.USV_Lng=Smart_Navigation_St.USV_Longitude_Degree;
+	Smart_Navigation_St.USV_Lng+=((double)(Smart_Navigation_St.USV_Longitude_Minute))/60.0;
+	Smart_Navigation_St.USV_Lng+=((double)(Smart_Navigation_St.USV_Longitude_Second))/3600.0;
+	Smart_Navigation_St.USV_Lng+=((double)(Smart_Navigation_St.USV_Longitude_Decimal_2))/360000.0;	
+	
+
+
+	if(ins_msg.insState.b1_diffSignalValid >= 1)
+		ins_msg.insState.c_rmcValid='A';
+	else
+		ins_msg.insState.c_rmcValid='V';
+
+	if (ins_msg.insState.c_rmcValid_old != ins_msg.insState.c_rmcValid && poweron_init)
+	{
+		if (ins_msg.insState.c_rmcValid == 'A')
+		{
+			WarnMsgQueuePut(WARN_SRC_ARM, ARM_WARN_INS_LOC_INVALID, WARN_OFF);
+		}
+		
+		if (ins_msg.insState.c_rmcValid == 'V')
+		{
+			WarnMsgQueuePut(WARN_SRC_ARM, ARM_WARN_INS_LOC_INVALID, WARN_ON);
+		}
+	}
+
+	ins_msg.insState.c_rmcValid_old = ins_msg.insState.c_rmcValid;
+
+	uint8 temp_NS;
+	uint8 temp_u8_latiDeg, temp_u8_latiMin, temp_u8_latiSec, temp_u8_latiSecDec, temp_u8_latiSecDec2; 
+
+	uint8 temp_EW;
+	uint8 temp_u8_longiDeg, temp_u8_longiMin, temp_u8_longiSec, temp_u8_longiSecDec, temp_u8_longiSecDec2; 
+
+	
+
+	if (rtk_locating_fuc){ 
+		//echo app
+		ins_msg.u8_latiSt = irtk_msg.u8_latiSt;
+		ins_msg.u8_latiDeg = irtk_msg.u8_latiDeg;
+		ins_msg.u8_latiMin = irtk_msg.u8_latiMin;
+		ins_msg.u8_latiSec = irtk_msg.u8_latiSec;
+		ins_msg.u8_latiSecDec = irtk_msg.u8_latiSecDec;
+		ins_msg.u8_latiSecDec2 = irtk_msg.u8_latiSecDec2;
+
+		ins_msg.u8_longiSt = irtk_msg.u8_longiSt;
+		ins_msg.u8_longiDeg = irtk_msg.u8_longiDeg;
+		ins_msg.u8_longiMin = irtk_msg.u8_longiMin;
+		ins_msg.u8_longiSec = irtk_msg.u8_longiSec;
+		ins_msg.u8_longiSecDec = irtk_msg.u8_longiSecDec;
+		ins_msg.u8_longiSecDec2 = irtk_msg.u8_longiSecDec2;
+
+		// ins_msg.u8_latiSecDec = irtk_msg.u8_latiSecDec;
+		// ins_msg.u16_speed = irtk_msg.u16_speed;
+		// ins_msg.u16_heading = irtk_msg.u16_heading;
+		// ins_msg.u16_volecityDir = irtk_msg.u16_volecityDir;
+
+
+		// ins_msg.i16_pitch = irtk_msg.i16_pitch;
+		// ins_msg.i16_roll = irtk_msg.i16_roll;
+		// ins_msg.i16_heaving	 = irtk_msg.i16_heaving;
+		// ins_msg.i16_rot = irtk_msg.i16_rot;
+
+		//control
+		ins_msg.latitude = irtk_msg.latitude;
+		ins_msg.longitude = irtk_msg.longitude;
+		//ins_msg.speed = irtk_msg.speed;
+		//ins_msg.heading = irtk_msg.heading;
+		//ins_msg.rotRate = irtk_msg.rotRate;
+		//printf(">>>LOCATION_RTK\n");
+	}
+	else if (ins_msg.insState.c_rmcValid == 'A')
+	{
+		//γ��
+		temp_u8_latiDeg = (uint8)(value[1] / 100);								//value[2]--γ��
+		temp_u8_latiMin = (uint8)(value[1] - 100 * ((int)(value[1] / 100)));
+		lat = (value[2] - (int)(value[1])) * 60;
+		temp_u8_latiSec = (int)(lat);										//��
+		temp_u8_latiSecDec = (uint8)((lat - (int)(lat)) * 100);					//��С��λ1��2
+		temp_u8_latiSecDec2 = (uint8)(((lat - (int)(lat)) * 100 - (int)((lat - (int)(lat)) * 100)) * 100);
+
+		sys_state_num = begin_num[2];
+		if (buff[sys_state_num] == 'N')						//������
+			temp_NS = 1;
+		if (buff[sys_state_num] == 'S')						//�ϰ���
+			temp_NS = 0;
+
+		//����
+		temp_u8_longiDeg = (uint8)(value[3] / 100);							//����
+		temp_u8_longiMin = (uint8)(value[4] - 100 * ((int)(value[3] / 100)));
+		lng = (value[3] - (int)(value[3])) * 60;
+		temp_u8_longiSec = (uint8)(lng);
+		temp_u8_longiSecDec = (uint8)((lng - (int)(lng)) * 100);
+		temp_u8_longiSecDec2 = (uint8)(((lng - (int)(lng)) * 100 - (int)((lng - (int)(lng)) * 100)) * 100);
+
+		sys_state_num = begin_num[4];
+		if (buff[sys_state_num] == 'E')						
+			temp_EW = 1;
+		if (buff[sys_state_num] == 'W')						
+			temp_EW = 0;
+
+	
+		temp_lat = (temp_NS == 0 ? -1 : 1)*(ins_msg.u8_latiDeg + ((double)(ins_msg.u8_latiMin)) / 60.0 + \
+												 ((double)(ins_msg.u8_latiSec)) / 3600.0+\
+												 ((double)(ins_msg.u8_latiSecDec)) / 360000.0);
+		temp_lng = (temp_EW == 0 ? -1 : 1)*(ins_msg.u8_longiDeg + ((double)(ins_msg.u8_longiMin)) / 60.0 + \
+												 ((double)(ins_msg.u8_longiSec)) / 3600.0 + \
+												 ((double)(ins_msg.u8_longiSecDec)) / 360000.0);
+		ins_msg.u8_latiSt = temp_NS;
+		ins_msg.u8_latiDeg = temp_u8_latiDeg;
+		ins_msg.u8_latiMin = temp_u8_latiMin;
+		ins_msg.u8_latiSec = temp_u8_latiSec;
+		ins_msg.u8_latiSecDec = temp_u8_latiSecDec;
+		ins_msg.u8_latiSecDec2 = temp_u8_latiSecDec2;
+
+		ins_msg.u8_longiSt = temp_EW;
+		ins_msg.u8_longiDeg = temp_u8_longiDeg;
+		ins_msg.u8_longiMin = temp_u8_longiMin;
+		ins_msg.u8_longiSec = temp_u8_longiSec;
+		ins_msg.u8_longiSecDec = temp_u8_longiSecDec;
+		ins_msg.u8_latiSecDec2 = temp_u8_longiSecDec2;
+
+		ins_msg.latitude = temp_lat;
+		ins_msg.longitude = temp_lng;
+	}
+
+	ins_msg.u8_hour    = (uint8)(value[0]/10000);
+	ins_msg.u8_minute  = (uint8)(value[0]/100-100*ins_msg.u8_hour);
+	ins_msg.u8_second  = (uint8)(value[0]-10000*ins_msg.u8_hour-100*ins_msg.u8_minute);
+
+	static int32_t count=0;
+	if(count++>10)
+	{
+		printf("2===>%d:%d:%d:%d==ins_msg.latitude=%f,ins_msg.longitude=%f\n",ins_msg.u8_hour ,ins_msg.u8_minute,ins_msg.u8_second,ins_msg.u8_second_2,ins_msg.latitude,ins_msg.longitude);
+		count = 0;
+	}
+	u16_pseudoRangeError = (uint16)((rtk_locating_fuc == 1 ? irtk_msg.pseudorRangeError : ins_msg.pseudorRangeError) * 100);//rtk / ins ��λ
+    u8_locationState = rtk_locating_fuc == 1 ? irtk_msg.rtk_state.b1_diffSignalValid : ins_msg.insState.b1_diffSignalValid;
+
+	if(last_lat>=1&&last_lat>=1)
+	{
+		double distance = fabsf(Get_distance(ins_msg.latitude,ins_msg.longitude,last_lat,last_long));
+		if(distance >2)
+		{
+			LOG(ERROR)<<"ins_get::ins_msg jump from "<<last_lat<<" ,"<<last_long<<" to "
+					  <<ins_msg.latitude<<" , "<<ins_msg.longitude
+					  <<" u16_pseudoRangeError = "<<u16_pseudoRangeError
+					  <<" u8_locationState = "<<u8_locationState
+					  <<" distance = "<<distance
+					  <<std::endl;
+		}
+	}
+	last_lat = ins_msg.latitude;
+	last_long = ins_msg.longitude;
+
+	}
 	return  ;
 }
 

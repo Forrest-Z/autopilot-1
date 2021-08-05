@@ -115,7 +115,7 @@ void Boat::setup(void)
      if((autoNaviSt.double_dst < autoNaviCfg.u16_arrival_distance1) ||
        (sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_sailArrival == 1)||
        (crosstrack_error.past_end == true) || 
-       (injector_->waypoint_unreachable() == true))
+       (injector_->waypoint_unreachable() == true /*&& injector_->finished_waypoint()*/))
 	{
 		sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_sailArrival = 1;
 		return true;
@@ -172,7 +172,8 @@ void Boat::update_navigation_task()
     double relative_angular_velocity = injector_->angular_velocity();
     double lateral_error = injector_->lateral_error();
 
-    double desired_speed = sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].f64_expSpeed;
+   // double desired_speed = sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].f64_expSpeed;
+      double desired_speed = injector_->desired_speed_ms();
 
     if(route_switch_ == true){
         if(fabs(relative_angle) <= 20.0 /*&& fabs(relative_angular_velocity) <=2.0*/ ){
@@ -223,7 +224,7 @@ void Boat::update_navigation_task()
 
         des_speed_lim = math::Clamp(des_speed_lim,0.0,desired_speed);
         lat_controller_.ComputeControlCommand(0.0,&cmd,loop_ts_);
-        lon_controller_.ComputeControlCommand(des_speed_lim,&cmd,loop_ts_);
+        lon_controller_.ComputeControlCommand(ms2kn(des_speed_lim),&cmd,loop_ts_);
     }
       set_steering(cmd.get_steering_target()/steering_limit);
       set_throttle(cmd.get_throttle()/throttle_limit);

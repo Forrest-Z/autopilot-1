@@ -483,11 +483,11 @@ void updateBrCC_usvState(void)
 	//printf("br_usv_state.u16_st_moter1Rpm == %d\n", br_usv_state.u16_st_moter1Rpm);
 	//printf("br_usv_state.u16_st_moter2Rpm == %d\n", br_usv_state.u16_st_moter2Rpm);
 
-	br_usv_state.u16_st_moter3Rpm    =	 0;
+	br_usv_state.u16_st_moter3Rpm    =	 IHC_rev_msg.u16_St_Motor1Rpm;
 	br_usv_state.i16_st_moter3Gear   =	 0;
 	br_usv_state.i16_st_moter3Rudder =	 0;
 
-	br_usv_state.u16_st_moter4Rpm    =	 0;
+	br_usv_state.u16_st_moter4Rpm    =	IHC_rev_msg.u16_St_Motor2Rpm;
 	br_usv_state.i16_st_moter4Gear   =	 0;
 	br_usv_state.i16_st_moter4Rudder =	 0;
 

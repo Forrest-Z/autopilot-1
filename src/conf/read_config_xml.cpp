@@ -664,5 +664,28 @@ bool ReadConfigXml::read_config_path_planning(PlanningConf &config_msg,string &_
         config_msg.PP_type = atof(str.c_str());
     }
     
+    if(!get_value("PATH_PLANNING","lon_scan_distance",str,_error)){
+        return false;
+    }else{
+        config_msg.lon_scan_distance = atof(str.c_str());
+    }
+
+    if(!get_value("PATH_PLANNING","lon_scan_angle",str,_error)){
+        return false;
+    }else{
+        config_msg.lon_scan_angle = atof(str.c_str());
+    }
+
+    if(!get_value("PATH_PLANNING","lon_time_constance",str,_error)){
+        return false;
+    }else{
+        config_msg.lon_time_constance = atof(str.c_str());
+    }
+
+    if(!get_value("PATH_PLANNING","lon_dccel_speed",str,_error)){
+        return false;
+    }else{
+        config_msg.lon_dccel_speed = atof(str.c_str());
+    }
     return true;
 }

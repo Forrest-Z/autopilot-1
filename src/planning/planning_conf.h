@@ -29,4 +29,10 @@ public:
 
     // pathplanner
     int8_t PP_type{1};
+
+    // 
+    float lon_scan_distance{30.0};
+    float lon_scan_angle{30};
+    float lon_time_constance{5};
+    float lon_dccel_speed{0.5};
 };

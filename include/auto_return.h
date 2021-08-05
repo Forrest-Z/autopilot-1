@@ -74,7 +74,7 @@ private:
 
 
 	float sqrt_controller(float error, float p, float second_ord_lim);
-
+    
 private:
 	
 	uint32  m_FuncEnable;						
@@ -105,6 +105,7 @@ private:
 	bool	m_IsCfgValid = false;				//�����ļ���Ч
 	bool	m_bPowerLowNeedReturn = false;		//��Ҫ�����ͷ���
 	bool	m_bForceAutoReturn = false;			//ǿ���Զ�����
+	float   _oa_speed_ms;
 };
 
 

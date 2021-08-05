@@ -398,9 +398,11 @@ void CAutoReturn::AutoReturn_GDPoint(void)
     // true if OA has been recently active;
 	bool _oa_active = false;
 
+
 	 AP_OAPathPlanner *oa = AP_OAPathPlanner::get_singleton();
     if (oa != nullptr) {
-        const AP_OAPathPlanner::OA_RetState oa_retstate = oa->mission_avoidance(current_loc, _origin, _destination,ins_msg.heading, _oa_origin, _oa_destination);
+		const AP_OAPathPlanner::OA_RetState oa_retstate = oa->mission_avoidance(current_loc, _origin, _destination,m_ExpSpeed,ins_msg.heading, _oa_origin, _oa_destination,_oa_speed_ms);
+
         switch (oa_retstate) {
         case AP_OAPathPlanner::OA_RetState::OA_NOT_REQUIRED:
             _oa_active = false;

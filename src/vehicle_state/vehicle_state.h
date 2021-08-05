@@ -55,9 +55,13 @@ public:
     double lon_end() const{return lon_end_;}
     double lat_now() const{return lat_now_;}
     double lon_now() const{return lon_now_;}
+    double desired_speed_ms() const{return _oa_speed_ms;}
+    bool finished_waypoint() const {return (sub_idx>=waypoint_list_.size() && waypoint_list_.size()>0);}
 
     bool   stop_boat(void) const { return stop_vehicle;}
     bool   waypoint_unreachable(void) const { return _oa_dest_unreachable;}
+
+    void   interp_waypoint(const Location& origin,const Location& destination,std::vector<Location> &waypoint);
 
 private:
 
@@ -81,6 +85,14 @@ private:
     double  lat_now_;
     double  lon_now_;
 
+    float desired_speed_ms_;
+
+    // interpolate route
+    const float descrete_distance{10.0};
+    std::vector<Location> waypoint_list_;
+    uint16_t sub_idx{0};
+    int16_t  last_id_{-1};
+
 private:
 
     static VehicleState *singleton_;
@@ -102,6 +114,7 @@ private:
     LOC::Location _oa_destination;       // intermediate destination during avoidance
     LOC::Location _origin;               // origin Location (vehicle will travel from the origin to the destination)
     LOC::Location _destination;          // destination Location when in Guided_WP
+    float      _oa_speed_ms;           //OA result_sppeed
 };
 
 namespace AP {

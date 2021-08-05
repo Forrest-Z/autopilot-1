@@ -44,9 +44,11 @@ public:
     OA_RetState mission_avoidance(const Location &current_loc,
                            const Location &origin,
                            const Location &destination,
+                           const float desired_speed_ms,
                            const float ground_course_deg,
                            Location &result_origin,
-                           Location &result_destination) WARN_IF_UNUSED;
+                           Location &result_destination,
+                           float  &result_desired_speed_ms) WARN_IF_UNUSED;
 
     // enumerations for _TYPE parameter
     enum OAPathPlanTypes {
@@ -67,12 +69,14 @@ private:
     // avoidance thread that continually updates the avoidance_result structure based on avoidance_request
     void avoidance_thread();
     bool start_thread();
+    void adjust_desired_speed(const Location &current_loc,const float ground_course_deg,float &desired_speed_ms);
 
     // an avoidance request from the navigation code
     struct avoidance_info {
         Location current_loc;
         Location origin;
         Location destination;
+        float    desired_speed_ms;
         float    ground_course_deg;
         uint32_t request_time_ms;
     } avoidance_request, avoidance_request2;
@@ -83,12 +87,16 @@ private:
         Location origin_new;        // intermediate origin.  The start of line segment that vehicle should follow
         Location destination_new;   // intermediate destination vehicle should move towards
         uint32_t result_time_ms;    // system time the result was calculated (used to verify the result is recent)
+        float    result_desired_speed_ms;//oa avoid spped;
         OA_RetState ret_state;      // OA_SUCCESS if the vehicle should move along the path from origin_new to destination_new
     } avoidance_result;
 
     // parameters
- 
-    
+    float lon_scan_distance{30.0};
+    float lon_scan_angle{30};
+    float lon_time_constance{5};
+    float lon_dccel_speed{3.0};
+
     // internal variables used by front end
      std::mutex _rsem;            // semaphore for multi-thread use of avoidance_request and avoidance_result
     bool _thread_created;           // true once background thread has been created

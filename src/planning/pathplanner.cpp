@@ -2,7 +2,7 @@
 #include <thread>
 #include <functional>
 #include <user_time/user_time.h>
-
+#include <math_utils.h>
 // parameter defaults
 const float OA_MARGIN_MAX_DEFAULT = 5;
 const int16_t OA_OPTIONS_DEFAULT = 1;
@@ -22,6 +22,10 @@ void AP_OAPathPlanner::init(const PlanningConf &conf)
 {
     // load parameters
     _type = conf.PP_type;
+     lon_scan_distance  = conf.lon_scan_distance;
+     lon_scan_angle     = conf.lon_scan_angle;
+     lon_time_constance = conf.lon_time_constance;
+     lon_dccel_speed    = conf.lon_dccel_speed;
 
     // run background task looking for best alternative destination
     switch (_type) {
@@ -64,9 +68,11 @@ bool AP_OAPathPlanner::start_thread()
 AP_OAPathPlanner::OA_RetState AP_OAPathPlanner::mission_avoidance(const Location &current_loc,
                                          const Location &origin,
                                          const Location &destination,
+                                         const float desired_speed_ms,
                                          const float ground_course_deg,
                                          Location &result_origin,
-                                         Location &result_destination)
+                                         Location &result_destination,
+                                         float  &result_desired_speed_ms)
 {
     // exit immediately if disabled or thread is not running from a failed init
     if (_type == OA_PATHPLAN_DISABLED || !_thread_created) {
@@ -81,7 +87,8 @@ AP_OAPathPlanner::OA_RetState AP_OAPathPlanner::mission_avoidance(const Location
     avoidance_request.origin = origin;
     avoidance_request.destination = destination;
     avoidance_request.ground_course_deg = ground_course_deg;
-    avoidance_request.request_time_ms = now;
+    avoidance_request.request_time_ms  = now;
+    avoidance_request.desired_speed_ms = desired_speed_ms;
 
     // check result's destination matches our request
     const bool destination_matches = (destination.lat == avoidance_result.destination.lat) && (destination.lng == avoidance_result.destination.lng);
@@ -94,6 +101,7 @@ AP_OAPathPlanner::OA_RetState AP_OAPathPlanner::mission_avoidance(const Location
         // we have a result from the thread
         result_origin = avoidance_result.origin_new;
         result_destination = avoidance_result.destination_new;
+        result_desired_speed_ms = avoidance_result.result_desired_speed_ms;
         return avoidance_result.ret_state;
     }
 
@@ -136,6 +144,7 @@ void AP_OAPathPlanner::avoidance_thread()
 
         Location origin_new;
         Location destination_new;
+        float desired_speed_new;
         {
               std::lock_guard<std::mutex> lock(_rsem);
             if (now - avoidance_request.request_time_ms > OA_TIMEOUT_MS) {
@@ -149,6 +158,7 @@ void AP_OAPathPlanner::avoidance_thread()
             // store passed in origin and destination so we can return it if object avoidance is not required
             origin_new = avoidance_request.origin;
             destination_new = avoidance_request.destination;
+            desired_speed_new = avoidance_request.desired_speed_ms;
         }
 
         // run background task looking for best alternative destination
@@ -169,17 +179,64 @@ void AP_OAPathPlanner::avoidance_thread()
             break;
         }
 
+        // longitude control
+         adjust_desired_speed(avoidance_request2.current_loc,avoidance_request2.ground_course_deg,desired_speed_new);
+
         {
             // give the main thread the avoidance result
              std::lock_guard<std::mutex> lock(_rsem);
             avoidance_result.destination = avoidance_request2.destination;
             avoidance_result.origin_new = (res == OA_SUCCESS) ? origin_new : avoidance_result.origin_new;
             avoidance_result.destination_new = (res == OA_SUCCESS) ? destination_new : avoidance_result.destination;
+            avoidance_result.result_desired_speed_ms = desired_speed_new;
             avoidance_result.result_time_ms = user_time::get_millis();
             avoidance_result.ret_state = res;
+            
         }
     }
 }
+
+void AP_OAPathPlanner::adjust_desired_speed(const Location &current_loc,const float ground_course_deg,float &desired_speed_ms)
+{
+    // exit immediately if db is empty
+    if(!_oadatabase.healthy()){
+        return;
+    }
+
+    //check each obstacle's distance from segment
+    float smallest_distance = FLT_MAX;
+    for(uint16_t i = 0; i<_oadatabase.database_count(); i++){
+        const AP_OADatabase::OA_DbItem& item = _oadatabase.get_item(i);
+
+        // compute relative distance to obstacle
+        Location obstacle(Vector3f(item.pos.x * 100.0f,item.pos.y *100.0f,0.0f),ekf_origin_);
+        const float distance_to_obstacle  = current_loc.get_distance(obstacle);
+        if(distance_to_obstacle > lon_scan_distance){
+            continue;
+        }
+
+        // compute relative heading to obstacle
+        const float heading_to_obstacle = math::wrap_180(current_loc.get_bearing_to(obstacle) *0.01f - ground_course_deg);
+
+        // compute smallest distance with a certain heading
+        if(heading_to_obstacle <= lon_scan_angle && heading_to_obstacle >= -lon_scan_angle){
+            if(smallest_distance > distance_to_obstacle){
+                smallest_distance = distance_to_obstacle;
+            }
+        }
+    }
+    if(smallest_distance>lon_scan_distance) 
+        return;
+  
+    const float speed_ms = math::SqrtController(smallest_distance,1.0f/lon_time_constance, lon_dccel_speed, 0.001f * OA_UPDATE_MS);
+    //printf("[INFO]:: reference_speed_ms = %f,filtered_speed_ms = %f\n",desired_speed_ms,speed_ms);
+    desired_speed_ms = math::Clamp(speed_ms,0.0f,desired_speed_ms);
+
+}
+
+
+
+
 
 // singleton instance
 AP_OAPathPlanner *AP_OAPathPlanner::_singleton;

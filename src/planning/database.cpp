@@ -50,7 +50,8 @@ void AP_OADatabase::init(const PlanningConf &conf)
     init_queue();
 
     // initialise scalar using beam width of at least 1deg
-    dist_to_radius_scalar = tanf(math::radians(std::fmax(_beam_width, 1.0f)));
+    // dist_to_radius_scalar = tanf(math::radians(std::fmax(_beam_width, 1.0f)));
+    dist_to_radius_scalar = 0.0f;
 
     if (!healthy()) {
         printf("DB init failed . Sizes queue:%u, db:%u", (unsigned int)_queue.size, (unsigned int)_database.size);

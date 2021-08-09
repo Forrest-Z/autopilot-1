@@ -105,19 +105,18 @@ void Boat::setup(void)
      double lon_start = injector_->lon_start();   
      double lat_end   = injector_->lat_end();  
      double lon_end   = injector_->lon_end();  
-    
+  
      struct crosstrack_error_s crosstrack_error;
-   // if(ins_msg.insState.c_rmcValid == 'A'){
-        autoNaviSt.double_dst = Get_distance(lat_now,lon_now,lat_end,lon_end);
-        get_distance_to_line(&crosstrack_error,lat_now,lon_now,lat_start,  lon_start,  lat_end,  lon_end);
-   // }
+
+     autoNaviSt.double_dst = Get_distance(lat_now,lon_now,lat_end,lon_end);
+     get_distance_to_line(&crosstrack_error,lat_now,lon_now,lat_start,  lon_start,  lat_end,  lon_end);
 
      if((autoNaviSt.double_dst < autoNaviCfg.u16_arrival_distance1) ||
-       (sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_sailArrival == 1)||
-       (crosstrack_error.past_end == true) || 
-       (injector_->waypoint_unreachable() == true /*&& injector_->finished_waypoint()*/))
+       /*(sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_sailArrival == 1)|| */
+       (crosstrack_error.past_end == true)|| (injector_->waypoint_unreachable() == true))
 	{
 		sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_sailArrival = 1;
+
 		return true;
 	}
     return false;
@@ -126,6 +125,10 @@ void Boat::setup(void)
 
  void Boat::update_sampling_task()
  {
+     if(injector_->waypoint_unreachable() == true){
+         sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_type = 0;
+     }
+
      if(sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_type != 0)
 	{
 		if(sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].u16_sampleVolume > 0){
@@ -152,25 +155,28 @@ void Boat::setup(void)
 		
 		if(sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_samplingCommand == 2
            &&sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_samplingComplete == 1){
-			printf("Arrival of waypoint[%d],waypoint with sampling, follow-up task",sailTask.u8_PointNum+1);
 			sailTask.u8_PointNum++;
+            printf("Arrival of waypoint[%d],waypoint with sampling, follow-up task\n",sailTask.u8_PointNum);
             route_switch_ = true;
-			printf("waypoint with sampling ++\n");
 		}
 
 	}else{
-		printf("Arrival of waypoint[%d],waypoint without sampling, follow-up task",sailTask.u8_PointNum+1);
-		sailTask.u8_PointNum++;
+	
+        sailTask.u8_PointNum++;
+        if(injector_->advance_finished() == false && injector_->waypoint_unreachable() == true){
+            sailTask.u8_PointNum--;
+            printf("searching new sub point to replace waypoint[%d]\n",sailTask.u8_PointNum);
+        }
+        printf("Arrival of waypoint[%d],waypoint without sampling, follow-up task\n",sailTask.u8_PointNum);
         route_switch_ = true;
-		printf("waypoint without sampling++\n");
 	}
  }
 
 void Boat::update_navigation_task()
  {
-    double relative_angle = injector_->heading_error();
+    double relative_angle            = injector_->heading_error();
     double relative_angular_velocity = injector_->angular_velocity();
-    double lateral_error = injector_->lateral_error();
+    double lateral_error             = injector_->lateral_error();
 
    // double desired_speed = sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].f64_expSpeed;
       double desired_speed = injector_->desired_speed_ms();

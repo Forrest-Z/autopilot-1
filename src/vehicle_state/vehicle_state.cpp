@@ -56,22 +56,40 @@ void VehicleState::update(double ts)
     // get current route with start point,goal point
     uint16_t id     = sailTask.u8_PointNum;
     uint16_t max_id = sailTask.sailMsg.u8_pointSum;
-    lat_now_ = ins_msg.latitude;
-    lon_now_ = ins_msg.longitude;
+    lat_now_        = ins_msg.latitude;
+    lon_now_        = ins_msg.longitude;
 
-    if(!initialized_ && id == 0 && gps_msg_ok && max_id >= 1){
-          LOG(INFO)<< "VehicleState:: Set initial sail task point!";
-          lat_start_ = lat_now_;
-          lon_start_ = lon_now_;
-          last_id_ = -1;
-          initialized_ = true;
+   
+    if(last_id_ != id){
+        if(id == 0){
+            lat_start_ = lat_now_;
+            lon_start_ = lon_now_;
+        }else{
+            lat_start_ = sailTask.sailMsg.wayPoint[id-1].f64_latitude;
+            lon_start_ = sailTask.sailMsg.wayPoint[id-1].f64_longitude;
+        }
+        last_id_ = id;
     }
-    if(id >= 1){
-        lat_start_     = sailTask.sailMsg.wayPoint[id-1].f64_latitude;
-        lon_start_     = sailTask.sailMsg.wayPoint[id-1].f64_longitude;
+
+     if(!initialized_ /*&& id == 0*/ && gps_msg_ok && max_id >= 1){
+        LOG(INFO)<< "VehicleState:: Set initial sail task point!";
+        lat_start_ = lat_now_;
+        lon_start_ = lon_now_;
+        initialized_ = true;
     }
-    lat_end_            = sailTask.sailMsg.wayPoint[id].f64_latitude;
-    lon_end_            = sailTask.sailMsg.wayPoint[id].f64_longitude;
+
+    lat_end_   = sailTask.sailMsg.wayPoint[id].f64_latitude;
+    lon_end_   = sailTask.sailMsg.wayPoint[id].f64_longitude;
+
+    if(max_id == 0){
+        lat_next_ = lat_now_;
+        lon_next_ = lon_now_;
+    }else{
+        uint16_t next_wp_id =id+1;
+        next_wp_id = (next_wp_id >= max_id-1)?(max_id-1):(next_wp_id);
+        lat_next_   = sailTask.sailMsg.wayPoint[next_wp_id].f64_latitude;
+        lon_next_   = sailTask.sailMsg.wayPoint[next_wp_id].f64_longitude;
+     }
 
 
     desired_speed_ms_   = kn2ms(sailTask.sailMsg.wayPoint[id].f64_expSpeed);
@@ -84,16 +102,13 @@ void VehicleState::update(double ts)
     _destination.lng = lon_end_*1e7;
     _destination.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
 
-    
-    // if(last_id_ != id){
-    //     waypoint_list_.clear();
-    //     interp_waypoint(_origin,_destination,waypoint_list_);
-    //     sub_idx = 0;
-    //     last_id_ = id;
-    // }
+    // next route destination
+    Location next_destination;
+    next_destination.lat = lat_next_ * 1e7;
+    next_destination.lng = lon_next_ * 1e7;
+    next_destination.set_alt_cm(0,Location::AltFrame::ABOVE_ORIGIN);
 
-    // Location current_sub_destination = waypoint_list_.at(sub_idx);
-    
+    // current location
     Location current_loc;
     current_loc.lat = lat_now_*1e7;
     current_loc.lng = lon_now_*1e7;
@@ -101,6 +116,7 @@ void VehicleState::update(double ts)
 
     // run path planning around obstacles
      stop_vehicle = false;
+
     // true if OA has been recently active;
     bool _oa_was_active = _oa_active;
     _oa_dest_unreachable = false;
@@ -108,14 +124,6 @@ void VehicleState::update(double ts)
     double current_yaw = 0.0;
      current_yaw = ins_msg.heading;
 
-{
-    // Location sub_wp_origin = (current_loc);
-    // Location sub_wp_destination =(current_sub_destination);
-
-    // Location sub_wp_origin = (_origin);
-    // Location sub_wp_destination =(_destination);
-
-}
     AP_OAPathPlanner *oa = AP_OAPathPlanner::get_singleton();
     if (oa != nullptr) {
         const AP_OAPathPlanner::OA_RetState oa_retstate = oa->mission_avoidance(current_loc, _origin, _destination,desired_speed_ms_,current_yaw, _oa_origin, _oa_destination,_oa_speed_ms);
@@ -134,13 +142,14 @@ void VehicleState::update(double ts)
             break;
         case AP_OAPathPlanner::OA_RetState::OA_CAN_NOT_ARRIVAL:
             _oa_dest_unreachable = true;
-             stop_vehicle = true;
+             //stop_vehicle = true;
             _oa_active = false;
             break;
         }
     }
+
     if (!_oa_active) {
-        _oa_origin = _origin;
+        _oa_origin      = _origin;
         _oa_destination = _destination;
     }
 
@@ -153,14 +162,32 @@ void VehicleState::update(double ts)
         }
     }
 
-    // float distance_to_sub_waypoint=current_loc.get_distance(current_sub_destination);
-    // if((_oa_dest_unreachable || distance_to_sub_waypoint<=descrete_distance))
-    // {
-    //     sub_idx = (sub_idx < waypoint_list_.size())?(sub_idx++):(sub_idx);
-    // }
+    _oa_advance_finished = false;
+
+    if(_oa_dest_unreachable == true){
+        if((id +1) < max_id){
+            const float next_route_bearing  = _destination.get_bearing_to(next_destination)*0.01f;
+            const float next_route_distance = _destination.get_distance(next_destination);
+            const float advance_distance = (next_route_distance > 10.0f)?(10.0f):(next_route_distance);
+
+            Location sub_wp = _destination;
+            sub_wp.offset_bearing(next_route_bearing,advance_distance);
+            sailTask.sailMsg.wayPoint[id].f64_latitude  = sub_wp.lat * 1e-7;
+            sailTask.sailMsg.wayPoint[id].f64_longitude = sub_wp.lng * 1e-7;
+
+            if(next_route_distance <1.0){
+            _oa_advance_finished = true;
+            }
+            printf("vehicle_state::remain_search_distance[%d] = %f\n",id,next_route_distance);
+            initialized_ = false;
+        }else{
+            _oa_advance_finished = true;
+        }
+    }
 
     // update current state 
     double gps_heading = 0.0,gps_track_error = 0.0,gps_course = 0.0;
+
     // compute vector of route
     double OA_distance = _oa_origin.get_distance(_oa_destination);
     double OA_bearing  = _oa_origin.get_bearing_to(_oa_destination) *0.01;
@@ -176,11 +203,12 @@ void VehicleState::update(double ts)
     PA.set_x(PA_distance * cos(math::radians(PA_bearing)));
     PA.set_y(PA_distance * sin(math::radians(PA_bearing)));
 
-    lateral_error_ = (OA.Length() >= 1e-6)?PA.CrossProd(OA)/OA.Length():0.0;
-    heading_error_ = math::wrap_180(current_yaw - OA_bearing);
-    linear_velocity_ = (gps_msg_ok == true)?(ins_msg.speed):(linear_velocity_);
-    angular_velocity_ = (use_external_angular_velocity_ == true)?(ins_msg.rotRate):heading_error_td_filter.z2();
-    time_stamp_ = cur_time;
+    lateral_error_     = (OA.Length() >= 1e-6)?PA.CrossProd(OA)/OA.Length():0.0;
+    heading_error_     = math::wrap_180(current_yaw - OA_bearing);
+
+    linear_velocity_   = (gps_msg_ok == true)?(ins_msg.speed):(linear_velocity_);
+    angular_velocity_  = (use_external_angular_velocity_ == true)?(ins_msg.rotRate):heading_error_td_filter.z2();
+    time_stamp_        = cur_time;
 
 
     // update current localization state
@@ -197,7 +225,7 @@ void VehicleState::update(double ts)
     // initialization not completed,navigation not allowed
     if(!initialized_ && id == 0){
        LOG(INFO)<< "VehicleState:: Initialization is not completed,navigation not allowed!";
-        status_ = GPS_ERR_RADAR_ERR;
+       status_ = GPS_ERR_RADAR_ERR;
     }
 
     // compute angular velocity
@@ -207,21 +235,6 @@ void VehicleState::update(double ts)
         heading_error_td_filter.Update(heading_error_,heading_error_,ts);
     }
 
-}
-
-void VehicleState::interp_waypoint(const Location& origin,const Location& destination,std::vector<Location> &waypoint)
-{
-    Location sub_wp = origin;
-    float distance_to_end = sub_wp.get_distance(destination);
-    const float route_bearing = origin.get_bearing_to(destination)*0.01f;
-
-    while(distance_to_end >= descrete_distance)
-    {
-        waypoint.emplace_back(sub_wp);
-        sub_wp.offset_bearing(route_bearing,descrete_distance);
-        distance_to_end = sub_wp.get_distance(destination);
-    }
-    waypoint.emplace_back(destination);
 }
 
 VehicleState *VehicleState::singleton_ = nullptr;

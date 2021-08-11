@@ -470,6 +470,7 @@ void updateBrCC_usvState(void)
 	br_usv_state.u8_dockcmd_feedback = usv_sign.cmd_feedback;
 	br_usv_state.u8_st_motorState = IHC_rev_msg.mid_st.b1_St_MotorOn;
 	
+<<<<<<< HEAD
     //fabsf(jet_system.jetL.u8_Cmd_MotorOpenDeg)* 1000.f/255.0f ;//
 	br_usv_state.u16_st_moter1Rpm    = fabsf(jet_system.jetL.u8_Cmd_MotorOpenDeg)* 1000.f/255.0f;
 	br_usv_state.i16_st_moter1Gear   = IHC_rev_msg.i16_St_Motor1Gear;
@@ -477,6 +478,15 @@ void updateBrCC_usvState(void)
 										
 	//fabsf(jet_system.jetR.i16_Cmd_MotorRudderDeg)* 1000.0f/255.0f ;//
 	br_usv_state.u16_st_moter2Rpm    = fabsf(jet_system.jetR.i16_Cmd_MotorRudderDeg)* 1000.0f/255.0f ;
+=======
+
+	br_usv_state.u16_st_moter1Rpm    = fabsf(jet_system.jetL.u8_Cmd_MotorOpenDeg)*1000.f/255.0f;//IHC_rev_msg.u16_St_Motor1Rpm;
+	br_usv_state.i16_st_moter1Gear   = IHC_rev_msg.i16_St_Motor1Gear;
+	br_usv_state.i16_st_moter1Rudder = IHC_rev_msg.i16_St_Motor1Rudder;
+										
+
+	br_usv_state.u16_st_moter2Rpm    = fabsf(jet_system.jetL.i16_Cmd_MotorRudderDeg)*1000.f/255.0f;//IHC_rev_msg.u16_St_Motor2Rpm;
+>>>>>>> 4ee0903dae03683f62fc1fcf9c95ac370491883a
 	br_usv_state.i16_st_moter2Gear   = IHC_rev_msg.i16_St_Motor2Gear;
 	br_usv_state.i16_st_moter2Rudder = IHC_rev_msg.i16_St_Motor2Rudder;
 

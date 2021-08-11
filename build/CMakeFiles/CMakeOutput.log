@@ -1,7 +1,7 @@
-The system is: Linux - 4.15.0-151-generic - x86_64
+The system is: Linux - 4.15.0-153-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc 
-Build flags: ;--sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi
+Compiler: /root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc 
+Build flags: ;--sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi
 Id flags:  
 
 The output was:
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/foo/Projects/autopilot/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/xlk/sf_ws/autopilot/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++ -std=c++11
+Compiler: /root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++ -std=c++11
 Build flags: 
 Id flags:  
 
@@ -23,72 +23,72 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/foo/Projects/autopilot/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/xlk/sf_ws/autopilot/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp
+Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f0545/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f0545.dir/build.make CMakeFiles/cmTC_f0545.dir/build
-make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f0545.dir/testCCompiler.c.o
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -o CMakeFiles/cmTC_f0545.dir/testCCompiler.c.o   -c /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_f0545
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0545.dir/link.txt --verbose=1
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi     CMakeFiles/cmTC_f0545.dir/testCCompiler.c.o  -o cmTC_f0545 
-make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d688a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d688a.dir/build.make CMakeFiles/cmTC_d688a.dir/build
+make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d688a.dir/testCCompiler.c.o
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -o CMakeFiles/cmTC_d688a.dir/testCCompiler.c.o   -c /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_d688a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d688a.dir/link.txt --verbose=1
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi     CMakeFiles/cmTC_d688a.dir/testCCompiler.c.o  -o cmTC_d688a 
+make[1]: Leaving directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp
+Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d9809/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d9809.dir/build.make CMakeFiles/cmTC_d9809.dir/build
-make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d9809.dir/CMakeCCompilerABI.c.o
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -o CMakeFiles/cmTC_d9809.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_d9809
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9809.dir/link.txt --verbose=1
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -v CMakeFiles/cmTC_d9809.dir/CMakeCCompilerABI.c.o  -o cmTC_d9809 
+Run Build Command:"/usr/bin/make" "cmTC_6b594/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6b594.dir/build.make CMakeFiles/cmTC_6b594.dir/build
+make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6b594.dir/CMakeCCompilerABI.c.o
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -o CMakeFiles/cmTC_6b594.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_6b594
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b594.dir/link.txt --verbose=1
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -v CMakeFiles/cmTC_6b594.dir/CMakeCCompilerABI.c.o  -o cmTC_6b594 
 Using built-in specs.
-COLLECT_GCC=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc
+COLLECT_GCC=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc
 COLLECT_LTO_WRAPPER=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/lto-wrapper
 Target: arm-linux-gnueabihf
 Configured with: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/src/gcc-linaro-4.7-2013.03/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-ppl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-host-libstdcxx='-L/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static/lib -lpwl' --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb
 Thread model: posix
 gcc version 4.7.3 20130226 (prerelease) (crosstool-NG linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03) 
 COMPILER_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/bin/
-LIBRARY_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib/:/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib/:/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d9809' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
- /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2 --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_d9809 /opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crt1.o /opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crti.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib -L/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib -L/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib CMakeFiles/cmTC_d9809.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtend.o /opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crtn.o
-make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
+LIBRARY_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib/:/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib/:/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6b594' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2 --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_6b594 /root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crt1.o /root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crti.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib -L/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib -L/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib CMakeFiles/cmTC_6b594.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtend.o /root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crtn.o
+make[1]: Leaving directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d9809/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d9809.dir/build.make CMakeFiles/cmTC_d9809.dir/build]
-  ignore line: [make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_d9809.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -o CMakeFiles/cmTC_d9809.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_d9809]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9809.dir/link.txt --verbose=1]
-  ignore line: [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -v CMakeFiles/cmTC_d9809.dir/CMakeCCompilerABI.c.o  -o cmTC_d9809 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6b594/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6b594.dir/build.make CMakeFiles/cmTC_6b594.dir/build]
+  ignore line: [make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_6b594.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -o CMakeFiles/cmTC_6b594.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_6b594]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b594.dir/link.txt --verbose=1]
+  ignore line: [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -v CMakeFiles/cmTC_6b594.dir/CMakeCCompilerABI.c.o  -o cmTC_6b594 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc]
+  ignore line: [COLLECT_GCC=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/lto-wrapper]
   ignore line: [Target: arm-linux-gnueabihf]
   ignore line: [Configured with: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/src/gcc-linaro-4.7-2013.03/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-ppl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-host-libstdcxx='-L/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static/lib -lpwl' --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.7.3 20130226 (prerelease) (crosstool-NG linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03) ]
   ignore line: [COMPILER_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/bin/]
-  ignore line: [LIBRARY_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib/:/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib/:/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d9809' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
-  link line: [ /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2 --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_d9809 /opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crt1.o /opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crti.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib -L/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib -L/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib CMakeFiles/cmTC_d9809.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtend.o /opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crtn.o]
+  ignore line: [LIBRARY_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib/:/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib/:/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6b594' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2 --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_6b594 /root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crt1.o /root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crti.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib -L/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib -L/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib CMakeFiles/cmTC_6b594.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtend.o /root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crtn.o]
     arg [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2] ==> ignore
-    arg [--sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi] ==> ignore
+    arg [--sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-dynamic-linker] ==> ignore
@@ -97,17 +97,17 @@ Parsed C implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d9809] ==> ignore
-    arg [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crt1.o] ==> ignore
-    arg [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crti.o] ==> ignore
+    arg [cmTC_6b594] ==> ignore
+    arg [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crt1.o] ==> ignore
+    arg [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crti.o] ==> ignore
     arg [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o] ==> ignore
     arg [-L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3] ==> dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3]
     arg [-L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc] ==> dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc]
     arg [-L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf] ==> dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf]
     arg [-L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib] ==> dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib]
-    arg [-L/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib] ==> dir [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib]
-    arg [-L/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib] ==> dir [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib]
-    arg [CMakeFiles/cmTC_d9809.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-L/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib] ==> dir [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib]
+    arg [-L/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib] ==> dir [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib]
+    arg [CMakeFiles/cmTC_6b594.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -118,32 +118,32 @@ Parsed C implicit link information from above output:
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
     arg [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtend.o] ==> ignore
-    arg [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crtn.o] ==> ignore
+    arg [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib/crtn.o] ==> ignore
   collapse library dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3] ==> [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/4.7.3]
   collapse library dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc] ==> [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc]
   collapse library dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf] ==> [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf]
   collapse library dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib] ==> [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/arm-linux-gnueabihf/lib]
-  collapse library dir [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib] ==> [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib]
-  collapse library dir [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib] ==> [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib]
+  collapse library dir [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib] ==> [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib]
+  collapse library dir [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib] ==> [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib]
   implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/4.7.3;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/arm-linux-gnueabihf/lib;/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib;/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib]
+  implicit dirs: [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf/4.7.3;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/lib/gcc/arm-linux-gnueabihf;/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/arm-linux-gnueabihf/lib;/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/lib;/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp
+Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b2259/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b2259.dir/build.make CMakeFiles/cmTC_b2259.dir/build
-make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b2259.dir/feature_tests.c.o
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -std=c11 -o CMakeFiles/cmTC_b2259.dir/feature_tests.c.o   -c /home/foo/Projects/autopilot/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_b2259
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2259.dir/link.txt --verbose=1
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi     CMakeFiles/cmTC_b2259.dir/feature_tests.c.o  -o cmTC_b2259 
-make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_2a296/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2a296.dir/build.make CMakeFiles/cmTC_2a296.dir/build
+make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2a296.dir/feature_tests.c.o
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -std=c11 -o CMakeFiles/cmTC_2a296.dir/feature_tests.c.o   -c /home/xlk/sf_ws/autopilot/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2a296
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a296.dir/link.txt --verbose=1
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi     CMakeFiles/cmTC_2a296.dir/feature_tests.c.o  -o cmTC_2a296 
+make[1]: Leaving directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -153,17 +153,17 @@ make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeT
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp
+Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_27467/fast"
-/usr/bin/make -f CMakeFiles/cmTC_27467.dir/build.make CMakeFiles/cmTC_27467.dir/build
-make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_27467.dir/feature_tests.c.o
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -std=c99 -o CMakeFiles/cmTC_27467.dir/feature_tests.c.o   -c /home/foo/Projects/autopilot/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_27467
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27467.dir/link.txt --verbose=1
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi     CMakeFiles/cmTC_27467.dir/feature_tests.c.o  -o cmTC_27467 
-make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ad0ac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad0ac.dir/build.make CMakeFiles/cmTC_ad0ac.dir/build
+make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad0ac.dir/feature_tests.c.o
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -std=c99 -o CMakeFiles/cmTC_ad0ac.dir/feature_tests.c.o   -c /home/xlk/sf_ws/autopilot/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ad0ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad0ac.dir/link.txt --verbose=1
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi     CMakeFiles/cmTC_ad0ac.dir/feature_tests.c.o  -o cmTC_ad0ac 
+make[1]: Leaving directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -173,17 +173,17 @@ make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeT
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp
+Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c918b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c918b.dir/build.make CMakeFiles/cmTC_c918b.dir/build
-make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c918b.dir/feature_tests.c.o
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -std=c90 -o CMakeFiles/cmTC_c918b.dir/feature_tests.c.o   -c /home/foo/Projects/autopilot/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c918b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c918b.dir/link.txt --verbose=1
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi     CMakeFiles/cmTC_c918b.dir/feature_tests.c.o  -o cmTC_c918b 
-make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_3e64a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3e64a.dir/build.make CMakeFiles/cmTC_3e64a.dir/build
+make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e64a.dir/feature_tests.c.o
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc   --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi    -std=c90 -o CMakeFiles/cmTC_3e64a.dir/feature_tests.c.o   -c /home/xlk/sf_ws/autopilot/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_3e64a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e64a.dir/link.txt --verbose=1
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc --sysroot=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi     CMakeFiles/cmTC_3e64a.dir/feature_tests.c.o  -o cmTC_3e64a 
+make[1]: Leaving directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -191,32 +191,32 @@ make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeT
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp
+Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_06239/fast"
-/usr/bin/make -f CMakeFiles/cmTC_06239.dir/build.make CMakeFiles/cmTC_06239.dir/build
-make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_06239.dir/testCXXCompiler.cxx.o
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11     -o CMakeFiles/cmTC_06239.dir/testCXXCompiler.cxx.o -c /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_06239
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06239.dir/link.txt --verbose=1
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11       CMakeFiles/cmTC_06239.dir/testCXXCompiler.cxx.o  -o cmTC_06239 
-make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6e9bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6e9bd.dir/build.make CMakeFiles/cmTC_6e9bd.dir/build
+make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6e9bd.dir/testCXXCompiler.cxx.o
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11     -o CMakeFiles/cmTC_6e9bd.dir/testCXXCompiler.cxx.o -c /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_6e9bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e9bd.dir/link.txt --verbose=1
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11       CMakeFiles/cmTC_6e9bd.dir/testCXXCompiler.cxx.o  -o cmTC_6e9bd 
+make[1]: Leaving directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp
+Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c8834/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c8834.dir/build.make CMakeFiles/cmTC_c8834.dir/build
-make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c8834.dir/CMakeCXXCompilerABI.cpp.o
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11     -o CMakeFiles/cmTC_c8834.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_c8834
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8834.dir/link.txt --verbose=1
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11      -v CMakeFiles/cmTC_c8834.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c8834 
+Run Build Command:"/usr/bin/make" "cmTC_fd058/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd058.dir/build.make CMakeFiles/cmTC_fd058.dir/build
+make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd058.dir/CMakeCXXCompilerABI.cpp.o
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11     -o CMakeFiles/cmTC_fd058.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_fd058
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd058.dir/link.txt --verbose=1
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11      -v CMakeFiles/cmTC_fd058.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_fd058 
 Using built-in specs.
-COLLECT_GCC=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++
+COLLECT_GCC=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++
 COLLECT_LTO_WRAPPER=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/lto-wrapper
 Target: arm-linux-gnueabihf
 Configured with: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/src/gcc-linaro-4.7-2013.03/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-ppl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-host-libstdcxx='-L/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static/lib -lpwl' --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb
@@ -224,25 +224,25 @@ Thread model: posix
 gcc version 4.7.3 20130226 (prerelease) (crosstool-NG linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03) 
 COMPILER_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/bin/
 LIBRARY_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/
-COLLECT_GCC_OPTIONS='-std=c++11' '-v' '-o' 'cmTC_c8834' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
- /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2 --sysroot=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_c8834 /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crt1.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crti.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_c8834.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtend.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crtn.o
-make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-std=c++11' '-v' '-o' 'cmTC_fd058' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2 --sysroot=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_fd058 /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crt1.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crti.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_fd058.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtend.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crtn.o
+make[1]: Leaving directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c8834/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c8834.dir/build.make CMakeFiles/cmTC_c8834.dir/build]
-  ignore line: [make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_c8834.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11     -o CMakeFiles/cmTC_c8834.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_c8834]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8834.dir/link.txt --verbose=1]
-  ignore line: [/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11      -v CMakeFiles/cmTC_c8834.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c8834 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_fd058/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_fd058.dir/build.make CMakeFiles/cmTC_fd058.dir/build]
+  ignore line: [make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_fd058.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11     -o CMakeFiles/cmTC_fd058.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_fd058]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd058.dir/link.txt --verbose=1]
+  ignore line: [/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11      -v CMakeFiles/cmTC_fd058.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_fd058 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++]
+  ignore line: [COLLECT_GCC=/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/lto-wrapper]
   ignore line: [Target: arm-linux-gnueabihf]
   ignore line: [Configured with: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/src/gcc-linaro-4.7-2013.03/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-ppl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static --with-host-libstdcxx='-L/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/.build/arm-linux-gnueabihf/build/static/lib -lpwl' --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-linux/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb]
@@ -250,8 +250,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.7.3 20130226 (prerelease) (crosstool-NG linaro-1.13.1-4.7-2013.03-20130313 - Linaro GCC 2013.03) ]
   ignore line: [COMPILER_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/bin/]
   ignore line: [LIBRARY_PATH=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/:/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/]
-  ignore line: [COLLECT_GCC_OPTIONS='-std=c++11' '-v' '-o' 'cmTC_c8834' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
-  link line: [ /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2 --sysroot=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_c8834 /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crt1.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crti.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_c8834.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtend.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++11' '-v' '-o' 'cmTC_fd058' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2 --sysroot=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_fd058 /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crt1.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crti.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/../../../../arm-linux-gnueabihf/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3 -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib -L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_fd058.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtend.o /usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crtn.o]
     arg [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../libexec/gcc/arm-linux-gnueabihf/4.7.3/collect2] ==> ignore
     arg [--sysroot=/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc] ==> ignore
     arg [--build-id] ==> ignore
@@ -262,7 +262,7 @@ Parsed CXX implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_c8834] ==> ignore
+    arg [cmTC_fd058] ==> ignore
     arg [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crt1.o] ==> ignore
     arg [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3/crti.o] ==> ignore
     arg [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../lib/gcc/arm-linux-gnueabihf/4.7.3/crtbegin.o] ==> ignore
@@ -276,7 +276,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3] ==> dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/4.7.3]
     arg [-L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib] ==> dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib]
     arg [-L/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/local/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf]
-    arg [CMakeFiles/cmTC_c8834.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_fd058.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -304,17 +304,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp
+Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a9d2b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a9d2b.dir/build.make CMakeFiles/cmTC_a9d2b.dir/build
-make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a9d2b.dir/feature_tests.cxx.o
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11    -std=c++11 -o CMakeFiles/cmTC_a9d2b.dir/feature_tests.cxx.o -c /home/foo/Projects/autopilot/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a9d2b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9d2b.dir/link.txt --verbose=1
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11       CMakeFiles/cmTC_a9d2b.dir/feature_tests.cxx.o  -o cmTC_a9d2b 
-make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_f0ade/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f0ade.dir/build.make CMakeFiles/cmTC_f0ade.dir/build
+make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f0ade.dir/feature_tests.cxx.o
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11    -std=c++11 -o CMakeFiles/cmTC_f0ade.dir/feature_tests.cxx.o -c /home/xlk/sf_ws/autopilot/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f0ade
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0ade.dir/link.txt --verbose=1
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11       CMakeFiles/cmTC_f0ade.dir/feature_tests.cxx.o  -o cmTC_f0ade 
+make[1]: Leaving directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -377,17 +377,17 @@ make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeT
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp
+Change Dir: /home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_67f64/fast"
-/usr/bin/make -f CMakeFiles/cmTC_67f64.dir/build.make CMakeFiles/cmTC_67f64.dir/build
-make[1]: Entering directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_67f64.dir/feature_tests.cxx.o
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11    -std=c++98 -o CMakeFiles/cmTC_67f64.dir/feature_tests.cxx.o -c /home/foo/Projects/autopilot/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_67f64
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67f64.dir/link.txt --verbose=1
-/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11       CMakeFiles/cmTC_67f64.dir/feature_tests.cxx.o  -o cmTC_67f64 
-make[1]: Leaving directory '/home/foo/Projects/autopilot/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_02be0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_02be0.dir/build.make CMakeFiles/cmTC_02be0.dir/build
+make[1]: Entering directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_02be0.dir/feature_tests.cxx.o
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11    -std=c++98 -o CMakeFiles/cmTC_02be0.dir/feature_tests.cxx.o -c /home/xlk/sf_ws/autopilot/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_02be0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02be0.dir/link.txt --verbose=1
+/root/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11       CMakeFiles/cmTC_02be0.dir/feature_tests.cxx.o  -o cmTC_02be0 
+make[1]: Leaving directory '/home/xlk/sf_ws/autopilot/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

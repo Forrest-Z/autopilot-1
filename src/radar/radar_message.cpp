@@ -198,6 +198,10 @@ void RadarMessage::database_push(const int32_t lat,const int32_t lng)
     }
 
     float distance = (obstacle_pos - current_pos).length()*0.01f;
+    if(distance <=0.5){
+        return;
+        //printf("[WARN]:distance <=2.0!,distance = %f,obs_lat = %ld,obs_lng = %ld,lat = %ld,lng = %ld\n",distance,lat,lng,current_loc.lat,current_loc.lng);
+    }
     Vector3f pos{obstacle_pos.x*0.01f,obstacle_pos.y*0.01f,0.0f};
 
     oaDb->queue_push(pos,user_time::get_millis(),distance);

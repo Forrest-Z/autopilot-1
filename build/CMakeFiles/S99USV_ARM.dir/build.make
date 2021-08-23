@@ -60,15 +60,15 @@ include CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.o: ../src/AisMsgQue.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.o -c /home/foo/Projects/autopilot/src/AisMsgQue.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.o -c /home/foo/Projects/autopilot/src/AisMsgQue.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/AisMsgQue.cpp > CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/AisMsgQue.cpp > CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/AisMsgQue.cpp -o CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/AisMsgQue.cpp -o CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.o.requires:
 
@@ -84,15 +84,15 @@ CMakeFiles/S99USV_ARM.dir/src/AisMsgQue.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.o: ../src/Algorithm_path.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.o -c /home/foo/Projects/autopilot/src/Algorithm_path.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.o -c /home/foo/Projects/autopilot/src/Algorithm_path.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/Algorithm_path.cpp > CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/Algorithm_path.cpp > CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/Algorithm_path.cpp -o CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/Algorithm_path.cpp -o CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.o.requires:
 
@@ -108,15 +108,15 @@ CMakeFiles/S99USV_ARM.dir/src/Algorithm_path.cpp.o.provides.build: CMakeFiles/S9
 CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.o: ../src/ApfMethod.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.o -c /home/foo/Projects/autopilot/src/ApfMethod.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.o -c /home/foo/Projects/autopilot/src/ApfMethod.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ApfMethod.cpp > CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ApfMethod.cpp > CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ApfMethod.cpp -o CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ApfMethod.cpp -o CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.o.requires:
 
@@ -132,15 +132,15 @@ CMakeFiles/S99USV_ARM.dir/src/ApfMethod.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.o: ../src/BradioUdpThread.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.o -c /home/foo/Projects/autopilot/src/BradioUdpThread.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.o -c /home/foo/Projects/autopilot/src/BradioUdpThread.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/BradioUdpThread.cpp > CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/BradioUdpThread.cpp > CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/BradioUdpThread.cpp -o CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/BradioUdpThread.cpp -o CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.o.requires:
 
@@ -156,15 +156,15 @@ CMakeFiles/S99USV_ARM.dir/src/BradioUdpThread.cpp.o.provides.build: CMakeFiles/S
 CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.o: ../src/GlobalFunction.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.o -c /home/foo/Projects/autopilot/src/GlobalFunction.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.o -c /home/foo/Projects/autopilot/src/GlobalFunction.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/GlobalFunction.cpp > CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/GlobalFunction.cpp > CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/GlobalFunction.cpp -o CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/GlobalFunction.cpp -o CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.o.requires:
 
@@ -180,15 +180,15 @@ CMakeFiles/S99USV_ARM.dir/src/GlobalFunction.cpp.o.provides.build: CMakeFiles/S9
 CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.o: ../src/MsgQue.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.o -c /home/foo/Projects/autopilot/src/MsgQue.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.o -c /home/foo/Projects/autopilot/src/MsgQue.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/MsgQue.cpp > CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/MsgQue.cpp > CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/MsgQue.cpp -o CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/MsgQue.cpp -o CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.o.requires:
 
@@ -204,15 +204,15 @@ CMakeFiles/S99USV_ARM.dir/src/MsgQue.cpp.o.provides.build: CMakeFiles/S99USV_ARM
 CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.o: ../src/SysLog.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.o -c /home/foo/Projects/autopilot/src/SysLog.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.o -c /home/foo/Projects/autopilot/src/SysLog.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/SysLog.cpp > CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/SysLog.cpp > CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/SysLog.cpp -o CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/SysLog.cpp -o CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.o.requires:
 
@@ -228,15 +228,15 @@ CMakeFiles/S99USV_ARM.dir/src/SysLog.cpp.o.provides.build: CMakeFiles/S99USV_ARM
 CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.o: ../src/SysMsgPub.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.o -c /home/foo/Projects/autopilot/src/SysMsgPub.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.o -c /home/foo/Projects/autopilot/src/SysMsgPub.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/SysMsgPub.cpp > CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/SysMsgPub.cpp > CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/SysMsgPub.cpp -o CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/SysMsgPub.cpp -o CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.o.requires:
 
@@ -252,15 +252,15 @@ CMakeFiles/S99USV_ARM.dir/src/SysMsgPub.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.o: ../src/TaskQue.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.o -c /home/foo/Projects/autopilot/src/TaskQue.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.o -c /home/foo/Projects/autopilot/src/TaskQue.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/TaskQue.cpp > CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/TaskQue.cpp > CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/TaskQue.cpp -o CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/TaskQue.cpp -o CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.o.requires:
 
@@ -276,15 +276,15 @@ CMakeFiles/S99USV_ARM.dir/src/TaskQue.cpp.o.provides.build: CMakeFiles/S99USV_AR
 CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.o: ../src/USV_const.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.o -c /home/foo/Projects/autopilot/src/USV_const.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.o -c /home/foo/Projects/autopilot/src/USV_const.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/USV_const.cpp > CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/USV_const.cpp > CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/USV_const.cpp -o CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/USV_const.cpp -o CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.o.requires:
 
@@ -300,15 +300,15 @@ CMakeFiles/S99USV_ARM.dir/src/USV_const.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.o: ../src/adrc.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.o -c /home/foo/Projects/autopilot/src/adrc.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.o -c /home/foo/Projects/autopilot/src/adrc.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.o.requires:
 
@@ -324,15 +324,15 @@ CMakeFiles/S99USV_ARM.dir/src/adrc.cpp.o.provides.build: CMakeFiles/S99USV_ARM.d
 CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.o: ../src/algorithm.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.o -c /home/foo/Projects/autopilot/src/algorithm.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.o -c /home/foo/Projects/autopilot/src/algorithm.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/algorithm.cpp > CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/algorithm.cpp > CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/algorithm.cpp -o CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/algorithm.cpp -o CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.o.requires:
 
@@ -348,15 +348,15 @@ CMakeFiles/S99USV_ARM.dir/src/algorithm.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o: ../src/auto_return.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o -c /home/foo/Projects/autopilot/src/auto_return.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o -c /home/foo/Projects/autopilot/src/auto_return.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/auto_return.cpp > CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/auto_return.cpp > CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/auto_return.cpp -o CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/auto_return.cpp -o CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o.requires:
 
@@ -372,15 +372,15 @@ CMakeFiles/S99USV_ARM.dir/src/auto_return.cpp.o.provides.build: CMakeFiles/S99US
 CMakeFiles/S99USV_ARM.dir/src/bd.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/bd.cpp.o: ../src/bd.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/bd.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/bd.cpp.o -c /home/foo/Projects/autopilot/src/bd.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/bd.cpp.o -c /home/foo/Projects/autopilot/src/bd.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/bd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/bd.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/bd.cpp > CMakeFiles/S99USV_ARM.dir/src/bd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/bd.cpp > CMakeFiles/S99USV_ARM.dir/src/bd.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/bd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/bd.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/bd.cpp -o CMakeFiles/S99USV_ARM.dir/src/bd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/bd.cpp -o CMakeFiles/S99USV_ARM.dir/src/bd.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/bd.cpp.o.requires:
 
@@ -396,15 +396,15 @@ CMakeFiles/S99USV_ARM.dir/src/bd.cpp.o.provides.build: CMakeFiles/S99USV_ARM.dir
 CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.o: ../src/bd_comm.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.o -c /home/foo/Projects/autopilot/src/bd_comm.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.o -c /home/foo/Projects/autopilot/src/bd_comm.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/bd_comm.cpp > CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/bd_comm.cpp > CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/bd_comm.cpp -o CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/bd_comm.cpp -o CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.o.requires:
 
@@ -420,15 +420,15 @@ CMakeFiles/S99USV_ARM.dir/src/bd_comm.cpp.o.provides.build: CMakeFiles/S99USV_AR
 CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.o: ../src/calculate_path_point.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.o -c /home/foo/Projects/autopilot/src/calculate_path_point.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.o -c /home/foo/Projects/autopilot/src/calculate_path_point.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/calculate_path_point.cpp > CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/calculate_path_point.cpp > CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/calculate_path_point.cpp -o CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/calculate_path_point.cpp -o CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.o.requires:
 
@@ -444,15 +444,15 @@ CMakeFiles/S99USV_ARM.dir/src/calculate_path_point.cpp.o.provides.build: CMakeFi
 CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.o: ../src/can_api.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.o -c /home/foo/Projects/autopilot/src/can_api.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.o -c /home/foo/Projects/autopilot/src/can_api.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_api.cpp > CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_api.cpp > CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_api.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_api.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.o.requires:
 
@@ -468,15 +468,15 @@ CMakeFiles/S99USV_ARM.dir/src/can_api.cpp.o.provides.build: CMakeFiles/S99USV_AR
 CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.o: ../src/can_ctrl.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.o -c /home/foo/Projects/autopilot/src/can_ctrl.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.o -c /home/foo/Projects/autopilot/src/can_ctrl.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_ctrl.cpp > CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_ctrl.cpp > CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_ctrl.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_ctrl.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.o.requires:
 
@@ -492,15 +492,15 @@ CMakeFiles/S99USV_ARM.dir/src/can_ctrl.cpp.o.provides.build: CMakeFiles/S99USV_A
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.o: ../src/can_deal_IDU.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.o -c /home/foo/Projects/autopilot/src/can_deal_IDU.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.o -c /home/foo/Projects/autopilot/src/can_deal_IDU.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_deal_IDU.cpp > CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_deal_IDU.cpp > CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_deal_IDU.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_deal_IDU.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.o.requires:
 
@@ -516,15 +516,15 @@ CMakeFiles/S99USV_ARM.dir/src/can_deal_IDU.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.o: ../src/can_deal_IHC.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.o -c /home/foo/Projects/autopilot/src/can_deal_IHC.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.o -c /home/foo/Projects/autopilot/src/can_deal_IHC.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_deal_IHC.cpp > CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_deal_IHC.cpp > CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_deal_IHC.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_deal_IHC.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.o.requires:
 
@@ -540,15 +540,15 @@ CMakeFiles/S99USV_ARM.dir/src/can_deal_IHC.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.o: ../src/can_deal_IOP.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.o -c /home/foo/Projects/autopilot/src/can_deal_IOP.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.o -c /home/foo/Projects/autopilot/src/can_deal_IOP.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_deal_IOP.cpp > CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_deal_IOP.cpp > CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_deal_IOP.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_deal_IOP.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.o.requires:
 
@@ -564,15 +564,15 @@ CMakeFiles/S99USV_ARM.dir/src/can_deal_IOP.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.o: ../src/can_deal_main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.o -c /home/foo/Projects/autopilot/src/can_deal_main.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.o -c /home/foo/Projects/autopilot/src/can_deal_main.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_deal_main.cpp > CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/can_deal_main.cpp > CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_deal_main.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/can_deal_main.cpp -o CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.o.requires:
 
@@ -588,15 +588,15 @@ CMakeFiles/S99USV_ARM.dir/src/can_deal_main.cpp.o.provides.build: CMakeFiles/S99
 CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.o: ../src/comm_main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.o -c /home/foo/Projects/autopilot/src/comm_main.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.o -c /home/foo/Projects/autopilot/src/comm_main.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/comm_main.cpp > CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/comm_main.cpp > CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/comm_main.cpp -o CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/comm_main.cpp -o CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.o.requires:
 
@@ -612,15 +612,15 @@ CMakeFiles/S99USV_ARM.dir/src/comm_main.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.o: ../src/control_BD.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.o -c /home/foo/Projects/autopilot/src/control_BD.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.o -c /home/foo/Projects/autopilot/src/control_BD.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_BD.cpp > CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_BD.cpp > CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_BD.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_BD.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.o.requires:
 
@@ -636,15 +636,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_BD.cpp.o.provides.build: CMakeFiles/S99USV
 CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.o: ../src/control_assistance.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.o -c /home/foo/Projects/autopilot/src/control_assistance.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.o -c /home/foo/Projects/autopilot/src/control_assistance.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_assistance.cpp > CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_assistance.cpp > CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_assistance.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_assistance.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.o.requires:
 
@@ -660,15 +660,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_assistance.cpp.o.provides.build: CMakeFile
 CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.o: ../src/control_auto.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.o -c /home/foo/Projects/autopilot/src/control_auto.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.o -c /home/foo/Projects/autopilot/src/control_auto.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_auto.cpp > CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_auto.cpp > CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_auto.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_auto.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.o.requires:
 
@@ -684,15 +684,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_auto.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.o: ../src/control_cmd.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.o -c /home/foo/Projects/autopilot/src/control_cmd.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.o -c /home/foo/Projects/autopilot/src/control_cmd.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_cmd.cpp > CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_cmd.cpp > CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_cmd.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_cmd.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.o.requires:
 
@@ -708,15 +708,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_cmd.cpp.o.provides.build: CMakeFiles/S99US
 CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.o: ../src/control_jetCtrlFunc.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.o -c /home/foo/Projects/autopilot/src/control_jetCtrlFunc.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.o -c /home/foo/Projects/autopilot/src/control_jetCtrlFunc.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_jetCtrlFunc.cpp > CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_jetCtrlFunc.cpp > CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_jetCtrlFunc.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_jetCtrlFunc.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.o.requires:
 
@@ -732,15 +732,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_jetCtrlFunc.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.o: ../src/control_main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.o -c /home/foo/Projects/autopilot/src/control_main.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.o -c /home/foo/Projects/autopilot/src/control_main.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_main.cpp > CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_main.cpp > CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_main.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_main.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.o.requires:
 
@@ -756,15 +756,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_main.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.o: ../src/control_manual.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.o -c /home/foo/Projects/autopilot/src/control_manual.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.o -c /home/foo/Projects/autopilot/src/control_manual.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_manual.cpp > CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_manual.cpp > CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_manual.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_manual.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.o.requires:
 
@@ -780,15 +780,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_manual.cpp.o.provides.build: CMakeFiles/S9
 CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.o: ../src/control_operation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.o -c /home/foo/Projects/autopilot/src/control_operation.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.o -c /home/foo/Projects/autopilot/src/control_operation.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_operation.cpp > CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_operation.cpp > CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_operation.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_operation.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.o.requires:
 
@@ -804,15 +804,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_operation.cpp.o.provides.build: CMakeFiles
 CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.o: ../src/control_semiAuto.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.o -c /home/foo/Projects/autopilot/src/control_semiAuto.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.o -c /home/foo/Projects/autopilot/src/control_semiAuto.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_semiAuto.cpp > CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_semiAuto.cpp > CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_semiAuto.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_semiAuto.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.o.requires:
 
@@ -828,15 +828,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_semiAuto.cpp.o.provides.build: CMakeFiles/
 CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.o: ../src/control_signalSt.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.o -c /home/foo/Projects/autopilot/src/control_signalSt.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.o -c /home/foo/Projects/autopilot/src/control_signalSt.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_signalSt.cpp > CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_signalSt.cpp > CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_signalSt.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_signalSt.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.o.requires:
 
@@ -852,15 +852,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_signalSt.cpp.o.provides.build: CMakeFiles/
 CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.o: ../src/control_stanby.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.o -c /home/foo/Projects/autopilot/src/control_stanby.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.o -c /home/foo/Projects/autopilot/src/control_stanby.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_stanby.cpp > CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control_stanby.cpp > CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_stanby.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control_stanby.cpp -o CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.o.requires:
 
@@ -876,15 +876,15 @@ CMakeFiles/S99USV_ARM.dir/src/control_stanby.cpp.o.provides.build: CMakeFiles/S9
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.o: ../src/ctrl_semiAuto_berth.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.o -c /home/foo/Projects/autopilot/src/ctrl_semiAuto_berth.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.o -c /home/foo/Projects/autopilot/src/ctrl_semiAuto_berth.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ctrl_semiAuto_berth.cpp > CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ctrl_semiAuto_berth.cpp > CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ctrl_semiAuto_berth.cpp -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ctrl_semiAuto_berth.cpp -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.o.requires:
 
@@ -900,15 +900,15 @@ CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_berth.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.o: ../src/ctrl_semiAuto_headingConstant.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.o -c /home/foo/Projects/autopilot/src/ctrl_semiAuto_headingConstant.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.o -c /home/foo/Projects/autopilot/src/ctrl_semiAuto_headingConstant.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ctrl_semiAuto_headingConstant.cpp > CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ctrl_semiAuto_headingConstant.cpp > CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ctrl_semiAuto_headingConstant.cpp -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ctrl_semiAuto_headingConstant.cpp -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.o.requires:
 
@@ -924,15 +924,15 @@ CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_headingConstant.cpp.o.provides.build
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.o: ../src/ctrl_semiAuto_speedConstant.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.o -c /home/foo/Projects/autopilot/src/ctrl_semiAuto_speedConstant.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.o -c /home/foo/Projects/autopilot/src/ctrl_semiAuto_speedConstant.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ctrl_semiAuto_speedConstant.cpp > CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ctrl_semiAuto_speedConstant.cpp > CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ctrl_semiAuto_speedConstant.cpp -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ctrl_semiAuto_speedConstant.cpp -o CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.o.requires:
 
@@ -948,15 +948,15 @@ CMakeFiles/S99USV_ARM.dir/src/ctrl_semiAuto_speedConstant.cpp.o.provides.build: 
 CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.o: ../src/docking_main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.o -c /home/foo/Projects/autopilot/src/docking_main.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.o -c /home/foo/Projects/autopilot/src/docking_main.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_main.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_main.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_main.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_main.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.o.requires:
 
@@ -972,15 +972,15 @@ CMakeFiles/S99USV_ARM.dir/src/docking_main.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.o: ../src/docking_pid_loop.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.o -c /home/foo/Projects/autopilot/src/docking_pid_loop.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.o -c /home/foo/Projects/autopilot/src/docking_pid_loop.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_pid_loop.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_pid_loop.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_pid_loop.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_pid_loop.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.o.requires:
 
@@ -996,15 +996,15 @@ CMakeFiles/S99USV_ARM.dir/src/docking_pid_loop.cpp.o.provides.build: CMakeFiles/
 CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.o: ../src/docking_sumlink_tuning.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.o -c /home/foo/Projects/autopilot/src/docking_sumlink_tuning.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.o -c /home/foo/Projects/autopilot/src/docking_sumlink_tuning.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_sumlink_tuning.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_sumlink_tuning.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_sumlink_tuning.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_sumlink_tuning.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.o.requires:
 
@@ -1020,15 +1020,15 @@ CMakeFiles/S99USV_ARM.dir/src/docking_sumlink_tuning.cpp.o.provides.build: CMake
 CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.o: ../src/docking_usv_control.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.o -c /home/foo/Projects/autopilot/src/docking_usv_control.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.o -c /home/foo/Projects/autopilot/src/docking_usv_control.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_usv_control.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_usv_control.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_usv_control.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_usv_control.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.o.requires:
 
@@ -1044,15 +1044,15 @@ CMakeFiles/S99USV_ARM.dir/src/docking_usv_control.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.o: ../src/docking_visual_guid.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.o -c /home/foo/Projects/autopilot/src/docking_visual_guid.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.o -c /home/foo/Projects/autopilot/src/docking_visual_guid.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_visual_guid.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/docking_visual_guid.cpp > CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_visual_guid.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/docking_visual_guid.cpp -o CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.o.requires:
 
@@ -1068,15 +1068,15 @@ CMakeFiles/S99USV_ARM.dir/src/docking_visual_guid.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.o: ../src/expert_pid.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.o -c /home/foo/Projects/autopilot/src/expert_pid.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.o -c /home/foo/Projects/autopilot/src/expert_pid.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/expert_pid.cpp > CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/expert_pid.cpp > CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/expert_pid.cpp -o CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/expert_pid.cpp -o CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.o.requires:
 
@@ -1092,15 +1092,15 @@ CMakeFiles/S99USV_ARM.dir/src/expert_pid.cpp.o.provides.build: CMakeFiles/S99USV
 CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.o: ../src/gpio_ctrl.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.o -c /home/foo/Projects/autopilot/src/gpio_ctrl.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.o -c /home/foo/Projects/autopilot/src/gpio_ctrl.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/gpio_ctrl.cpp > CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/gpio_ctrl.cpp > CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/gpio_ctrl.cpp -o CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/gpio_ctrl.cpp -o CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.o.requires:
 
@@ -1116,15 +1116,15 @@ CMakeFiles/S99USV_ARM.dir/src/gpio_ctrl.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.o: ../src/initApp.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.o -c /home/foo/Projects/autopilot/src/initApp.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.o -c /home/foo/Projects/autopilot/src/initApp.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/initApp.cpp > CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/initApp.cpp > CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/initApp.cpp -o CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/initApp.cpp -o CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.o.requires:
 
@@ -1140,15 +1140,15 @@ CMakeFiles/S99USV_ARM.dir/src/initApp.cpp.o.provides.build: CMakeFiles/S99USV_AR
 CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.o: ../src/input_monitor_data.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.o -c /home/foo/Projects/autopilot/src/input_monitor_data.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.o -c /home/foo/Projects/autopilot/src/input_monitor_data.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/input_monitor_data.cpp > CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/input_monitor_data.cpp > CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/input_monitor_data.cpp -o CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/input_monitor_data.cpp -o CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.o.requires:
 
@@ -1164,15 +1164,15 @@ CMakeFiles/S99USV_ARM.dir/src/input_monitor_data.cpp.o.provides.build: CMakeFile
 CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.o: ../src/ins_recorder.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.o -c /home/foo/Projects/autopilot/src/ins_recorder.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.o -c /home/foo/Projects/autopilot/src/ins_recorder.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ins_recorder.cpp > CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/ins_recorder.cpp > CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ins_recorder.cpp -o CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/ins_recorder.cpp -o CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.o.requires:
 
@@ -1188,15 +1188,15 @@ CMakeFiles/S99USV_ARM.dir/src/ins_recorder.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.o: ../src/lan_api.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.o -c /home/foo/Projects/autopilot/src/lan_api.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.o -c /home/foo/Projects/autopilot/src/lan_api.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/lan_api.cpp > CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/lan_api.cpp > CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/lan_api.cpp -o CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/lan_api.cpp -o CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.o.requires:
 
@@ -1212,15 +1212,15 @@ CMakeFiles/S99USV_ARM.dir/src/lan_api.cpp.o.provides.build: CMakeFiles/S99USV_AR
 CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.o: ../src/lan_ctrl.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.o -c /home/foo/Projects/autopilot/src/lan_ctrl.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.o -c /home/foo/Projects/autopilot/src/lan_ctrl.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/lan_ctrl.cpp > CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/lan_ctrl.cpp > CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/lan_ctrl.cpp -o CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/lan_ctrl.cpp -o CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.o.requires:
 
@@ -1236,15 +1236,15 @@ CMakeFiles/S99USV_ARM.dir/src/lan_ctrl.cpp.o.provides.build: CMakeFiles/S99USV_A
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.o: ../src/lan_deal_BRadio.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.o -c /home/foo/Projects/autopilot/src/lan_deal_BRadio.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.o -c /home/foo/Projects/autopilot/src/lan_deal_BRadio.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/lan_deal_BRadio.cpp > CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/lan_deal_BRadio.cpp > CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/lan_deal_BRadio.cpp -o CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/lan_deal_BRadio.cpp -o CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.o.requires:
 
@@ -1260,15 +1260,15 @@ CMakeFiles/S99USV_ARM.dir/src/lan_deal_BRadio.cpp.o.provides.build: CMakeFiles/S
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.o: ../src/lan_deal_CtrlCenter.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.o -c /home/foo/Projects/autopilot/src/lan_deal_CtrlCenter.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.o -c /home/foo/Projects/autopilot/src/lan_deal_CtrlCenter.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/lan_deal_CtrlCenter.cpp > CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/lan_deal_CtrlCenter.cpp > CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/lan_deal_CtrlCenter.cpp -o CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/lan_deal_CtrlCenter.cpp -o CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.o.requires:
 
@@ -1284,15 +1284,15 @@ CMakeFiles/S99USV_ARM.dir/src/lan_deal_CtrlCenter.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/main.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/main.cpp.o: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/main.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/main.cpp.o -c /home/foo/Projects/autopilot/src/main.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/main.cpp.o -c /home/foo/Projects/autopilot/src/main.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/main.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/main.cpp > CMakeFiles/S99USV_ARM.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/main.cpp > CMakeFiles/S99USV_ARM.dir/src/main.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/main.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/main.cpp -o CMakeFiles/S99USV_ARM.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/main.cpp -o CMakeFiles/S99USV_ARM.dir/src/main.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/main.cpp.o.requires:
 
@@ -1308,15 +1308,15 @@ CMakeFiles/S99USV_ARM.dir/src/main.cpp.o.provides.build: CMakeFiles/S99USV_ARM.d
 CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.o: ../src/monitor.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.o -c /home/foo/Projects/autopilot/src/monitor.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.o -c /home/foo/Projects/autopilot/src/monitor.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/monitor.cpp > CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/monitor.cpp > CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/monitor.cpp -o CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/monitor.cpp -o CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.o.requires:
 
@@ -1332,15 +1332,15 @@ CMakeFiles/S99USV_ARM.dir/src/monitor.cpp.o.provides.build: CMakeFiles/S99USV_AR
 CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.o: ../src/nanoObstacleSender.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.o -c /home/foo/Projects/autopilot/src/nanoObstacleSender.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.o -c /home/foo/Projects/autopilot/src/nanoObstacleSender.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/nanoObstacleSender.cpp > CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/nanoObstacleSender.cpp > CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/nanoObstacleSender.cpp -o CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/nanoObstacleSender.cpp -o CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.o.requires:
 
@@ -1356,15 +1356,15 @@ CMakeFiles/S99USV_ARM.dir/src/nanoObstacleSender.cpp.o.provides.build: CMakeFile
 CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.o: ../src/pid_control.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.o -c /home/foo/Projects/autopilot/src/pid_control.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.o -c /home/foo/Projects/autopilot/src/pid_control.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid_control.cpp > CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid_control.cpp > CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid_control.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid_control.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.o.requires:
 
@@ -1380,15 +1380,15 @@ CMakeFiles/S99USV_ARM.dir/src/pid_control.cpp.o.provides.build: CMakeFiles/S99US
 CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.o: ../src/read_usv_cfg.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.o -c /home/foo/Projects/autopilot/src/read_usv_cfg.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.o -c /home/foo/Projects/autopilot/src/read_usv_cfg.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/read_usv_cfg.cpp > CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/read_usv_cfg.cpp > CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/read_usv_cfg.cpp -o CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/read_usv_cfg.cpp -o CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.o.requires:
 
@@ -1404,15 +1404,15 @@ CMakeFiles/S99USV_ARM.dir/src/read_usv_cfg.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.o: ../src/read_usv_state.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.o -c /home/foo/Projects/autopilot/src/read_usv_state.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.o -c /home/foo/Projects/autopilot/src/read_usv_state.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/read_usv_state.cpp > CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/read_usv_state.cpp > CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/read_usv_state.cpp -o CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/read_usv_state.cpp -o CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.o.requires:
 
@@ -1428,15 +1428,15 @@ CMakeFiles/S99USV_ARM.dir/src/read_usv_state.cpp.o.provides.build: CMakeFiles/S9
 CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.o: ../src/sailWaypoint.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.o -c /home/foo/Projects/autopilot/src/sailWaypoint.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.o -c /home/foo/Projects/autopilot/src/sailWaypoint.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/sailWaypoint.cpp > CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/sailWaypoint.cpp > CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/sailWaypoint.cpp -o CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/sailWaypoint.cpp -o CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.o.requires:
 
@@ -1452,15 +1452,15 @@ CMakeFiles/S99USV_ARM.dir/src/sailWaypoint.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.o: ../src/samplingComm.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.o -c /home/foo/Projects/autopilot/src/samplingComm.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.o -c /home/foo/Projects/autopilot/src/samplingComm.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/samplingComm.cpp > CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/samplingComm.cpp > CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/samplingComm.cpp -o CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/samplingComm.cpp -o CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.o.requires:
 
@@ -1476,15 +1476,15 @@ CMakeFiles/S99USV_ARM.dir/src/samplingComm.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.o: ../src/simu_ship.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.o -c /home/foo/Projects/autopilot/src/simu_ship.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.o -c /home/foo/Projects/autopilot/src/simu_ship.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/simu_ship.cpp > CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/simu_ship.cpp > CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/simu_ship.cpp -o CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/simu_ship.cpp -o CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.o.requires:
 
@@ -1500,15 +1500,15 @@ CMakeFiles/S99USV_ARM.dir/src/simu_ship.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.o: ../src/sysinfo.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.o -c /home/foo/Projects/autopilot/src/sysinfo.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.o -c /home/foo/Projects/autopilot/src/sysinfo.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/sysinfo.cpp > CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/sysinfo.cpp > CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/sysinfo.cpp -o CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/sysinfo.cpp -o CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.o.requires:
 
@@ -1524,15 +1524,15 @@ CMakeFiles/S99USV_ARM.dir/src/sysinfo.cpp.o.provides.build: CMakeFiles/S99USV_AR
 CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.o: ../src/threadexp.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.o -c /home/foo/Projects/autopilot/src/threadexp.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.o -c /home/foo/Projects/autopilot/src/threadexp.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/threadexp.cpp > CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/threadexp.cpp > CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/threadexp.cpp -o CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/threadexp.cpp -o CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.o.requires:
 
@@ -1548,15 +1548,15 @@ CMakeFiles/S99USV_ARM.dir/src/threadexp.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.o: ../src/uart_api.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.o -c /home/foo/Projects/autopilot/src/uart_api.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.o -c /home/foo/Projects/autopilot/src/uart_api.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_api.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_api.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_api.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_api.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.o.requires:
 
@@ -1572,15 +1572,15 @@ CMakeFiles/S99USV_ARM.dir/src/uart_api.cpp.o.provides.build: CMakeFiles/S99USV_A
 CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.o: ../src/uart_ctrl.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.o -c /home/foo/Projects/autopilot/src/uart_ctrl.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.o -c /home/foo/Projects/autopilot/src/uart_ctrl.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_ctrl.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_ctrl.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_ctrl.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_ctrl.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.o.requires:
 
@@ -1596,15 +1596,15 @@ CMakeFiles/S99USV_ARM.dir/src/uart_ctrl.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.o: ../src/uart_deal_BD.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.o -c /home/foo/Projects/autopilot/src/uart_deal_BD.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.o -c /home/foo/Projects/autopilot/src/uart_deal_BD.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_deal_BD.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_deal_BD.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_deal_BD.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_deal_BD.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.o.requires:
 
@@ -1620,15 +1620,15 @@ CMakeFiles/S99USV_ARM.dir/src/uart_deal_BD.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.o: ../src/uart_deal_DRadio.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.o -c /home/foo/Projects/autopilot/src/uart_deal_DRadio.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.o -c /home/foo/Projects/autopilot/src/uart_deal_DRadio.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_deal_DRadio.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_deal_DRadio.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_deal_DRadio.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_deal_DRadio.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.o.requires:
 
@@ -1644,15 +1644,15 @@ CMakeFiles/S99USV_ARM.dir/src/uart_deal_DRadio.cpp.o.provides.build: CMakeFiles/
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.o: ../src/uart_deal_ins.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.o -c /home/foo/Projects/autopilot/src/uart_deal_ins.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.o -c /home/foo/Projects/autopilot/src/uart_deal_ins.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_deal_ins.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_deal_ins.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_deal_ins.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_deal_ins.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.o.requires:
 
@@ -1668,15 +1668,15 @@ CMakeFiles/S99USV_ARM.dir/src/uart_deal_ins.cpp.o.provides.build: CMakeFiles/S99
 CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.o: ../src/uart_irtk.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.o -c /home/foo/Projects/autopilot/src/uart_irtk.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.o -c /home/foo/Projects/autopilot/src/uart_irtk.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_irtk.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/uart_irtk.cpp > CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_irtk.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/uart_irtk.cpp -o CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.o.requires:
 
@@ -1692,15 +1692,15 @@ CMakeFiles/S99USV_ARM.dir/src/uart_irtk.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.o: ../src/warnProcess.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.o -c /home/foo/Projects/autopilot/src/warnProcess.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.o -c /home/foo/Projects/autopilot/src/warnProcess.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/warnProcess.cpp > CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/warnProcess.cpp > CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/warnProcess.cpp -o CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/warnProcess.cpp -o CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.o.requires:
 
@@ -1716,15 +1716,15 @@ CMakeFiles/S99USV_ARM.dir/src/warnProcess.cpp.o.provides.build: CMakeFiles/S99US
 CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.o: ../src/watch_dog.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.o -c /home/foo/Projects/autopilot/src/watch_dog.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.o -c /home/foo/Projects/autopilot/src/watch_dog.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/watch_dog.cpp > CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/watch_dog.cpp > CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/watch_dog.cpp -o CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/watch_dog.cpp -o CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.o.requires:
 
@@ -1740,15 +1740,15 @@ CMakeFiles/S99USV_ARM.dir/src/watch_dog.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.o: ../src/zmqGetObstacles.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.o -c /home/foo/Projects/autopilot/src/zmqGetObstacles.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.o -c /home/foo/Projects/autopilot/src/zmqGetObstacles.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/zmqGetObstacles.cpp > CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/zmqGetObstacles.cpp > CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/zmqGetObstacles.cpp -o CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/zmqGetObstacles.cpp -o CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.o.requires:
 
@@ -1764,15 +1764,15 @@ CMakeFiles/S99USV_ARM.dir/src/zmqGetObstacles.cpp.o.provides.build: CMakeFiles/S
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o: ../src/proto/obstacle/error_code.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/error_code.pb.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/error_code.pb.cc
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/error_code.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/error_code.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/error_code.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/error_code.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o.requires:
 
@@ -1788,15 +1788,15 @@ CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/error_code.pb.cc.o.provides.build: 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.o: ../src/proto/obstacle/geometry.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/geometry.pb.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/geometry.pb.cc
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/geometry.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/geometry.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/geometry.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/geometry.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.o.requires:
 
@@ -1812,15 +1812,15 @@ CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/geometry.pb.cc.o.provides.build: CM
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.o: ../src/proto/obstacle/gnss_un237.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/gnss_un237.pb.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/gnss_un237.pb.cc
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/gnss_un237.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/gnss_un237.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/gnss_un237.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/gnss_un237.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.o.requires:
 
@@ -1836,15 +1836,15 @@ CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/gnss_un237.pb.cc.o.provides.build: 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.o: ../src/proto/obstacle/header.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/header.pb.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/header.pb.cc
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/header.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/header.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/header.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/header.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.o.requires:
 
@@ -1860,15 +1860,15 @@ CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/header.pb.cc.o.provides.build: CMak
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.o: ../src/proto/obstacle/obstacle_radar.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/obstacle_radar.pb.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.o -c /home/foo/Projects/autopilot/src/proto/obstacle/obstacle_radar.pb.cc
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/obstacle_radar.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/proto/obstacle/obstacle_radar.pb.cc > CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/obstacle_radar.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/proto/obstacle/obstacle_radar.pb.cc -o CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.o.requires:
 
@@ -1884,15 +1884,15 @@ CMakeFiles/S99USV_ARM.dir/src/proto/obstacle/obstacle_radar.pb.cc.o.provides.bui
 CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.o: ../src/adrc/eso.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.o -c /home/foo/Projects/autopilot/src/adrc/eso.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.o -c /home/foo/Projects/autopilot/src/adrc/eso.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc/eso.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc/eso.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc/eso.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc/eso.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.o.requires:
 
@@ -1908,15 +1908,15 @@ CMakeFiles/S99USV_ARM.dir/src/adrc/eso.cpp.o.provides.build: CMakeFiles/S99USV_A
 CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.o: ../src/adrc/lpd.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.o -c /home/foo/Projects/autopilot/src/adrc/lpd.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.o -c /home/foo/Projects/autopilot/src/adrc/lpd.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc/lpd.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc/lpd.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc/lpd.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc/lpd.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.o.requires:
 
@@ -1932,15 +1932,15 @@ CMakeFiles/S99USV_ARM.dir/src/adrc/lpd.cpp.o.provides.build: CMakeFiles/S99USV_A
 CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.o: ../src/adrc/npd.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.o -c /home/foo/Projects/autopilot/src/adrc/npd.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.o -c /home/foo/Projects/autopilot/src/adrc/npd.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc/npd.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc/npd.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc/npd.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc/npd.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.o.requires:
 
@@ -1956,15 +1956,15 @@ CMakeFiles/S99USV_ARM.dir/src/adrc/npd.cpp.o.provides.build: CMakeFiles/S99USV_A
 CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.o: ../src/adrc/td.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.o -c /home/foo/Projects/autopilot/src/adrc/td.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.o -c /home/foo/Projects/autopilot/src/adrc/td.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc/td.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/adrc/td.cpp > CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc/td.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/adrc/td.cpp -o CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.o.requires:
 
@@ -1980,15 +1980,15 @@ CMakeFiles/S99USV_ARM.dir/src/adrc/td.cpp.o.provides.build: CMakeFiles/S99USV_AR
 CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.o: ../src/boat/boat.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.o -c /home/foo/Projects/autopilot/src/boat/boat.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.o -c /home/foo/Projects/autopilot/src/boat/boat.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/boat/boat.cpp > CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/boat/boat.cpp > CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/boat/boat.cpp -o CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/boat/boat.cpp -o CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.o.requires:
 
@@ -2004,15 +2004,15 @@ CMakeFiles/S99USV_ARM.dir/src/boat/boat.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.o: ../src/conf/conf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.o -c /home/foo/Projects/autopilot/src/conf/conf.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.o -c /home/foo/Projects/autopilot/src/conf/conf.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/conf/conf.cpp > CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/conf/conf.cpp > CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/conf/conf.cpp -o CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/conf/conf.cpp -o CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.o.requires:
 
@@ -2028,15 +2028,15 @@ CMakeFiles/S99USV_ARM.dir/src/conf/conf.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.o: ../src/conf/read_config.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.o -c /home/foo/Projects/autopilot/src/conf/read_config.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.o -c /home/foo/Projects/autopilot/src/conf/read_config.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/conf/read_config.cpp > CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/conf/read_config.cpp > CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/conf/read_config.cpp -o CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/conf/read_config.cpp -o CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.o.requires:
 
@@ -2052,15 +2052,15 @@ CMakeFiles/S99USV_ARM.dir/src/conf/read_config.cpp.o.provides.build: CMakeFiles/
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.o: ../src/conf/read_config_xml.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.o -c /home/foo/Projects/autopilot/src/conf/read_config_xml.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.o -c /home/foo/Projects/autopilot/src/conf/read_config_xml.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/conf/read_config_xml.cpp > CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/conf/read_config_xml.cpp > CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/conf/read_config_xml.cpp -o CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/conf/read_config_xml.cpp -o CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.o.requires:
 
@@ -2076,15 +2076,15 @@ CMakeFiles/S99USV_ARM.dir/src/conf/read_config_xml.cpp.o.provides.build: CMakeFi
 CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.o: ../src/common/common.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.o -c /home/foo/Projects/autopilot/src/common/common.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.o -c /home/foo/Projects/autopilot/src/common/common.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/common/common.cpp > CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/common/common.cpp > CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/common/common.cpp -o CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/common/common.cpp -o CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.o.requires:
 
@@ -2100,15 +2100,15 @@ CMakeFiles/S99USV_ARM.dir/src/common/common.cpp.o.provides.build: CMakeFiles/S99
 CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.o: ../src/control/controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.o -c /home/foo/Projects/autopilot/src/control/controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.o -c /home/foo/Projects/autopilot/src/control/controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.o.requires:
 
@@ -2124,15 +2124,15 @@ CMakeFiles/S99USV_ARM.dir/src/control/controller.cpp.o.provides.build: CMakeFile
 CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.o: ../src/control/lat_adrc_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lat_adrc_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lat_adrc_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lat_adrc_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lat_adrc_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lat_adrc_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lat_adrc_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.o.requires:
 
@@ -2148,15 +2148,15 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_adrc_controller.cpp.o.provides.build: 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.o: ../src/control/lat_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lat_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lat_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lat_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lat_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lat_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lat_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.o.requires:
 
@@ -2172,15 +2172,15 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_controller.cpp.o.provides.build: CMake
 CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.o: ../src/control/lat_mrac_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lat_mrac_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lat_mrac_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lat_mrac_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lat_mrac_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lat_mrac_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lat_mrac_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.o.requires:
 
@@ -2196,15 +2196,15 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_mrac_controller.cpp.o.provides.build: 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.o: ../src/control/lat_pid_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lat_pid_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lat_pid_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lat_pid_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lat_pid_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lat_pid_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lat_pid_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.o.requires:
 
@@ -2220,15 +2220,15 @@ CMakeFiles/S99USV_ARM.dir/src/control/lat_pid_controller.cpp.o.provides.build: C
 CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.o: ../src/control/lon_adrc_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lon_adrc_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lon_adrc_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lon_adrc_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lon_adrc_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lon_adrc_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lon_adrc_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.o.requires:
 
@@ -2244,15 +2244,15 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_adrc_controller.cpp.o.provides.build: 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.o: ../src/control/lon_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lon_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lon_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lon_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lon_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lon_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lon_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.o.requires:
 
@@ -2268,15 +2268,15 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_controller.cpp.o.provides.build: CMake
 CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.o: ../src/control/lon_mrac_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lon_mrac_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lon_mrac_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lon_mrac_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lon_mrac_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lon_mrac_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lon_mrac_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.o.requires:
 
@@ -2292,15 +2292,15 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_mrac_controller.cpp.o.provides.build: 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.o: ../src/control/lon_pid_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lon_pid_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.o -c /home/foo/Projects/autopilot/src/control/lon_pid_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lon_pid_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/control/lon_pid_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lon_pid_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/control/lon_pid_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.o.requires:
 
@@ -2316,15 +2316,15 @@ CMakeFiles/S99USV_ARM.dir/src/control/lon_pid_controller.cpp.o.provides.build: C
 CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.o: ../src/filter/low_pass_filter.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.o -c /home/foo/Projects/autopilot/src/filter/low_pass_filter.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.o -c /home/foo/Projects/autopilot/src/filter/low_pass_filter.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/filter/low_pass_filter.cpp > CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/filter/low_pass_filter.cpp > CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/filter/low_pass_filter.cpp -o CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/filter/low_pass_filter.cpp -o CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.o.requires:
 
@@ -2340,15 +2340,15 @@ CMakeFiles/S99USV_ARM.dir/src/filter/low_pass_filter.cpp.o.provides.build: CMake
 CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.o: ../src/filter/mean_filter.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.o -c /home/foo/Projects/autopilot/src/filter/mean_filter.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.o -c /home/foo/Projects/autopilot/src/filter/mean_filter.cc
 
 CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/filter/mean_filter.cc > CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/filter/mean_filter.cc > CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/filter/mean_filter.cc -o CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/filter/mean_filter.cc -o CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.o.requires:
 
@@ -2364,15 +2364,15 @@ CMakeFiles/S99USV_ARM.dir/src/filter/mean_filter.cc.o.provides.build: CMakeFiles
 CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.o: ../src/filter/slew_limiter.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.o -c /home/foo/Projects/autopilot/src/filter/slew_limiter.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.o -c /home/foo/Projects/autopilot/src/filter/slew_limiter.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/filter/slew_limiter.cpp > CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/filter/slew_limiter.cpp > CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/filter/slew_limiter.cpp -o CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/filter/slew_limiter.cpp -o CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.o.requires:
 
@@ -2388,15 +2388,15 @@ CMakeFiles/S99USV_ARM.dir/src/filter/slew_limiter.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.o: ../src/hal/console.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.o -c /home/foo/Projects/autopilot/src/hal/console.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.o -c /home/foo/Projects/autopilot/src/hal/console.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/hal/console.cpp > CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/hal/console.cpp > CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/hal/console.cpp -o CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/hal/console.cpp -o CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.o.requires:
 
@@ -2412,15 +2412,15 @@ CMakeFiles/S99USV_ARM.dir/src/hal/console.cpp.o.provides.build: CMakeFiles/S99US
 CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.o: ../src/hal/socket_can.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.o -c /home/foo/Projects/autopilot/src/hal/socket_can.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.o -c /home/foo/Projects/autopilot/src/hal/socket_can.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/hal/socket_can.cpp > CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/hal/socket_can.cpp > CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/hal/socket_can.cpp -o CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/hal/socket_can.cpp -o CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.o.requires:
 
@@ -2436,15 +2436,15 @@ CMakeFiles/S99USV_ARM.dir/src/hal/socket_can.cpp.o.provides.build: CMakeFiles/S9
 CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.o: ../src/hal/uart_device.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.o -c /home/foo/Projects/autopilot/src/hal/uart_device.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.o -c /home/foo/Projects/autopilot/src/hal/uart_device.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/hal/uart_device.cpp > CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/hal/uart_device.cpp > CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/hal/uart_device.cpp -o CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/hal/uart_device.cpp -o CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.o.requires:
 
@@ -2460,15 +2460,15 @@ CMakeFiles/S99USV_ARM.dir/src/hal/uart_device.cpp.o.provides.build: CMakeFiles/S
 CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.o: ../src/math/Location.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.o -c /home/foo/Projects/autopilot/src/math/Location.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.o -c /home/foo/Projects/autopilot/src/math/Location.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/Location.cpp > CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/Location.cpp > CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/Location.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/Location.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.o.requires:
 
@@ -2484,15 +2484,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/Location.cpp.o.provides.build: CMakeFiles/S99
 CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.o: ../src/math/RingBuffer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.o -c /home/foo/Projects/autopilot/src/math/RingBuffer.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.o -c /home/foo/Projects/autopilot/src/math/RingBuffer.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/RingBuffer.cpp > CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/RingBuffer.cpp > CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/RingBuffer.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/RingBuffer.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.o.requires:
 
@@ -2508,15 +2508,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/RingBuffer.cpp.o.provides.build: CMakeFiles/S
 CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.o: ../src/math/aabox2d.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.o -c /home/foo/Projects/autopilot/src/math/aabox2d.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.o -c /home/foo/Projects/autopilot/src/math/aabox2d.cc
 
 CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/aabox2d.cc > CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/aabox2d.cc > CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/aabox2d.cc -o CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/aabox2d.cc -o CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.o.requires:
 
@@ -2532,15 +2532,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/aabox2d.cc.o.provides.build: CMakeFiles/S99US
 CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.o: ../src/math/box2d.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.o -c /home/foo/Projects/autopilot/src/math/box2d.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.o -c /home/foo/Projects/autopilot/src/math/box2d.cc
 
 CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/box2d.cc > CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/box2d.cc > CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/box2d.cc -o CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/box2d.cc -o CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.o.requires:
 
@@ -2556,15 +2556,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/box2d.cc.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.o: ../src/math/common_math.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.o -c /home/foo/Projects/autopilot/src/math/common_math.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.o -c /home/foo/Projects/autopilot/src/math/common_math.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/common_math.cpp > CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/common_math.cpp > CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/common_math.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/common_math.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.o.requires:
 
@@ -2580,15 +2580,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/common_math.cpp.o.provides.build: CMakeFiles/
 CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.o: ../src/math/geo.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.o -c /home/foo/Projects/autopilot/src/math/geo.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.o -c /home/foo/Projects/autopilot/src/math/geo.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/geo.cpp > CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/geo.cpp > CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/geo.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/geo.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.o.requires:
 
@@ -2604,15 +2604,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/geo.cpp.o.provides.build: CMakeFiles/S99USV_A
 CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.o: ../src/math/line_segment2d.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.o -c /home/foo/Projects/autopilot/src/math/line_segment2d.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.o -c /home/foo/Projects/autopilot/src/math/line_segment2d.cc
 
 CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/line_segment2d.cc > CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/line_segment2d.cc > CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/line_segment2d.cc -o CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/line_segment2d.cc -o CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.o.requires:
 
@@ -2628,15 +2628,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/line_segment2d.cc.o.provides.build: CMakeFile
 CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.o: ../src/math/math_utils.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.o -c /home/foo/Projects/autopilot/src/math/math_utils.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.o -c /home/foo/Projects/autopilot/src/math/math_utils.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/math_utils.cpp > CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/math_utils.cpp > CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/math_utils.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/math_utils.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.o.requires:
 
@@ -2652,15 +2652,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/math_utils.cpp.o.provides.build: CMakeFiles/S
 CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.o: ../src/math/polygon2d.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.o -c /home/foo/Projects/autopilot/src/math/polygon2d.cc
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.o -c /home/foo/Projects/autopilot/src/math/polygon2d.cc
 
 CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/polygon2d.cc > CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/polygon2d.cc > CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/polygon2d.cc -o CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/polygon2d.cc -o CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.o.requires:
 
@@ -2676,15 +2676,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/polygon2d.cc.o.provides.build: CMakeFiles/S99
 CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.o: ../src/math/sin_table.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.o -c /home/foo/Projects/autopilot/src/math/sin_table.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.o -c /home/foo/Projects/autopilot/src/math/sin_table.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/sin_table.cpp > CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/sin_table.cpp > CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/sin_table.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/sin_table.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.o.requires:
 
@@ -2700,15 +2700,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/sin_table.cpp.o.provides.build: CMakeFiles/S9
 CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.o: ../src/math/vec2d.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.o -c /home/foo/Projects/autopilot/src/math/vec2d.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.o -c /home/foo/Projects/autopilot/src/math/vec2d.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/vec2d.cpp > CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/vec2d.cpp > CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/vec2d.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/vec2d.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.o.requires:
 
@@ -2724,15 +2724,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/vec2d.cpp.o.provides.build: CMakeFiles/S99USV
 CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.o: ../src/math/vector2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.o -c /home/foo/Projects/autopilot/src/math/vector2.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.o -c /home/foo/Projects/autopilot/src/math/vector2.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/vector2.cpp > CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/vector2.cpp > CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/vector2.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/vector2.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.o.requires:
 
@@ -2748,15 +2748,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/vector2.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.o: ../src/math/vector3.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.o -c /home/foo/Projects/autopilot/src/math/vector3.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.o -c /home/foo/Projects/autopilot/src/math/vector3.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/vector3.cpp > CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/math/vector3.cpp > CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/vector3.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/math/vector3.cpp -o CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.o.requires:
 
@@ -2772,15 +2772,15 @@ CMakeFiles/S99USV_ARM.dir/src/math/vector3.cpp.o.provides.build: CMakeFiles/S99U
 CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.o: ../src/mrac/mrac_adrc_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.o -c /home/foo/Projects/autopilot/src/mrac/mrac_adrc_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.o -c /home/foo/Projects/autopilot/src/mrac/mrac_adrc_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/mrac/mrac_adrc_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/mrac/mrac_adrc_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/mrac/mrac_adrc_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/mrac/mrac_adrc_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.o.requires:
 
@@ -2796,15 +2796,15 @@ CMakeFiles/S99USV_ARM.dir/src/mrac/mrac_adrc_controller.cpp.o.provides.build: CM
 CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.o: ../src/mrac/proj.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.o -c /home/foo/Projects/autopilot/src/mrac/proj.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.o -c /home/foo/Projects/autopilot/src/mrac/proj.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/mrac/proj.cpp > CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/mrac/proj.cpp > CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/mrac/proj.cpp -o CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/mrac/proj.cpp -o CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.o.requires:
 
@@ -2820,15 +2820,15 @@ CMakeFiles/S99USV_ARM.dir/src/mrac/proj.cpp.o.provides.build: CMakeFiles/S99USV_
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.o: ../src/pid/pid_BC_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_BC_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_BC_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_BC_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_BC_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_BC_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_BC_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.o.requires:
 
@@ -2844,15 +2844,15 @@ CMakeFiles/S99USV_ARM.dir/src/pid/pid_BC_controller.cpp.o.provides.build: CMakeF
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.o: ../src/pid/pid_IC_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_IC_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_IC_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_IC_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_IC_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_IC_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_IC_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.o.requires:
 
@@ -2868,15 +2868,15 @@ CMakeFiles/S99USV_ARM.dir/src/pid/pid_IC_controller.cpp.o.provides.build: CMakeF
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.o: ../src/pid/pid_INC_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_INC_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_INC_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_INC_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_INC_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_INC_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_INC_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.o.requires:
 
@@ -2892,15 +2892,15 @@ CMakeFiles/S99USV_ARM.dir/src/pid/pid_INC_controller.cpp.o.provides.build: CMake
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.o: ../src/pid/pid_SQRT_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_SQRT_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_SQRT_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_SQRT_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_SQRT_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_SQRT_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_SQRT_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.o.requires:
 
@@ -2916,15 +2916,15 @@ CMakeFiles/S99USV_ARM.dir/src/pid/pid_SQRT_controller.cpp.o.provides.build: CMak
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.o: ../src/pid/pid_controller.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_controller.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.o -c /home/foo/Projects/autopilot/src/pid/pid_controller.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/pid/pid_controller.cpp > CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/pid/pid_controller.cpp -o CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.o.requires:
 
@@ -2940,15 +2940,15 @@ CMakeFiles/S99USV_ARM.dir/src/pid/pid_controller.cpp.o.provides.build: CMakeFile
 CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.o: ../src/radar/mypublic.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.o -c /home/foo/Projects/autopilot/src/radar/mypublic.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.o -c /home/foo/Projects/autopilot/src/radar/mypublic.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/radar/mypublic.cpp > CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/radar/mypublic.cpp > CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/radar/mypublic.cpp -o CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/radar/mypublic.cpp -o CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.o.requires:
 
@@ -2964,15 +2964,15 @@ CMakeFiles/S99USV_ARM.dir/src/radar/mypublic.cpp.o.provides.build: CMakeFiles/S9
 CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.o: ../src/radar/proc_apdu.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.o -c /home/foo/Projects/autopilot/src/radar/proc_apdu.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.o -c /home/foo/Projects/autopilot/src/radar/proc_apdu.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/radar/proc_apdu.cpp > CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/radar/proc_apdu.cpp > CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/radar/proc_apdu.cpp -o CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/radar/proc_apdu.cpp -o CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.o.requires:
 
@@ -2988,15 +2988,15 @@ CMakeFiles/S99USV_ARM.dir/src/radar/proc_apdu.cpp.o.provides.build: CMakeFiles/S
 CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o: ../src/radar/radar_message.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o -c /home/foo/Projects/autopilot/src/radar/radar_message.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o -c /home/foo/Projects/autopilot/src/radar/radar_message.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/radar/radar_message.cpp > CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/radar/radar_message.cpp > CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/radar/radar_message.cpp -o CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/radar/radar_message.cpp -o CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o.requires:
 
@@ -3012,15 +3012,15 @@ CMakeFiles/S99USV_ARM.dir/src/radar/radar_message.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.o: ../src/user_time/user_time.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.o -c /home/foo/Projects/autopilot/src/user_time/user_time.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.o -c /home/foo/Projects/autopilot/src/user_time/user_time.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/user_time/user_time.cpp > CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/user_time/user_time.cpp > CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/user_time/user_time.cpp -o CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/user_time/user_time.cpp -o CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.o.requires:
 
@@ -3036,15 +3036,15 @@ CMakeFiles/S99USV_ARM.dir/src/user_time/user_time.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.o: ../src/vehicle_state/vehicle_state.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.o -c /home/foo/Projects/autopilot/src/vehicle_state/vehicle_state.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.o -c /home/foo/Projects/autopilot/src/vehicle_state/vehicle_state.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/vehicle_state/vehicle_state.cpp > CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/vehicle_state/vehicle_state.cpp > CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/vehicle_state/vehicle_state.cpp -o CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/vehicle_state/vehicle_state.cpp -o CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.o.requires:
 
@@ -3060,15 +3060,15 @@ CMakeFiles/S99USV_ARM.dir/src/vehicle_state/vehicle_state.cpp.o.provides.build: 
 CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.o: ../src/simulation/sim_boat.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.o -c /home/foo/Projects/autopilot/src/simulation/sim_boat.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.o -c /home/foo/Projects/autopilot/src/simulation/sim_boat.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/simulation/sim_boat.cpp > CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/simulation/sim_boat.cpp > CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/simulation/sim_boat.cpp -o CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/simulation/sim_boat.cpp -o CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.o.requires:
 
@@ -3084,15 +3084,15 @@ CMakeFiles/S99USV_ARM.dir/src/simulation/sim_boat.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.o: ../src/xml/xml_cfg.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.o -c /home/foo/Projects/autopilot/src/xml/xml_cfg.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.o -c /home/foo/Projects/autopilot/src/xml/xml_cfg.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/xml/xml_cfg.cpp > CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/xml/xml_cfg.cpp > CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/xml/xml_cfg.cpp -o CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/xml/xml_cfg.cpp -o CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.o.requires:
 
@@ -3108,15 +3108,15 @@ CMakeFiles/S99USV_ARM.dir/src/xml/xml_cfg.cpp.o.provides.build: CMakeFiles/S99US
 CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.o: ../src/util/easylogging++.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.o -c /home/foo/Projects/autopilot/src/util/easylogging++.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.o -c /home/foo/Projects/autopilot/src/util/easylogging++.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/util/easylogging++.cpp > CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/util/easylogging++.cpp > CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/util/easylogging++.cpp -o CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/util/easylogging++.cpp -o CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.o.requires:
 
@@ -3132,15 +3132,15 @@ CMakeFiles/S99USV_ARM.dir/src/util/easylogging++.cpp.o.provides.build: CMakeFile
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o: ../src/planning/bendyruler.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o -c /home/foo/Projects/autopilot/src/planning/bendyruler.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o -c /home/foo/Projects/autopilot/src/planning/bendyruler.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/planning/bendyruler.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/planning/bendyruler.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/planning/bendyruler.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/planning/bendyruler.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o.requires:
 
@@ -3156,15 +3156,15 @@ CMakeFiles/S99USV_ARM.dir/src/planning/bendyruler.cpp.o.provides.build: CMakeFil
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o: ../src/planning/boundary.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o -c /home/foo/Projects/autopilot/src/planning/boundary.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o -c /home/foo/Projects/autopilot/src/planning/boundary.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/planning/boundary.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/planning/boundary.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/planning/boundary.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/planning/boundary.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o.requires:
 
@@ -3180,15 +3180,15 @@ CMakeFiles/S99USV_ARM.dir/src/planning/boundary.cpp.o.provides.build: CMakeFiles
 CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o: ../src/planning/database.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o -c /home/foo/Projects/autopilot/src/planning/database.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o -c /home/foo/Projects/autopilot/src/planning/database.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/planning/database.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/planning/database.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/planning/database.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/planning/database.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o.requires:
 
@@ -3204,15 +3204,15 @@ CMakeFiles/S99USV_ARM.dir/src/planning/database.cpp.o.provides.build: CMakeFiles
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: CMakeFiles/S99USV_ARM.dir/flags.make
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o: ../src/planning/pathplanner.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foo/Projects/autopilot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o -c /home/foo/Projects/autopilot/src/planning/pathplanner.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o -c /home/foo/Projects/autopilot/src/planning/pathplanner.cpp
 
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.i"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/planning/pathplanner.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/foo/Projects/autopilot/src/planning/pathplanner.cpp > CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.i
 
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.s"
-	/opt/335XLBV111_2015-05-12/cross_compiler/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-g++  -std=c++11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/planning/pathplanner.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/foo/Projects/autopilot/src/planning/pathplanner.cpp -o CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.s
 
 CMakeFiles/S99USV_ARM.dir/src/planning/pathplanner.cpp.o.requires:
 

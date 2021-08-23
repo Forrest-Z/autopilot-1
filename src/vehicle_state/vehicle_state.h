@@ -55,15 +55,23 @@ public:
     double lon_end() const{return lon_end_;}
     double lat_now() const{return lat_now_;}
     double lon_now() const{return lon_now_;}
+    double lat_next() const{return lat_next_;}
+    double lon_next() const{return lon_next_;}
+
+    double desired_speed_ms() const{return _oa_speed_ms;}
+ 
 
     bool   stop_boat(void) const { return stop_vehicle;}
     bool   waypoint_unreachable(void) const { return _oa_dest_unreachable;}
+    bool   advance_finished(void) const { return _oa_advance_finished;}
 
 private:
 
     uint64_t time_stamp_ = 0;
 
     SensorStatus status_;
+
+    int16_t last_id_{-1};
 
     // pose
     double  lateral_error_ = 0;    // m
@@ -80,6 +88,10 @@ private:
     double  lon_end_;
     double  lat_now_;
     double  lon_now_;
+    double  lat_next_;
+    double  lon_next_;
+
+    float desired_speed_ms_;
 
 private:
 
@@ -97,11 +109,13 @@ private:
     bool _oa_active;                // true if we should use alternative destination to avoid obstacles
     bool stop_vehicle{false};
     bool _oa_dest_unreachable{false};
+    bool _oa_advance_finished{false};
 
     LOC::Location _oa_origin;            // intermediate origin during avoidance
     LOC::Location _oa_destination;       // intermediate destination during avoidance
     LOC::Location _origin;               // origin Location (vehicle will travel from the origin to the destination)
     LOC::Location _destination;          // destination Location when in Guided_WP
+    float         _oa_speed_ms;           //OA result_sppeed
 };
 
 namespace AP {

@@ -155,10 +155,9 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
 
                         destinatoin_near_obstacle_ = check_near_obstacle(current_loc,destination);
                         if(destinatoin_near_obstacle_ == true && fabs(math::wrap_180(final_bearing -bearing_to_dest)) >=10.0){
-                            printf("destination is too close obstacle or destination can not arrival\n");
+                            printf("bendyruler1:: destination is too close obstacle or destination can not arrival\n");
                             return false;
                         }
-
                         return active;
                     }
                 }
@@ -197,7 +196,7 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
 
     destinatoin_near_obstacle_ = check_near_obstacle(current_loc,destination);
     if(destinatoin_near_obstacle_ == true && fabs(math::wrap_180(chosen_bearing -bearing_to_dest)) >=10.0){
-        printf("destination is too close obstacle or destination can not arrival\n");
+        printf("bendyruler2:: destination is too close obstacle or destination can not arrival\n");
         return false;
     }
     return true;

@@ -329,7 +329,7 @@ uint8 autoReturnLOS(double fix_heading)
 
 		speed_fix = 0.5;
 		set_steering(0);
-		set_throttle(0.30);
+		set_throttle((float)dock_entry_throttle*0.01);
 		suc_enter=1;
 
 	}else{

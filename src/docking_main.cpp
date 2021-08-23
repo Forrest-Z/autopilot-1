@@ -82,6 +82,7 @@ RETURN_POINT return_point[RETURN_POINT_MAX_NUMBER];
 
 int8 return_num = RETURN_POINT_MAX_NUMBER;
 uint32 dock_number = 0;
+uint32 dock_entry_throttle =38;
 //dock can
 COMM_SIGN DOCK_comm_sign;
 
@@ -725,14 +726,27 @@ int8  read_usv_docking_inf(void)
 		ret_val = FALSE;
 	}
 
+
+	sprintf_usv(s1, "Return_Point");
+	sprintf_usv(s2, "dock_entry_throttle");
+
+	if (read_sub_setting(s1, s2, 0, &dock_entry_throttle, INT_TYPE) == FALSE){
+		dock_entry_throttle = 38;
+		//printf("would set dock_number to 0");
+	}
+	printf("dock_entry_throttle=%d\n",dock_entry_throttle);
+
+
 	sprintf_usv(s1, "Return_Point");
 	sprintf_usv(s2, "dock_num");
 
 	if (read_sub_setting(s1, s2, 0, &dock_number, INT_TYPE) == FALSE){
 		dock_number = 0;
-		printf("would set dock_number to 0");
+		//printf("would set dock_number to 0");
 	}
 	printf("dock_numer=%d\n",dock_number);
+
+
 	return_num = number;//���뷵�������?
 	if (number > RETURN_POINT_MAX_NUMBER){ //������󷵺�����?
 		input_cfg_ini_err_sub(s1, s2, 0);

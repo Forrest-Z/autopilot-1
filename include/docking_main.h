@@ -192,4 +192,5 @@ extern float image_servo_pix_multi;//���ؾ����ϵ��
 extern uint8 motorEnable_sign;//������ʹ�ܱ���λ
 extern int8 dockingIn();
 extern uint32 dock_number ;
+extern uint32 dock_entry_throttle ;
 #endif//DOCK_COMMUNICATION_H_

@@ -66,5 +66,8 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "*.txx": "cpp"
-    }
+    },
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ]
 }

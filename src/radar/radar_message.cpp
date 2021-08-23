@@ -77,7 +77,7 @@ void RadarMessage::update_receive(void)
 
 void RadarMessage::handle_message(int sysid, int msgid, uint8 * const pBuf)
 {
-    if(ins_msg.latitude == 0 || ins_msg.longitude == 0){
+    if(ins_msg.latitude == 0 || ins_msg.longitude == 0 || ins_msg.insState.u8_sysState1 == 3){
         return;
     }
 

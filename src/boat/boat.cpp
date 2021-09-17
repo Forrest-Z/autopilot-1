@@ -125,8 +125,8 @@ void Boat::setup(void)
 
  void Boat::update_sampling_task()
  {
-     if(injector_->waypoint_unreachable() == true){
-         printf("Boat:: waypoint can not reached,give up sampling task[%d+1]\n",sailTask.u8_PointNum);
+     if(injector_->waypoint_unreachable() == true && sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_type != 0){
+         printf("Boat::waypoint can not reached,give up sampling point[%d]\n",sailTask.u8_PointNum+1);
          sailTask.sailMsg.wayPoint[sailTask.u8_PointNum].b1_type = 0;
      }
 

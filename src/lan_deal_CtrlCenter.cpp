@@ -255,15 +255,15 @@ int8 deal_CC_sailTask_parsing(int8 *buff, uint16 len)
 			printf("-%d", udp_sailTask_report.arrayTaskPoint[i].u8_lat_deg);
 			printf("-%d", udp_sailTask_report.arrayTaskPoint[i].u8_lat_min);
 			printf("-%d", udp_sailTask_report.arrayTaskPoint[i].u8_lat_sec);
-			printf("-%d\n", udp_sailTask_report.arrayTaskPoint[i].u8_lat_secDec);
+			printf("-%d, ", udp_sailTask_report.arrayTaskPoint[i].u8_lat_secDec);
 
 			printf("WP_LON(num-st-deg-min-sec-secdec)::%d,%d",(i+1),udp_sailTask_report.arrayTaskPoint[i].u8_lon_st);
 			printf("-%d", udp_sailTask_report.arrayTaskPoint[i].u8_lon_deg);
 			printf("-%d", udp_sailTask_report.arrayTaskPoint[i].u8_lon_min);
 			printf("-%d", udp_sailTask_report.arrayTaskPoint[i].u8_lon_sec);
-			printf("-%d\n", udp_sailTask_report.arrayTaskPoint[i].u8_lon_secDec);
+			printf("-%d, ", udp_sailTask_report.arrayTaskPoint[i].u8_lon_secDec);
 
-
+			printf("WP_TYPE:%d,SAP_VOL:%d\n",	udp_sailTask_report.arrayTaskPoint[i].u8_pointType,udp_sailTask_report.arrayTaskPoint[i].u16_sampleVolume);
 		}
 
 		if (udp_sailTask_report.socket_ID_l == 0){

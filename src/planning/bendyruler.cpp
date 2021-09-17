@@ -74,6 +74,7 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
     // check OA_BEARING_INC definition allows checking in all directions
     static_assert(360 % OA_BENDYRULER_BEARING_INC_XY == 0, "check 360 is a multiple of OA_BEARING_INC");
     destination_unreachable_   = false;
+    destinatoin_near_obstacle_ = false;
 
     // search in OA_BENDYRULER_BEARING_INC degree increments around the vehicle alternating left
     // and right. For each direction check if vehicle would avoid all obstacles
@@ -153,8 +154,8 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
                             return false;
                         }
 
-                        destinatoin_near_obstacle_ = check_near_obstacle(current_loc,destination);
-                        if(destinatoin_near_obstacle_ == true && fabs(math::wrap_180(final_bearing -bearing_to_dest)) >=10.0){
+                        if(check_near_obstacle(current_loc,destination) == true && fabs(math::wrap_180(final_bearing -bearing_to_dest)) >=10.0){
+                            destinatoin_near_obstacle_ = true;
                             printf("bendyruler1:: destination is too close obstacle or destination can not arrival\n");
                             return false;
                         }
@@ -194,8 +195,8 @@ bool AP_OABendyRuler::search_xy_path(const Location& current_loc, const Location
         return false;
     }
 
-    destinatoin_near_obstacle_ = check_near_obstacle(current_loc,destination);
-    if(destinatoin_near_obstacle_ == true && fabs(math::wrap_180(chosen_bearing -bearing_to_dest)) >=10.0){
+    if(check_near_obstacle(current_loc,destination) == true && fabs(math::wrap_180(chosen_bearing -bearing_to_dest)) >=10.0){
+        destinatoin_near_obstacle_ = true;
         printf("bendyruler2:: destination is too close obstacle or destination can not arrival\n");
         return false;
     }

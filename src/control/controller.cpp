@@ -48,7 +48,6 @@ bool Controller::ComputeControlCommand(double target,ControlCommand *cmd,double 
     // compute control commands
     Run(target,cmd,ts);
     return true;
-
 }
 
 

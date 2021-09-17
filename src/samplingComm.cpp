@@ -249,7 +249,7 @@ void samplingInit( void )
 void * samplingComm( void *aa )
 {
 	samplingInit();
-	//锟斤拷始锟斤拷锟竭筹拷锟斤拷
+	
 	usv_mutex_init(&mutex_smp);
 	void* ctx	 = zmq_ctx_new();
 	void* client = zmq_socket(ctx,ZMQ_REQ);
@@ -274,23 +274,23 @@ void * samplingComm( void *aa )
 				while(expect_reply){
 					zmq_pollitem_t items[]={{client,0,ZMQ_POLLIN,0}};
 					int rc = zmq_poll(items,1,REQUEST_TIMEOUT*1);
-					if(rc==-1) break; //锟叫讹拷
+					if(rc==-1) break; 
 
 					if(items[0].revents&ZMQ_POLLIN){
-						//锟斤拷锟斤拷MPC应锟金，憋拷锟斤拷锟斤拷锟斤拷锟绞憋拷锟斤拷锟斤拷一锟斤拷
+					
 						char *reply = s_recvNoWait(client);
 						if(!reply){
 							break;	
 						}
 						read_status(reply,&smpRep);
-						//锟斤拷锟斤拷
+						
 						//printf("%s\n",reply);
 						free(reply);
 						if(smpRep.replySn == smpCmd.requestSn){
-							//锟斤拷锟斤拷锟叫讹拷锟竭硷拷
+						
 							
 								retries_left = REQUEST_RETRIES;
-								//1.MPC锟秸碉拷锟斤拷锟斤拷
+								
 								if(smpRep.sampleStatus == SAMPLE_STATUS_CMD_RECV){
 									expect_reply = 0;
 									usv_mutex_lock(&mutex_smp);
@@ -299,7 +299,7 @@ void * samplingComm( void *aa )
 									smpCtrl.askSampleStart = 0;
 									smpCtrl.repSampleFinish = 0;
 									usv_mutex_unlock(&mutex_smp);
-								//	SysPubMsgPost("锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟铰凤拷锟缴癸拷 锟斤拷锟斤拷ID=%lld",smpRep.sampleID);
+							
 									
 									if (sampleCommState == 0){
 										WarnMsgQueuePut(WARN_SRC_ARM, ARM_WARN_SAMPLE_TIMEOUT, WARN_OFF);
@@ -315,23 +315,21 @@ void * samplingComm( void *aa )
 									}
 									break;
 								}
-								//2.MPC锟斤拷锟斤拷锟斤拷忙碌
+							
 								else if(smpRep.sampleStatus ==SAMPLE_STATUS_BUSY){
 									expect_reply = 0;
 									if (sampleTaskBlock == 0){
-										//SysLogMsgPost("MPC锟斤拷锟斤拷忙 锟斤拷锟斤拷ID=%lld锟斤拷锟斤拷未锟斤拷锟秸ｏ拷锟截凤拷", smpRep.sampleID);
-										//SysPubMsgPost("MPC锟斤拷锟斤拷忙 锟斤拷锟斤拷ID=%lld锟斤拷锟斤拷未锟斤拷锟秸ｏ拷锟截凤拷", smpRep.sampleID);
+
 										WarnMsgQueuePut(WARN_SRC_ARM, ARM_WARN_SAMPLE_TASK_BLOCK, WARN_ON);
 										sampleTaskBlock = 1;
 									}
 									break;
 								}
-								//3.MPC锟截革拷锟斤拷锟斤拷
+								
 								else{
 									expect_reply = 0;
 									if (sampleRepError == 0){										
-										//SysLogMsgPost("MPC锟截革拷锟斤拷锟斤拷 锟斤拷锟斤拷ID=%lld锟斤拷锟斤拷未锟斤拷锟秸ｏ拷锟截凤拷", smpRep.sampleID);
-										//SysPubMsgPost("MPC锟截革拷锟斤拷锟斤拷 锟斤拷锟斤拷ID=%lld锟斤拷锟斤拷未锟斤拷锟秸ｏ拷锟截凤拷", smpRep.sampleID);
+
 										WarnMsgQueuePut(WARN_SRC_ARM, ARM_WARN_SAMPLE_REP_ERROR, WARN_ON);
 										sampleRepError = 1;
 									}
@@ -341,10 +339,7 @@ void * samplingComm( void *aa )
 					}
 					else{
 						if(--retries_left == 0){
-							//锟斤拷锟斤拷锟斤拷锟襟不成癸拷
-							//printf("锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷失锟斤拷\n");
-							//SysLogMsgPost("锟斤拷锟斤拷锟斤拷锟斤拷通讯锟叫讹拷");
-							//SysPubMsgPost("锟斤拷锟斤拷锟斤拷锟斤拷通讯锟叫讹拷");
+	
 							if (sampleCommState == 1){
 								WarnMsgQueuePut(WARN_SRC_ARM, ARM_WARN_SAMPLE_TIMEOUT, WARN_ON);
 								sampleCommState = 0;
@@ -358,7 +353,7 @@ void * samplingComm( void *aa )
 							zmq_close(client);
 							client = zmq_socket(ctx,ZMQ_REQ);
 							zmq_connect(client,samplingCfg);
-							//使锟斤拷锟铰碉拷锟阶斤拷锟街凤拷锟斤拷
+
 							s_send(client,request);
 						}
 					}
@@ -370,34 +365,32 @@ void * samplingComm( void *aa )
 
 		if(smpCtrl.askSampleStatus == 1){	//
 			retries_left = REQUEST_RETRIES;
-			while((retries_left) && (smpCtrl.repSampleFinish != 1)&&(smpCtrl.askSampleStart != 1) && (smpCtrl.askSampleCancel != 1)){		//锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷路锟斤拷锟斤拷睿拷锟斤拷顺锟� 锟斤拷锟斤拷锟斤拷锟饺★拷锟斤拷锟斤拷锟斤拷锟斤拷顺锟�
+			while((retries_left) && (smpCtrl.repSampleFinish != 1)&&(smpCtrl.askSampleStart != 1) && (smpCtrl.askSampleCancel != 1)){		
 				writeSamplingStatus(request,requstSn++,&smpCmd);
 				s_send(client,request);
-				//锟斤拷锟斤拷
-				//printf("锟斤拷询:%s\n",request);
-				//锟饺达拷锟截革拷
+			
 				int expect_reply = 1;
 				while(expect_reply){
 					zmq_pollitem_t items_s[]={{client,0,ZMQ_POLLIN,0}};
 					int rc = zmq_poll(items_s,1,REQUEST_TIMEOUT*1);
-					if(rc==-1) break;	//锟叫讹拷
+					if(rc==-1) break;	
 
-					//锟斤拷锟斤拷锟斤拷栈馗锟斤拷锟斤拷写锟斤拷锟�
+			
 					if(items_s[0].revents&ZMQ_POLLIN){
-						//锟斤拷锟斤拷MPC应锟金，憋拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷一锟斤拷
+				
 						char *reply = s_recvNoWait(client);
 						if(!reply){
 							break;
 						}
 						read_status(reply,&smpRep);
-						//锟斤拷锟斤拷
+					
 						//printf("%s\n",reply);
 						free(reply);	
 						if(smpRep.replySn == smpCmd.requestSn){
 							retries_left = REQUEST_RETRIES;
-							//锟叫断斤拷锟斤拷
+				
 							if(smpRep.sampleStatus == SAMPLE_STATUS_SMP_FINISHED){
-								//锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
+						
 								usv_mutex_lock(&mutex_smp);
 								smpCtrl.askSampleStatus = 0;
 								smpCtrl.repSampleFinish = 1;
@@ -405,12 +398,11 @@ void * samplingComm( void *aa )
 								break;
 							}
 							if(smpRep.sampleStatus == SAMPLE_STATUS_ERROR){
-								//锟斤拷锟斤拷锟竭硷拷
+							
 								usv_mutex_lock(&mutex_smp);
 								smpCtrl.askSampleStatus =0;
 								usv_mutex_unlock(&mutex_smp);
-							//	SysLogMsgPost("锟斤拷锟斤拷锟斤拷锟斤拷");
-							//	SysPubMsgPost("锟斤拷锟斤拷锟斤拷锟斤拷");
+
 								break;
 							}
 							break;
@@ -419,13 +411,11 @@ void * samplingComm( void *aa )
 					}
 					else{
 						if(--retries_left == 0){
-							//通讯锟叫讹拷锟竭硷拷
+						
 							usv_mutex_lock(&mutex_smp);
 							smpCtrl.askSampleStatus = 0;
 							usv_mutex_unlock(&mutex_smp);
-						//	printf("锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷询通讯锟叫讹拷\n");
-						//	SysLogMsgPost("锟斤拷锟斤拷锟斤拷锟斤拷通讯锟叫讹拷");
-						//	SysPubMsgPost("锟斤拷锟斤拷锟斤拷锟斤拷通讯锟叫讹拷");	
+	
 							break;
 						}
 						else{
@@ -433,7 +423,7 @@ void * samplingComm( void *aa )
 							zmq_close(client);
 							client = zmq_socket(ctx,ZMQ_REQ);
 							zmq_connect(client,samplingCfg);
-							//使锟斤拷锟铰碉拷锟阶斤拷锟街凤拷锟斤拷
+					
 							s_send(client,request);
 						}
 					}
@@ -441,44 +431,36 @@ void * samplingComm( void *aa )
 				sleep_1(SAMPLING_TIMESLICE*10);
 			}
 
-			//if(smpCtrl.repSampleFinish == 1){
-			//	//锟斤拷锟斤拷锟斤拷锟�
 
-			//	//锟斤拷锟皆达拷锟斤拷
-			//	//sampleStart(testSampleID++);
-			//}
 		}
 
-		if(smpCtrl.askSampleCancel == 1){	//锟斤拷锟酵诧拷锟斤拷锟斤拷锟斤拷取锟斤拷锟斤拷锟筋，锟饺达拷锟截革拷
+		if(smpCtrl.askSampleCancel == 1){	
 			retries_left = REQUEST_RETRIES;
 			while(retries_left && (smpCtrl.repSampleCanceled != 1)){
 				writeSamplingCancel(request,requstSn++,&smpCmd);
 				s_send(client,request);
 
-				//锟斤拷锟斤拷
-			//	printf("锟斤拷锟斤拷取锟斤拷锟斤拷锟斤拷:%s\n",request);
-
-				//锟饺达拷锟截革拷
+	
 				int expect_reply = 1;
 				while(expect_reply){
 					zmq_pollitem_t items[] = {{client,0,ZMQ_POLLIN,0}};
 					int rc = zmq_poll(items,1,REQUEST_TIMEOUT*1);
-					if(rc==-1) break; //锟叫讹拷
+					if(rc==-1) break; 
 
-					//锟斤拷锟斤拷锟斤拷栈馗锟斤拷锟斤拷写锟斤拷锟�
+				
 					if(items[0].revents&ZMQ_POLLIN){
-						//锟斤拷锟斤拷MPC应锟金，憋拷锟斤拷锟斤拷锟斤拷锟绞憋拷锟斤拷锟斤拷一锟斤拷
+						
 						char *reply = s_recvNoWait(client);
 						if(!reply){
-							break;	//锟叫讹拷
+							break;	
 						}
 						read_status(reply,&smpRep);
-					//	printf("取锟斤拷锟截革拷:%s\n",reply);
+				
 						free(reply);
 						if(smpRep.replySn == smpCmd.requestSn){
-							//锟斤拷锟斤拷锟竭硷拷锟叫讹拷
+						
 								retries_left = REQUEST_RETRIES;
-								//1.MPC锟斤拷锟秸碉拷锟斤拷锟斤拷
+								
 								if(smpRep.sampleStatus == SAMPLE_STATUS_CANCELED){
 									expect_reply = 0;
 									usv_mutex_lock(&mutex_smp);
@@ -487,15 +469,13 @@ void * samplingComm( void *aa )
 									smpCtrl.askSampleStart = 0;
 									smpCtrl.askSampleStatus = 0;
 									usv_mutex_unlock(&mutex_smp);
-								//	SysPubMsgPost("取锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷 锟斤拷锟斤拷ID=%lld",smpRep.sampleID);
-								//	SysLogMsgPost("取锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷 锟斤拷锟斤拷ID=%lld",smpRep.sampleID);
+							
 									break;
 								}
-								//MPC锟截革拷锟斤拷锟斤拷
+								
 								else{
 									expect_reply = 0;
-								//	SysPubMsgPost("取锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷馗锟斤拷锟斤拷锟�,锟斤拷锟斤拷锟铰凤拷取锟斤拷锟斤拷锟斤拷,锟斤拷锟斤拷ID=%lld",smpRep.sampleID);
-								//	SysLogMsgPost("取锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷馗锟斤拷锟斤拷锟�,锟斤拷锟斤拷锟铰凤拷取锟斤拷锟斤拷锟斤拷,锟斤拷锟斤拷ID=%lld",smpRep.sampleID);
+							
 									break;
 
 								}
@@ -504,14 +484,12 @@ void * samplingComm( void *aa )
 					}
 					else{
 						if(--retries_left == 0){
-							//锟斤拷锟斤拷锟斤拷锟襟不成癸拷
+						
 							usv_mutex_lock(&mutex_smp);
 							smpCtrl.askSampleCancel = 0;
 							smpCtrl.repSampleCanceled = 0;
 							usv_mutex_unlock(&mutex_smp);
-						//	printf("锟斤拷锟斤拷锟斤拷锟斤拷取锟斤拷失锟斤拷\n");
-						//	SysPubMsgPost("锟斤拷锟斤拷锟斤拷锟斤拷通讯锟叫断ｏ拷取锟斤拷锟斤拷锟斤拷失锟斤拷");
-						//	SysLogMsgPost("锟斤拷锟斤拷锟斤拷锟斤拷通讯锟叫断ｏ拷取锟斤拷锟斤拷锟斤拷失锟斤拷");
+					
 							break;
 						}
 						else{
@@ -519,7 +497,7 @@ void * samplingComm( void *aa )
 							zmq_close(client);
 							client = zmq_socket(ctx,ZMQ_REQ);
 							zmq_connect(client,samplingCfg);
-							//使锟斤拷锟铰碉拷锟阶斤拷锟街凤拷锟斤拷
+						
 							s_send(client,request);
 						}
 					}
@@ -530,7 +508,7 @@ void * samplingComm( void *aa )
 		}
 
 
-		sleep_1(SAMPLING_TIMESLICE);	//100锟斤拷锟斤拷
+		sleep_1(SAMPLING_TIMESLICE);	
 	}
 
 	
@@ -607,7 +585,7 @@ int8 isSampleFinished( uint64 sampleId )
 			return TRUE;
 		}
 		if(smpRep.sampleStatus == SAMPLE_STATUS_ERROR){
-
+			printf("sampleId:%lld Error\n",sampleId);
 		}
 	}
 	return FALSE;

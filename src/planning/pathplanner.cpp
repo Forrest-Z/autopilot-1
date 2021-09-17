@@ -235,9 +235,6 @@ void AP_OAPathPlanner::adjust_desired_speed(const Location &current_loc,const fl
 }
 
 
-
-
-
 // singleton instance
 AP_OAPathPlanner *AP_OAPathPlanner::_singleton;
 
